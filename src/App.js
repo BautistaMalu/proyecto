@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
+import {BrowserRouter, Routes,Route,Link} from 'react-router-dom';
 import Login from './Components/login';
 import Register from './Components/register';
 
@@ -8,21 +8,15 @@ function App() {
     <div className="App"> 
       <header className="App-Header">
         <h3> Home </h3>
-        <Router>
+        <BrowserRouter>
             <Routes>
               
-              <Route path="/login" exact>
-                <Login/>
-                  <Link to='/register'>Registrarse</Link>
-              </Route>
-
-              <Route path="/register" exact>
-                <Register/>
-                  <Link to='/login'>Iniciar Sesion</Link>
-              </Route>
-              
+              <Route path="/" exact element={<Login/>}/>
+                
+              <Route path="/register" exact element={<Register/>}/>
+                                
             </Routes>
-          </Router>
+          </BrowserRouter>
       </header>
      </div>
   );
