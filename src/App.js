@@ -7,7 +7,6 @@ function App() {
   return (
     <div className="App"> 
       <header className="App-Header">
-        <h3> Home </h3>
         <BrowserRouter>
             <Routes>
               
@@ -18,7 +17,8 @@ function App() {
             </Routes>
           </BrowserRouter>
       </header>
-     </div>
+      </div>
+
   );
 }
 

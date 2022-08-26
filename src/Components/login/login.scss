@@ -1,7 +1,17 @@
 $main-color: #4dd6b6;
+
+body{
+    margin: 0;
+    //padding: 0;
+    //box-sizing: border-box;    
+}
+
 .Logueo{
     min-height: 100vh;
-    min-width: 100vh;
+    min-width: 100%;
     overflow-x: hidden;
-    background: linear-gradient(to right, rgb(207,207,207) 50%, $main-color 50% );
+    background: linear-gradient(to left, rgb(207,207,207) 50%, $main-color 50% );
+    padding: 0%;
+    
+
 }

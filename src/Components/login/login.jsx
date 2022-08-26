@@ -4,15 +4,15 @@ import {Link} from 'react-router-dom';
 function login() {
   return (
     <div className='Logueo'>
+            
+      Iniciar sesion<br/>
+      <Link to='/register'>Registrarse</Link>
+
       <div className='contenido-login'>
-
-
+        
 
       </div>
-      
-        <h1>Logueate :) </h1>
 
-        <h3><Link to='/register'>Registrarse</Link></h3>
     </div>
   )
 }
