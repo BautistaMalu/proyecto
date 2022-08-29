@@ -10,7 +10,7 @@ body{
     min-height: 100vh;
     min-width: 100%;
     overflow-x: hidden;
-    background: linear-gradient(to right, rgb(207,207,207) 50%, $main-color 50% );
+    background: linear-gradient(to right, rgb(255, 252, 252) 50%, $main-color 50% );
     padding: 0%;
     .contenido-login{
         height: 80vh;
@@ -18,13 +18,61 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: 2rem;
         
         .ladoizq,.ladoder{
 
             height: 90%;
             width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+        }
+        .ladoder{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .ladoizq{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            input{
+                font-size: 1rem;
+                display: block;
+                outline: gray;
+                border-color: gray;
+                height: 50px;
+                width: 429px;
+                border-radius: 0.625rem;
+                margin-bottom: 1rem;
+                &:focus{
+                    outline: none   ;
+                    border-color: gray;
+                }
+                
+
+            }
+            label{
+                display: block;
+                margin: auto;
+                float: left;
+                width: 20%;
+                font-size: larger;
+            }
+            #ingreso{
+                width: 429px;
+                height: 50px;
+                margin-right: 5rem;
+                background: #2A81C0;
+                cursor: pointer;
+                border-radius: 0.625rem;
+                border: none;
+                color: white;
+                font-size: medium;
+
+            }
         }
     }
 }

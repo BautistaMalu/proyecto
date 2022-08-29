@@ -2,6 +2,11 @@ import React from 'react'
 import './login.css';
 import {Link} from 'react-router-dom';
 function login() {
+
+  const handlesubmit=(event)=>{
+    event.preventDefault();
+  }
+
   return (
     <div className='Logueo'>
             
@@ -11,11 +16,17 @@ function login() {
       <div className='contenido-login'>
         
         <div className='ladoizq'>
-          hola<br/>
+          <form onSubmit={handlesubmit}>
+            <label for ="email1">Email</label>
+              <input placeholder=" Ingrese su email..." type="email" id="email1"/>
+            <label for="psw1">Contraseña</label>
+              <input placeholder=" Ingrese su contraseña" type="password" id="psw1"/>
+              <button type="submit" id="ingreso">Ingresar</button>
+          </form>
         </div>
 
         <div className='ladoder'>
-          chau<br/>
+          <p>Chacu</p><br/>
         </div>
 
       </div>
