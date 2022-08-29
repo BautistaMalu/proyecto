@@ -13,16 +13,18 @@ body{
     background: linear-gradient(to right, rgb(207,207,207) 50%, $main-color 50% );
     padding: 0%;
     .contenido-login{
-        height: 75vh;
-        width: 70%;
+        height: 80vh;
+        width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
         
         .ladoizq,.ladoder{
 
-            height: 80%;
+            height: 90%;
             width: 100%;
+            display: flex;
+            flex-direction: row;
         }
     }
 }
