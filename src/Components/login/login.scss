@@ -2,8 +2,7 @@ $main-color: #4dd6b6;
 
 body{
     margin: 0;
-    //padding: 0;
-    //box-sizing: border-box;    
+   
 }
 
 .Logueo{
@@ -41,15 +40,15 @@ body{
             input{
                 font-size: 1rem;
                 display: block;
-                outline: gray;
                 border-color: gray;
                 height: 50px;
                 width: 429px;
                 border-radius: 0.625rem;
                 margin-bottom: 1rem;
+                border-style:solid;
                 &:focus{
-                    outline: none   ;
-                    border-color: gray;
+                    border-color: gray;  
+                    border-style:solid;
                 }
                 
 
@@ -64,14 +63,16 @@ body{
             #ingreso{
                 width: 429px;
                 height: 50px;
-                margin-right: 5rem;
+                margin-right: 5.25rem;
                 background: #2A81C0;
                 cursor: pointer;
                 border-radius: 0.625rem;
                 border: none;
                 color: white;
                 font-size: medium;
-
+                &:hover{
+                    background-color: #2f7699;
+                }
             }
         }
     }

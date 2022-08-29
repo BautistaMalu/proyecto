@@ -18,9 +18,9 @@ function login() {
         <div className='ladoizq'>
           <form onSubmit={handlesubmit}>
             <label for ="email1">Email</label>
-              <input placeholder=" Ingrese su email..." type="email" id="email1"/>
+              <input placeholder="Ingrese su email..." type="email" id="email1"/>
             <label for="psw1">Contraseña</label>
-              <input placeholder=" Ingrese su contraseña" type="password" id="psw1"/>
+              <input placeholder="Ingrese su contraseña" type="password" id="psw1"/>
               <button type="submit" id="ingreso">Ingresar</button>
           </form>
         </div>
