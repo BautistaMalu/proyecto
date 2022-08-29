@@ -10,6 +10,13 @@ function login() {
 
       <div className='contenido-login'>
         
+        <div className='ladoizq'>
+          hola<br/>
+        </div>
+
+        <div className='ladoder'>
+          chau<br/>
+        </div>
 
       </div>
 

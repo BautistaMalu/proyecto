@@ -6,8 +6,27 @@ body {
   min-height: 100vh;
   min-width: 100%;
   overflow-x: hidden;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #cfcfcf), color-stop(50%, #4dd6b6));
-  background: linear-gradient(to left, #cfcfcf 50%, #4dd6b6 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #cfcfcf), color-stop(50%, #4dd6b6));
+  background: linear-gradient(to right, #cfcfcf 50%, #4dd6b6 50%);
   padding: 0%;
+}
+
+.Logueo .contenido-login {
+  height: 75vh;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Logueo .contenido-login .ladoizq, .Logueo .contenido-login .ladoder {
+  height: 80%;
+  width: 100%;
 }
 /*# sourceMappingURL=login.css.map */

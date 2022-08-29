@@ -10,8 +10,19 @@ body{
     min-height: 100vh;
     min-width: 100%;
     overflow-x: hidden;
-    background: linear-gradient(to left, rgb(207,207,207) 50%, $main-color 50% );
+    background: linear-gradient(to right, rgb(207,207,207) 50%, $main-color 50% );
     padding: 0%;
-    
+    .contenido-login{
+        height: 75vh;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .ladoizq,.ladoder{
 
+            height: 80%;
+            width: 100%;
+        }
+    }
 }
