@@ -11,8 +11,15 @@ body{
     overflow-x: hidden;
     background: linear-gradient(to right, rgb(255, 252, 252) 50%, $main-color 50% );
     padding: 0%;
+        .imagen{
+            display: flex;
+            justify-content: left;
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
     .contenido-login{
-        height: 80vh;
+
+        height: 60vh;
         width: 90%;
         display: flex;
         justify-content: center;
@@ -37,6 +44,17 @@ body{
             align-items: center;
             flex-direction: column;
             justify-content: center;
+
+            .login{
+                font-family:'Inter';
+                margin-right: 5rem;
+                margin-bottom: 0rem;
+            }
+            .ingrese{
+                margin-right: 7rem;
+                margin-top: 0rem;
+                margin-bottom: 1rem;
+            }
             input{
                 font-size: 1rem;
                 display: block;
@@ -50,9 +68,18 @@ body{
                     border-color: gray;  
                     border-style:solid;
                 }
+               /* .ojo{
+                      <i className='ojo'>{eye}</i>
                 
+                }*/
 
             }
+            .h3{
+                display: flex;
+                justify-content: right;
+                margin-right: 18rem;
+            }
+           
             label{
                 display: block;
                 margin: auto;
@@ -63,7 +90,7 @@ body{
             #ingreso{
                 width: 429px;
                 height: 50px;
-                margin-right: 5.25rem;
+                margin-left: 0.2rem;
                 background: #2A81C0;
                 cursor: pointer;
                 border-radius: 0.625rem;
