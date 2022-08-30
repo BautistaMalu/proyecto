@@ -20,6 +20,7 @@ body {
           justify-content: left;
   margin-left: 2rem;
   margin-top: 1rem;
+  height: 2rem;
 }
 
 .Logueo .contenido-login {
@@ -62,6 +63,7 @@ body {
 }
 
 .Logueo .contenido-login .ladoizq {
+  margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,15 +80,19 @@ body {
 }
 
 .Logueo .contenido-login .ladoizq .login {
-  font-family: 'Inter';
-  margin-right: 5rem;
+  font-family: 'Inter', sans-serif;
+  margin-right: 7rem;
   margin-bottom: 0rem;
+  height: 3rem;
+  font-size: 1.75rem;
 }
 
 .Logueo .contenido-login .ladoizq .ingrese {
-  margin-right: 7rem;
+  font-family: 'Inter', sans-serif;
+  margin-right: 8rem;
   margin-top: 0rem;
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 .Logueo .contenido-login .ladoizq input {
@@ -109,16 +115,6 @@ body {
   border-style: solid;
 }
 
-.Logueo .contenido-login .ladoizq .h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  margin-right: 18rem;
-}
-
 .Logueo .contenido-login .ladoizq label {
   display: block;
   margin: auto;
@@ -130,7 +126,8 @@ body {
 .Logueo .contenido-login .ladoizq #ingreso {
   width: 429px;
   height: 50px;
-  margin-left: 0.2rem;
+  margin-left: 0.3rem;
+  margin-top: 0.75rem;
   background: #2A81C0;
   cursor: pointer;
   border-radius: 0.625rem;
@@ -141,5 +138,29 @@ body {
 
 .Logueo .contenido-login .ladoizq #ingreso:hover {
   background-color: #2f7699;
+}
+
+.Logueo .contenido-login .ladoizq #google {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+  width: 429px;
+  height: 50px;
+  cursor: pointer;
+  background: white;
+  border-radius: 0.625rem;
+  border: 1px solid #949449;
 }
 /*# sourceMappingURL=login.css.map */

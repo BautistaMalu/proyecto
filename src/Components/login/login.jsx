@@ -26,7 +26,7 @@ function login() {
           <h1 className='login'> Bienvenido de vuelta <br/> </h1>
 
           <h3 className="ingrese"> Por favor ingrese sus datos <br/> </h3>
-          
+
           <form onSubmit={handlesubmit}>
 
             <label for ="email1">Email</label>
@@ -38,6 +38,8 @@ function login() {
               <input placeholder="Ingrese su contraseña" type="password" id="psw1"/>
 
               <button type="submit" id="ingreso">Ingresar</button>
+
+              <button type='submit' id='google'> Ingresar con google</button>
 
           </form>
 
