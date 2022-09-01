@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AACA,AAAA,WAAW,CAAA;EACP,UAAU,EAAE,KAAK;EACjB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,kDAAgE;CAI/E",
+    "mappings": "",
     "sources": [
         "register.scss"
     ],

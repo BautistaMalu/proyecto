@@ -2,9 +2,11 @@ import React from 'react'
 import './login.css';
 import {Link} from 'react-router-dom';
 import Logo from './Logo.png';
+import Foto from './Fotoprueba.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 const eye = <FontAwesomeIcon icon={faEye} />;
+
 function login() {
 
   const handlesubmit=(event)=>{
@@ -14,9 +16,6 @@ function login() {
   return (
     <div className='Logueo'>
             
-
-
-
       <div className="imagen"> <img src={Logo} alt="" /> </div>
 
       <div className='contenido-login'>
@@ -39,18 +38,18 @@ function login() {
 
               <button type="submit" id="ingreso">Ingresar</button>
 
-              <button type='submit' id='google'> Ingresar con google</button>
+              <button type='submit' id='google'> Ingresa con google</button>
 
           </form>
 
             <div className="footer">
-              <h3>¿No tenes cuenta? <Link to='/register'>Registrate</Link></h3  >
+              <h3 id='Registrolink'>¿No tenes cuenta? <Link to='/register'>Registrate</Link></h3>
             </div>
 
         </div>
 
         <div className='ladoder'>
-          <p>Chacu</p><br/>
+        <div className="Foto"> <img src={Foto} alt="" /> </div>
         </div>
 
       </div>

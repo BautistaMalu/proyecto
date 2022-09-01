@@ -1,4 +1,4 @@
-$main-color: #4dd6b6;
+
 
 body{
     margin: 0;
@@ -9,14 +9,13 @@ body{
     min-height: 100vh;
     min-width: 100%;
     overflow-x: hidden;
-    background: linear-gradient(to right, rgb(255, 252, 252) 50%, $main-color 50% );
     padding: 0%;
         .imagen{
             display: flex;
             justify-content: left;
             margin-left: 2rem;
             margin-top: 1rem;
-            height: 2rem;
+            height: 2.3rem;
         }
     .contenido-login{
 
@@ -29,16 +28,19 @@ body{
         
         .ladoizq,.ladoder{
             
-            height: 90%;
+            height: 100%;
             width: 100%;
             display: flex;
             flex-direction: column;
         }
         .ladoder{
             display: flex;
-            align-items: center;
             justify-content: center;
-
+            .Foto{
+                display: flex;
+                justify-content: left;
+                width: 100%;
+            }
         }
         .ladoizq{
             margin-top: 5rem;
@@ -46,19 +48,22 @@ body{
             align-items: center;
             flex-direction: column;
             justify-content: center;
+            margin-left: 10rem;
+            margin-right: 5rem;
 
             .login{
                 font-family:'Inter', sans-serif;
-                margin-right: 7rem;
+                margin-right: 3rem;
                 margin-bottom: 0rem;
                 height: 3rem;
                 font-size: 1.75rem;
+                margin-top: 5rem;
             }
             .ingrese{
                 font-family:'Inter', sans-serif;
-                margin-right: 8rem;
+                margin-right: 3.3rem;
                 margin-top: 0rem;
-                margin-bottom: 1rem;
+                margin-bottom: 1.5rem;
                 font-size: 1rem;
             }
             input{
@@ -68,7 +73,7 @@ body{
                 height: 50px;
                 width: 429px;
                 border-radius: 0.625rem;
-                margin-bottom: 1rem;
+                margin-bottom: 1.5rem;
                 border-style:solid;
                 &:focus{
                     border-color: gray;  
@@ -89,6 +94,8 @@ body{
                 float: left;
                 width: 20%;
                 font-size: larger;
+                font-family:'Inter', sans-serif;
+                font-size: 1rem;
             }
             #ingreso{
                 width: 429px;
@@ -118,8 +125,21 @@ body{
                 background:white;
                 border-radius: 0.625rem;
                 border: 1px solid #949449;
+                font-size: medium;
 
             }
+            
+            .footer{
+                #Registrolink{
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 1rem;
+                    font-family:'Inter', sans-serif;
+                    font-size: small;
+                    margin-top: 1rem;
+                }
+            }
+
         }
     }
 }
