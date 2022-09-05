@@ -19,7 +19,7 @@ function register() {
 
       <div className='ladoizq'>
         
-        <h1 className='registro'> Bienvenido de vuelta <br/> </h1>
+        <h1 className='registro'> Bienvenido a GroupIT <br/> </h1>
 
         <h3 className="ingrese"> Por favor ingrese sus datos <br/> </h3>
 
@@ -37,14 +37,14 @@ function register() {
 
             <input placeholder="Ingresa su contraseña" type="password" id="psw1"/>
             
-            <button type="submit" id="ingreso">Ingresar</button>
+            <button type="submit" id="registrarse">Registrarse</button>
 
             <button type='submit' id='google'> Ingresa con google</button>
 
         </form>
 
           <div className="footer">
-            <h3 id='Registrolink'>¿Ya tenes cuenta? <Link to='/'>Inicia Sesion</Link></h3>
+            <h3 id='Iniciolink'>¿Ya tenes cuenta? <Link to='/login'>Inicia Sesion</Link></h3>
           </div>
 
         </div>

@@ -50,7 +50,7 @@ body{
             margin-left: 10rem;
             margin-right: 5rem;
 
-            .login{
+            .registro{
                 font-family:'Inter', sans-serif;
                 margin-right: 3rem;
                 margin-bottom: 0rem;
@@ -62,18 +62,20 @@ body{
                 font-family:'Inter', sans-serif;
                 margin-right: 3.3rem;
                 margin-top: 0rem;
-                margin-bottom: 1.5rem;
+                margin-bottom: 1rem;
                 font-size: 1rem;
             }
             input{
                 font-size: 1rem;
                 display: block;
                 border-color: gray;
-                height: 50px;
-                width: 429px;
+                height: 35px;
+                width: 400px;
                 border-radius: 0.625rem;
-                margin-bottom: 1.5rem;
+                margin-bottom: 0.6rem;
+                margin-top: 0.2rem;
                 border-style:solid;
+                padding: 0.6rem;
                 &:focus{
                     border-color: gray;  
                     border-style:solid;
@@ -95,11 +97,12 @@ body{
                 font-size: larger;
                 font-family:'Inter', sans-serif;
                 font-size: 1rem;
+                margin-left: 0.5rem;
             }
-            #ingreso{
-                width: 429px;
+            #registrarse{
+                width: 410px;
                 height: 50px;
-                margin-left: 0.3rem;
+                margin-left: 0.5rem;
                 margin-top: 0.75rem;
                 background: #2A81C0;
                 cursor: pointer;
@@ -117,8 +120,9 @@ body{
                 margin-left: 0.3rem;
                 display: flex;
                 flex-direction: column;
-                margin-top: 2rem;
-                width: 429px;
+                margin-left: 0.5rem;
+                margin-top: 1rem;
+                width: 410px;
                 height: 50px;
                 cursor: pointer;
                 background:white;
@@ -129,12 +133,12 @@ body{
             }
             
             .footer{
-                #Registrolink{
+                #Iniciolink{
                     justify-content: center;
                     align-items: center;
                     margin-left: 1rem;
                     font-family:'Inter', sans-serif;
-                    font-size: small;
+                    font-size: 1rem;
                     margin-top: 1rem;
                 }
             }
