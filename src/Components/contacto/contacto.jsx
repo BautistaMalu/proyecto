@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import Header from '../header/header';
 import './contacto.css';
 import Foto from './Compu.png';
+
 function contacto() {
   return (
     
@@ -17,21 +18,26 @@ function contacto() {
         
       <div className="ladoizq">
 
-
+          <div className="textos">
           <h2 className="contactate">Contactate con nosotros</h2>
           <h4 className="preguntas">Nos encataria escuchar tus preguntas o propuestas</h4>
-          
-          <label for="nombre">Nombre</label>
+          </div>
+
+          <div className="nya">
+          <label for="nombre" id="l1">Nombre</label>
           <input placeholder="Ingresa su nombre"type="text" id="nombre" />
 
-          <label for="apellido">Apellido</label>
+          <label for="apellido" id='l2'>Apellido</label>
           <input placeholder="Ingresa su apellido"type="text" id="apellido" />
+          </div>
           
+          <div className="em">
           <label for="email1">Email</label>
           <input placeholder="Ingresa su nombre"type="email" id="email1" />
           
           <label for="msj">Mensaje</label>
           <input placeholder="Escriba aca su mensaje"type="text" id="msj" />
+          </div>
 
 
         </div>

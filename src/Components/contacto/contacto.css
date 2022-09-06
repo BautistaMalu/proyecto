@@ -31,8 +31,9 @@
       -ms-flex-align: left;
           align-items: left;
   text-align: center;
-  margin-right: 4rem;
+  margin-right: 0rem;
   margin-top: 2rem;
+  background-image: url("Rectangulo.png");
 }
 
 .contacto .contenidocontacto .ladoder .dispocision, .contacto .contenidocontacto .ladoder .duda {
@@ -43,6 +44,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: 2rem;
 }
 
 .contacto .contenidocontacto .ladoder .dispocision {
@@ -50,7 +52,9 @@
 }
 
 .contacto .contenidocontacto .ladoder .duda {
-  margin-top: 0.75rem;
+  margin-top: 1rem;
+  height: 5rem;
+  width: 22rem;
 }
 
 .contacto .contenidocontacto .ladoizq {
@@ -70,10 +74,55 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*hacer tres divs separados para ponerlo en paralelo*/
 }
 
-.contacto .contenidocontacto .ladoizq #nombre, .contacto .contenidocontacto .ladoizq #apellido {
+.contacto .contenidocontacto .ladoizq .textos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacto .contenidocontacto .ladoizq .textos .contactate, .contacto .contenidocontacto .ladoizq .textos .preguntas {
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacto .contenidocontacto .ladoizq .textos .contactate {
+  margin-bottom: 0rem;
+}
+
+.contacto .contenidocontacto .ladoizq .textos .preguntas {
+  margin-top: 0,75rem;
+}
+
+.contacto .contenidocontacto .ladoizq .nya {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacto .contenidocontacto .ladoizq .nya #l1, .contacto .contenidocontacto .ladoizq .nya #l2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacto .contenidocontacto .ladoizq .nya #nombre, .contacto .contenidocontacto .ladoizq .nya #apellido {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,16 +138,40 @@
   outline: none;
 }
 
-.contacto .contenidocontacto .ladoizq .contactate, .contacto .contenidocontacto .ladoizq .preguntas {
-  font-family: 'Inter', sans-serif;
-  text-align: center;
+.contacto .contenidocontacto .ladoizq .em {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: start;
 }
 
-.contacto .contenidocontacto .ladoizq .contactate {
-  margin-bottom: 0rem;
+.contacto .contenidocontacto .ladoizq .em #email1, .contacto .contenidocontacto .ladoizq .em #msj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 0.625rem;
+  text-align: start;
 }
 
-.contacto .contenidocontacto .ladoizq .preguntas {
-  margin-top: 0,75rem;
+.contacto .contenidocontacto .ladoizq .em #email1 {
+  width: 15rem;
+  border-style: solid;
+  outline: none;
+  height: 4rem;
+}
+
+.contacto .contenidocontacto .ladoizq .em #msj {
+  width: 20rem;
+  border-style: solid;
+  outline: none;
+  height: 8rem;
 }
 /*# sourceMappingURL=contacto.css.map */
