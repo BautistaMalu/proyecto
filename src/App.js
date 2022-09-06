@@ -18,9 +18,9 @@ function App() {
                 
               <Route path="/register" exact element={<Register/>}/>
 
-              <Route path="/sobrenosotros" exact element={Sobrenosotros}/>
+              <Route path="/sobrenosotros" exact element={<Sobrenosotros/>}/>
 
-              <Route path="/contacto" exact element={Contacto}/>
+              <Route path="/contacto" exact element={<Contacto/>}/>
                                 
             </Routes>
           </BrowserRouter>

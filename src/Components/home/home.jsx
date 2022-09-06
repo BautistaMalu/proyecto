@@ -1,8 +1,7 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+/*import {Link} from 'react-router-dom'*/
 import './home.css';
-import Header from './components home/header';
-import foto from './Group 471.png';
+import Header from '../header/header';
 function home() {
   return (
 

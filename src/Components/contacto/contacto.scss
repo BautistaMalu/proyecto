@@ -1,0 +1,64 @@
+.contacto{
+   
+    .contenidocontacto{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ladoder{
+            display: flex;
+            flex-direction: column;
+            flex: 50%;
+            width: 100%;
+            justify-content: left;
+            align-items: left;
+            text-align: center;
+            margin-right: 4rem;
+            margin-top: 2rem;
+            .dispocision,.duda{
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .dispocision{
+                margin-bottom: 0rem;
+            }
+            .duda{
+                margin-top: 0.75rem;
+            }
+
+
+        }
+        .ladoizq{
+            display: flex;
+            flex: 50%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            #nombre, #apellido{
+                display: flex;
+                flex-direction: row;
+                padding: 0.5rem;
+                height: 1rem;
+                font-size: small;
+                border-radius: 0.625rem;
+                border-style: solid;
+                outline: none;
+            }
+            /*hacer tres divs separados para ponerlo en paralelo*/
+
+            .contactate,.preguntas{
+                font-family: 'Inter', sans-serif;
+                text-align: center;
+            }
+            .contactate{
+                margin-bottom: 0rem;
+            }
+            .preguntas{
+                margin-top: 0,75rem;
+            }
+        }
+    }
+}

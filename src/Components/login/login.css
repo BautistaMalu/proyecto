@@ -113,15 +113,11 @@ body {
   margin-bottom: 1.5rem;
   border-style: solid;
   padding: 0.6rem;
+  outline: none;
   /* .ojo{
                       <i className='ojo'>{eye}</i>
                 
                 }*/
-}
-
-.Logueo .contenido-login .ladoizq input:focus {
-  border-color: gray;
-  border-style: solid;
 }
 
 .Logueo .contenido-login .ladoizq label {

@@ -114,15 +114,11 @@ body {
   margin-top: 0.2rem;
   border-style: solid;
   padding: 0.6rem;
+  outline: none;
   /* .ojo{
                       <i className='ojo'>{eye}</i>
                 
                 }*/
-}
-
-.registrate .contenido-registro .ladoizq input:focus {
-  border-color: gray;
-  border-style: solid;
 }
 
 .registrate .contenido-registro .ladoizq label {

@@ -76,10 +76,7 @@ body{
                 margin-top: 0.2rem;
                 border-style:solid;
                 padding: 0.6rem;
-                &:focus{
-                    border-color: gray;  
-                    border-style:solid;
-                }
+                outline: none;
 
                /* .ojo{
                       <i className='ojo'>{eye}</i>
