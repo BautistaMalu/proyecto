@@ -62,14 +62,25 @@
                     margin-top: 0,75rem;
                 }
             }
+            .labels1y2{
+                #l1,#l2{
+                    display: flex;
+                    flex-direction: row;
+                    font-family:'Inter', sans-serif;
+                }
+                #l1{
+                    margin-right: 20rem;
+                    margin-bottom: 0rem;
+                }
+                #l2{
+                    margin-left: 10rem;
+                }
+            }
 
             .nya{
                 display: flex;
 
-                #l1,#l2{
-                    display: flex;
-                    flex-direction: column;
-                }
+
                 #nombre, #apellido{
                     display: flex;
                     flex-direction: row;
@@ -86,6 +97,10 @@
                 display: flex;
                 flex-direction: column;
                 text-align: start;
+
+                #l3,#l4{
+                    font-family:'Inter', sans-serif;
+                }
                 #email1,#msj{
                     display: flex;
                     flex-direction: column;
@@ -108,4 +123,4 @@
             }
         }
     }
-}
+}   

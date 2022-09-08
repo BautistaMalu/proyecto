@@ -23,19 +23,21 @@ function contacto() {
           <h4 className="preguntas">Nos encataria escuchar tus preguntas o propuestas</h4>
           </div>
 
-          <div className="nya">
+          <div className="labels1y2">
           <label for="nombre" id="l1">Nombre</label>
-          <input placeholder="Ingresa su nombre"type="text" id="nombre" />
-
           <label for="apellido" id='l2'>Apellido</label>
+          </div>
+
+          <div className="nya">
+          <input placeholder="Ingresa su nombre"type="text" id="nombre" />
           <input placeholder="Ingresa su apellido"type="text" id="apellido" />
           </div>
           
           <div className="em">
-          <label for="email1">Email</label>
+          <label for="email1" id="l3">Email</label>
           <input placeholder="Ingresa su nombre"type="email" id="email1" />
           
-          <label for="msj">Mensaje</label>
+          <label for="msj" id="l4">Mensaje</label>
           <input placeholder="Escriba aca su mensaje"type="text" id="msj" />
           </div>
 

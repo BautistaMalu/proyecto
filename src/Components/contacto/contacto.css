@@ -106,20 +106,30 @@
   margin-top: 0,75rem;
 }
 
+.contacto .contenidocontacto .ladoizq .labels1y2 #l1, .contacto .contenidocontacto .ladoizq .labels1y2 #l2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Inter', sans-serif;
+}
+
+.contacto .contenidocontacto .ladoizq .labels1y2 #l1 {
+  margin-right: 20rem;
+  margin-bottom: 0rem;
+}
+
+.contacto .contenidocontacto .ladoizq .labels1y2 #l2 {
+  margin-left: 10rem;
+}
+
 .contacto .contenidocontacto .ladoizq .nya {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.contacto .contenidocontacto .ladoizq .nya #l1, .contacto .contenidocontacto .ladoizq .nya #l2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .contacto .contenidocontacto .ladoizq .nya #nombre, .contacto .contenidocontacto .ladoizq .nya #apellido {
@@ -147,6 +157,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: start;
+}
+
+.contacto .contenidocontacto .ladoizq .em #l3, .contacto .contenidocontacto .ladoizq .em #l4 {
+  font-family: 'Inter', sans-serif;
 }
 
 .contacto .contenidocontacto .ladoizq .em #email1, .contacto .contenidocontacto .ladoizq .em #msj {
