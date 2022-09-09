@@ -42,8 +42,10 @@
             display: flex;
             flex: 50%;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: left;
+            align-items: left;
+            margin-left: 3%;
+
 
             .textos{
                 display: flex;
@@ -57,68 +59,104 @@
                 }
                 .contactate{
                     margin-bottom: 0rem;
+                    margin-top: 0rem;
                 }
                 .preguntas{
-                    margin-top: 0,75rem;
+                    margin-top: 1rem;
+                    margin-bottom: 3rem;
                 }
             }
             .labels1y2{
-                #l1,#l2{
+                /*#l1,#l2{
                     display: flex;
                     flex-direction: row;
                     font-family:'Inter', sans-serif;
-                }
+                }*/
+                display: flex;
+                flex-direction: row;
+                font-family:'Inter', sans-serif;
+                width: 100%;
+                
                 #l1{
-                    margin-right: 20rem;
-                    margin-bottom: 0rem;
+                    width: 40%;
+
+
                 }
                 #l2{
-                    margin-left: 10rem;
+                    width: 60%;
+
                 }
             }
 
             .nya{
                 display: flex;
+                
 
 
                 #nombre, #apellido{
                     display: flex;
                     flex-direction: row;
                     padding: 0.5rem;
-                    height: 1rem;
+                    height: 1.5rem;
                     font-size: small;
                     border-radius: 0.625rem;
                     border-style: solid;
                     outline: none;
+                    font-family:'Inter', sans-serif;
+                    align-items: left;
+                    justify-content: left;
+                    border-color: #949499;
+                }
+                #nombre{
+                    margin-right: 3rem;
                 }
             }
            
             .em{
                 display: flex;
                 flex-direction: column;
-                text-align: start;
+
 
                 #l3,#l4{
+                    margin-top:2rem;;
                     font-family:'Inter', sans-serif;
                 }
                 #email1,#msj{
                     display: flex;
                     flex-direction: column;
                     border-radius: 0.625rem;
-                    text-align: start;
+                    font-family:'Inter', sans-serif;
+                    border-color: #949499;
+
                 }
                 #email1{
-                    width: 15rem;
+                    width: 27rem;
                     border-style: solid;
                     outline: none;
-                    height: 4rem;
+                    padding-top: 0.8rem;
+                    padding-bottom: 1rem;
+                    padding-left: 0.4rem;
+                    height: 1rem;
                 }
                 #msj{
-                    width: 20rem;
+                    width: 27rem;
                     border-style: solid;
                     outline: none;
-                    height: 8rem;
+                    padding-top: 0.7rem;
+                    padding-bottom: 5rem;
+                    padding-left: 0.4rem;
 
+                }
+                .enviar{
+                    margin-top: 3rem;
+                    width: 28rem;
+                    height: 3rem;
+                    border-radius: 0.625rem;
+                    outline: none;
+                    border-style: none;
+                    font-family:'Inter', sans-serif;
+                    color:white;
+                    background-color: rgb(122, 130,217);
                 }
             }
         }

@@ -35,11 +35,13 @@ function contacto() {
           
           <div className="em">
           <label for="email1" id="l3">Email</label>
-          <input placeholder="Ingresa su nombre"type="email" id="email1" />
+          <input placeholder="Ingresa su mail"type="email" id="email1" />
           
           <label for="msj" id="l4">Mensaje</label>
           <input placeholder="Escriba aca su mensaje"type="text" id="msj" />
+          <button className="enviar">Enviar</button>
           </div>
+
 
 
         </div>

@@ -3,9 +3,9 @@ import './login.css';
 import {Link} from 'react-router-dom';
 import Logo from './Logo.png';
 import Foto from './Fotoprueba.png';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+/*import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
-const eye = <FontAwesomeIcon icon={faEye} />;
+const eye = <FontAwesomeIcon icon={faEye} />;*/
 
 function login() {
 
@@ -30,11 +30,13 @@ function login() {
 
             <label for ="email1">Email</label>
 
-              <input placeholder="Ingrese su email..." type="email" id="email1"/>
+              <input placeholder="Ingrese su email" type="email" id="email1"/>
 
             <label for="psw1">Contraseña</label>
 
               <input placeholder="Ingrese su contraseña" type="password" id="psw1"/>
+
+              <Link to='/olvidemicontrasenia' id='linkolvi'>¿Olvidaste tu contraseña?</Link>
 
               <button type="submit" id="ingreso">Ingresar</button>
 

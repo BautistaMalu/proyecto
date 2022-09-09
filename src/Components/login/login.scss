@@ -74,16 +74,25 @@ body{
                 height: 40px;
                 width: 400px;
                 border-radius: 0.625rem;
-                margin-bottom: 1.5rem;
+                margin-bottom: 0.2rem;
                 border-style:solid;
                 padding: 0.6rem;
                 outline: none;
+                font-family:'Inter', sans-serif;
 
                /* .ojo{
                       <i className='ojo'>{eye}</i>
                 
                 }*/
 
+            }
+            #linkolvi{
+                display: flex;
+                justify-content: right;
+                margin-bottom: 1.5rem;
+                font-family:'Inter', sans-serif;
+                font-size: small;
+                text-decoration: none;
             }
 
            

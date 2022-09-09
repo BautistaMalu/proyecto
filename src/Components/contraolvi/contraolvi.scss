@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+   
+}
+
+    .Contraolvi{
+        min-height: 100vh;
+        min-width: 100%;
+        overflow-x: hidden;
+        padding: 0%;
+            .imagen{
+                display: flex;
+                justify-content: left;
+                margin-left: 2rem;
+                margin-top: 1rem;
+                height: 2.3rem;
+            }
+        .contenido-contra{
+
+            height: 60vh;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 2rem;
+            
+            .ladoizq,.ladoder{
+                
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .ladoder{
+                display: flex;
+                justify-content: center;
+                .Foto{
+                    display: flex;
+                    justify-content: left;
+                    width: 100%;
+                }
+            }
+            .ladoizq{
+                margin-top: 5rem;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 10rem;
+                margin-right: 5rem;
+
+                .recordar{
+                    font-family:'Inter', sans-serif;
+                    margin-right: 3rem;
+                    margin-bottom: 0rem;
+                    height: 3rem;
+                    font-size: 1.75rem;
+                    margin-top: 5rem;
+                    
+                }
+                .recuperar{
+                    font-family:'Inter', sans-serif;
+                    margin-right: 3.3rem;
+                    margin-top: 0rem;
+                    margin-bottom: 1.5rem;
+                    font-size: 1rem;
+                }
+                input{
+                    font-size: 1rem;
+                    display: block;
+                    border-color: gray;
+                    height: 30px;
+                    width: 400px;
+                    border-radius: 0.625rem;
+                    margin-bottom: 0.2rem;
+                    margin-top: 1.5rem;
+                    border-style:solid;
+                    padding: 0.6rem;
+                    outline: none;
+                    font-family:'Inter', sans-serif;
+
+
+                }
+            
+                label{
+                    display: block;
+                    margin: auto;
+                    float: left;
+                    width: 20%;
+                    font-size: larger;
+                    font-family:'Inter', sans-serif;
+                    font-size: 1rem;
+                    margin-left: 0.5rem;
+                }
+                #recuperarcontra{
+                    width: 420px;
+                    height: 45px;
+                    margin-left: 0.2rem;
+                    margin-top: 1rem;
+                    background: #2A81C0;
+                    cursor: pointer;
+                    border-radius: 0.625rem;
+                    border: none;
+                    color: white;
+                    font-size: medium;
+                    &:hover{
+                        background-color: #2f7699;
+                    }
+                }
+
+
+            }
+        }
+    }

@@ -2,14 +2,14 @@ body {
   margin: 0;
 }
 
-.registrate {
+.Contraolvi {
   min-height: 100vh;
   min-width: 100%;
   overflow-x: hidden;
   padding: 0%;
 }
 
-.registrate .imagen {
+.Contraolvi .imagen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +21,7 @@ body {
   height: 2.3rem;
 }
 
-.registrate .contenido-registro {
+.Contraolvi .contenido-contra {
   height: 60vh;
   width: 90%;
   display: -webkit-box;
@@ -36,7 +36,7 @@ body {
   margin-left: 2rem;
 }
 
-.registrate .contenido-registro .ladoizq, .registrate .contenido-registro .ladoder {
+.Contraolvi .contenido-contra .ladoizq, .Contraolvi .contenido-contra .ladoder {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -48,7 +48,7 @@ body {
           flex-direction: column;
 }
 
-.registrate .contenido-registro .ladoder {
+.Contraolvi .contenido-contra .ladoder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,7 +57,7 @@ body {
           justify-content: center;
 }
 
-.registrate .contenido-registro .ladoder .Foto {
+.Contraolvi .contenido-contra .ladoder .Foto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +67,7 @@ body {
   width: 100%;
 }
 
-.registrate .contenido-registro .ladoizq {
+.Contraolvi .contenido-contra .ladoizq {
   margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,7 +86,7 @@ body {
   margin-right: 5rem;
 }
 
-.registrate .contenido-registro .ladoizq .registro {
+.Contraolvi .contenido-contra .ladoizq .recordar {
   font-family: 'Inter', sans-serif;
   margin-right: 3rem;
   margin-bottom: 0rem;
@@ -95,34 +95,30 @@ body {
   margin-top: 5rem;
 }
 
-.registrate .contenido-registro .ladoizq .ingrese {
+.Contraolvi .contenido-contra .ladoizq .recuperar {
   font-family: 'Inter', sans-serif;
   margin-right: 3.3rem;
   margin-top: 0rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
 }
 
-.registrate .contenido-registro .ladoizq input {
+.Contraolvi .contenido-contra .ladoizq input {
   font-size: 1rem;
   display: block;
   border-color: gray;
-  height: 35px;
+  height: 30px;
   width: 400px;
   border-radius: 0.625rem;
-  margin-bottom: 0.6rem;
-  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  margin-top: 1.5rem;
   border-style: solid;
   padding: 0.6rem;
   outline: none;
   font-family: 'Inter', sans-serif;
-  /* .ojo{
-                      <i className='ojo'>{eye}</i>
-                
-                }*/
 }
 
-.registrate .contenido-registro .ladoizq label {
+.Contraolvi .contenido-contra .ladoizq label {
   display: block;
   margin: auto;
   float: left;
@@ -133,11 +129,11 @@ body {
   margin-left: 0.5rem;
 }
 
-.registrate .contenido-registro .ladoizq #registrarse {
-  width: 410px;
-  height: 50px;
-  margin-left: 0.5rem;
-  margin-top: 0.75rem;
+.Contraolvi .contenido-contra .ladoizq #recuperarcontra {
+  width: 420px;
+  height: 45px;
+  margin-left: 0.2rem;
+  margin-top: 1rem;
   background: #2A81C0;
   cursor: pointer;
   border-radius: 0.625rem;
@@ -146,46 +142,7 @@ body {
   font-size: medium;
 }
 
-.registrate .contenido-registro .ladoizq #registrarse:hover {
+.Contraolvi .contenido-contra .ladoizq #recuperarcontra:hover {
   background-color: #2f7699;
 }
-
-.registrate .contenido-registro .ladoizq #google {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 0.3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 0.5rem;
-  margin-top: 1rem;
-  width: 410px;
-  height: 50px;
-  cursor: pointer;
-  background: white;
-  border-radius: 0.625rem;
-  border: 1px solid #949449;
-  font-size: medium;
-}
-
-.registrate .contenido-registro .ladoizq .footer #Iniciolink {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 1rem;
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-/*# sourceMappingURL=register.css.map */
+/*# sourceMappingURL=contraolvi.css.map */
