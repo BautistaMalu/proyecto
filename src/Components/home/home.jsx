@@ -2,13 +2,14 @@ import React from 'react'
 /*import {Link} from 'react-router-dom'*/
 import './home.css';
 import Header from '../header/header';
+import Footer from '../footer/footer';
 function home() {
   return (
 
     <div className='Home'>
 
         <div className="header">
-            <Header/>
+          <Header/>
         </div>
 
         <div className="contenidohome">
@@ -16,8 +17,7 @@ function home() {
         </div>
 
         <div className="footer">
-
-
+          <Footer/>
         </div>
 
 

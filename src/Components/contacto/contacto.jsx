@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import Header from '../header/header';
 import './contacto.css';
 import Foto from './Compu.png';
-
+import Footer from '../footer/footer';
 function contacto() {
   return (
     
@@ -56,7 +56,7 @@ function contacto() {
       </div>
 
       <div className="footer">
-
+        <Footer/>
       </div>
     </div>
   )
