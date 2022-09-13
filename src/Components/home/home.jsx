@@ -13,7 +13,11 @@ function home() {
         </div>
 
         <div className="contenidohome">
-          
+
+          <div className="azul">
+            
+          </div>
+
         </div>
 
         <div className="footer">

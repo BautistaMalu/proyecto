@@ -1,5 +1,5 @@
 .footer {
-  height: 200px;
+  height: 230px;
   background-color: #000856;
   width: 100%;
   display: -webkit-box;
@@ -23,7 +23,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 35%;
+  height: 30%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -31,7 +31,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 0rem;
 }
 
@@ -99,5 +99,31 @@
   font-family: 'Inter', sans-serif;
   color: white;
   margin-top: 0rem;
+}
+
+.footer .contenido-footer .links {
+  text-align: center;
+}
+
+.footer .contenido-footer .links .us, .footer .contenido-footer .links .inicio, .footer .contenido-footer .links .contacto {
+  margin: 2%;
+}
+
+.footer .contenido-footer .links .us {
+  text-decoration: none;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer .contenido-footer .links .inicio {
+  text-decoration: none;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer .contenido-footer .links .contacto {
+  text-decoration: none;
+  color: white;
+  font-family: 'Inter', sans-serif;
 }
 /*# sourceMappingURL=footer.css.map */

@@ -15,20 +15,26 @@ function footer() {
 
         <div className="imagenes">
 
-            <img src={LineaIzq} alt="" id="LineaIzq" />
-            <img src={Facebook} alt="" id="Facebook" />
-            <img src={Instagram} alt="" id="Instagram" />
-            <img src={Discord} alt="" id="Discord" />
-            <img src={LineaDer} alt="" id="LineaDer" />
+          <img src={LineaIzq} alt="" id="LineaIzq" />
+          <img src={Facebook} alt="" id="Facebook" />
+          <img src={Instagram} alt="" id="Instagram" />
+          <img src={Discord} alt="" id="Discord" />
+          <img src={LineaDer} alt="" id="LineaDer" />
 
         </div>
 
         <div className="texto">
-                <h1 id="Nombre">GroupIT</h1>
-                <h6 id="Copy">Copyright @ 2022</h6>
+
+          <h1 id="Nombre">GroupIT</h1>
+          <h6 id="Copy">Copyright @ 2022</h6>
+
         </div>
 
         <div className="links">
+
+         <Link to='/sobrenosotros' className='us'>Sobre nosotros</Link>
+         <Link to='/' className='inicio'>Inicio</Link>  
+         <Link to='/contacto' className='contacto'>Contactanos</Link>
 
         </div>
 
