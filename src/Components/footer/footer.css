@@ -89,6 +89,7 @@
   color: white;
   margin-bottom: 0.3rem;
   margin-top: 0rem;
+  font-weight: 100;
 }
 
 .footer .contenido-footer .texto #Copy {
@@ -99,6 +100,7 @@
   font-family: 'Inter', sans-serif;
   color: white;
   margin-top: 0rem;
+  font-weight: 100;
 }
 
 .footer .contenido-footer .links {
