@@ -139,12 +139,13 @@ body{
 
             }
             
-            .footer{
-                #Registrolink{
+            .link{
+                #registrolink{
                     justify-content: center;
                     align-items: center;
                     margin-left: 1rem;
                     font-family:'Inter', sans-serif;
+                    text-decoration: none;
                     font-size: medium;
                     margin-top: 1rem;
                 }

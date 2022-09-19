@@ -188,7 +188,7 @@ body {
   font-size: medium;
 }
 
-.Logueo .contenido-login .ladoizq .footer #Registrolink {
+.Logueo .contenido-login .ladoizq .link #registrolink {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -197,6 +197,7 @@ body {
           align-items: center;
   margin-left: 1rem;
   font-family: 'Inter', sans-serif;
+  text-decoration: none;
   font-size: medium;
   margin-top: 1rem;
 }

@@ -43,7 +43,7 @@ function register() {
 
         </form>
 
-          <div className="footer">
+          <div className="links">
             <h3 id='Iniciolink'>¿Ya tenes cuenta? <Link to='/login'>Inicia Sesion</Link></h3>
           </div>
 

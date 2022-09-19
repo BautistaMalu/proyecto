@@ -9,15 +9,13 @@
             width: 100%;
             background: rgb(40,52,130);
             background: linear-gradient(90deg, rgba(40,52,130,1) 4%, rgba(0,9,255,1) 49%, rgba(32,56,149,1) 83%);
-            justify-content: center;
             display: flex;
             flex-direction: column;
-            padding: 5%;
+
             
             .textos{
                 display: flex;
                 flex-direction: column;
-                /*justify-content: center;*/
                 align-items: center;
                 .planificar,.brindar{
                     text-align: center;
@@ -55,19 +53,32 @@
                 }
                 
             }
-            .blanco1{
-                justify-content: center;
-                align-items: center;
-                width: 80%;
-                height: 100%;
+        }
+        .gris{
+            height: 2000px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background: #F2F4F7;
+            .imagenes{
                 .blancoideas{
                     width: 80%;
-                    height: 100%;
-                    justify-content: center;
-                    align-items: center;
-
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    position: relative;
+                    bottom: 10rem;
+                }
+                .Compu{
+                    z-index: 1;
+                    width: 60%;
+                    padding-left: 20%;
+                    padding-right: 20%;
+                    position: relative;
+                    bottom: 53rem;
                 }
             }
         }
+
     }
 }

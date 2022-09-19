@@ -44,8 +44,8 @@ function login() {
 
           </form>
 
-            <div className="footer">
-              <h3 id='Registrolink'>¿No tenes cuenta? <Link to='/register'>Registrate</Link></h3>
+            <div className="link">
+              <h3 id='registrolink'>¿No tenes cuenta? <Link to='/register'>Registrate</Link></h3>
             </div>
 
         </div>

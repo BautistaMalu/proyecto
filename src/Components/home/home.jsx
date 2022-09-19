@@ -4,6 +4,7 @@ import './home.css';
 import Header from '../header/header';
 import Footer from '../footer/footer';
 import Ideas from './Ideas.png';
+import Compu from './Compu.png';
 function home() {
   return (
 
@@ -26,9 +27,15 @@ function home() {
               <button className="crear">Empieza a crear</button>
 
             </div>
-            <div className="blanco1">
-              <img src={Ideas} alt="" className="blancoideas" />
-            </div>
+
+          </div>
+
+          <div className="gris">
+
+              <div className="imagenes">
+                <img src={Ideas} alt="" className="blancoideas" />
+                <img src={Compu} alt="" className="Compu" />
+              </div>
 
           </div>
 

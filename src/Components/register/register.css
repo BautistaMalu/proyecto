@@ -176,7 +176,7 @@ body {
   font-size: medium;
 }
 
-.registrate .contenido-registro .ladoizq .footer #Iniciolink {
+.registrate .contenido-registro .ladoizq .links #Iniciolink {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
