@@ -5,6 +5,7 @@ import Header from '../header/header';
 import Footer from '../footer/footer';
 import Ideas from './Ideas.png';
 import Compu from './Compu.png';
+import Lineas from './Lineas.png';
 function home() {
   return (
 
@@ -35,6 +36,9 @@ function home() {
               <div className="imagenes">
                 <img src={Ideas} alt="" className="blancoideas" />
                 <img src={Compu} alt="" className="Compu" />
+              </div>
+              <div className="cuadrados">
+                <img src={Lineas} alt="" className="lineas" />
               </div>
 
           </div>

@@ -94,8 +94,8 @@
   width: 80%;
   padding-left: 10%;
   padding-right: 10%;
-  position: relative;
-  bottom: 10rem;
+  position: absolute;
+  margin-bottom: 10rem;
 }
 
 .Home .contenidohome .gris .imagenes .Compu {
@@ -103,7 +103,13 @@
   width: 60%;
   padding-left: 20%;
   padding-right: 20%;
-  position: relative;
-  bottom: 53rem;
+  position: absolute;
+  margin-bottom: 80%;
+}
+
+.Home .contenidohome .gris .cuadrados .lineas {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 /*# sourceMappingURL=home.css.map */
