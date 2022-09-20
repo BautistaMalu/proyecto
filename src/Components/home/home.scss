@@ -62,21 +62,19 @@
             flex-direction: column;
             background: #F2F4F7;
             .imagenes{
+                display: flex;
+                justify-content: center;
                 .blancoideas{
-                    width: 80%;
-                    padding-left: 10%;
-                    padding-right: 10%;
                     position: absolute;
-                    margin-bottom: 10rem;
+                    margin-top: -100px;
+                    width: 80%;
                     
                 }
                 .Compu{
                     z-index: 1;
-                    width: 60%;
-                    padding-left: 20%;
-                    padding-right: 20%;
                     position: absolute;
-                    margin-bottom: 80%;
+                    margin-top: -310px;
+                    height: 500px;
                 }
             }
             .cuadrados{
@@ -85,6 +83,7 @@
                     padding-left: 10%;
                     padding-right: 10%;
                 }
+                
             }
         }
 
