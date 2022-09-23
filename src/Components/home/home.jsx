@@ -6,6 +6,11 @@ import Footer from '../footer/footer';
 import Ideas from './Ideas.png';
 import Compu from './Compu.png';
 import Lineas from './Lineas.png';
+import Invitaciones from './Invitaciones.png';
+import Items from './Items.png';
+import Lista from './Lista.png';
+import Proveedores from './Proveedores.png';
+
 function home() {
   return (
 
@@ -39,6 +44,23 @@ function home() {
               </div>
               <div className="cuadrados">
                 <img src={Lineas} alt="" className="lineas" />
+                <h1 className="elegir">Porque deberian elegirnos</h1>
+                <h4 className="herramientas">Tenemos una gran variedad de herramientas que haran con que tu experiencia sea mucho mas agradable </h4>
+               
+                <div className="lista">
+                  <h1 className="titulo1">Lista de invitados</h1>
+                  <h4 className="subtitulo1">Te proporcionamos una lista en donde tendras la posibilidad de ver quienes podran estar presentes en tu evento. </h4>
+                </div>
+
+                <div className="items">
+                </div>
+                
+                <div className="invitaciones">
+                </div>
+
+                <div className="proveedores">
+                </div>
+
               </div>
 
           </div>

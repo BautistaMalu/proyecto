@@ -78,12 +78,81 @@
                 }
             }
             .cuadrados{
+                justify-content: center;
+                display: flex;
+            
                 .lineas{
-                    width: 80%;
-                    padding-left: 10%;
-                    padding-right: 10%;
+                    width: 90%;
+                    position: absolute;
+                    margin-top: 550px;
+                    height: 410px;
+                    display: flex;
+                    flex-direction: column;
+                    .titulo1{
+                        text-align: left;
+                    }
+                    .subtitulo1{
+                        text-align: center;
+                    }
                 }
-                
+                .elegir{
+                    position: absolute;
+                    margin-top: 505px;  
+                    font-family:'Inter', sans-serif;
+                }
+                .herramientas{
+                    position: absolute;
+                    margin-top: 550px;  
+                    font-family:'Inter', sans-serif;
+                    text-align: center;
+                    width: 40%;
+                }
+                .lista{
+                    position: absolute;
+                    margin-top: 625px;  
+                    display: flex;
+                    height: 280px;
+                    background-color: #FFFFFF;
+                    width: 225px;
+                    border-radius: 0.625rem;
+                    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+                    margin-left: -860px;
+
+                }
+                .items{
+                    position: absolute;
+                    margin-top: 625px;  
+                    display: flex;
+                    height: 280px;
+                    background-color: #FFFFFF;
+                    width: 225px;
+                    border-radius: 0.625rem;
+                    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+                    margin-left: -270px;
+
+                }
+                .invitaciones{
+                    position: absolute;
+                    margin-top: 625px;  
+                    display: flex;
+                    height: 280px;
+                    background-color: #FFFFFF;
+                    width: 225px;
+                    border-radius: 0.625rem;
+                    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+                    margin-left: 310px;
+                }
+                .proveedores{
+                    position: absolute;
+                    margin-top: 625px;  
+                    display: flex;
+                    height: 280px;
+                    background-color: #FFFFFF;
+                    width: 225px;
+                    border-radius: 0.625rem;
+                    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+                    margin-left: 890px;
+                }
             }
         }
 
