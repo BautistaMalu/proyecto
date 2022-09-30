@@ -9,9 +9,27 @@ const eye = <FontAwesomeIcon icon={faEye} />;*/
 
 function login() {
 
-  const handlesubmit=(event)=>{
+  const handlesubmit = (event) => {
     event.preventDefault();
-  }
+  };
+
+  const login = () => {
+    const apiURL = 'http://localhost:8080/auth/login';
+
+    const requestConfig = {
+      method: 'POST',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        nombreUsuario: "1234",
+        password: '1234'
+      })
+    };
+
+    fetch(apiURL, requestConfig)
+      .then(response => response.json())
+      .then(data => console.log(data));
+  };
 
   return (
     <div className='Logueo'>
@@ -38,7 +56,7 @@ function login() {
 
               <Link to='/olvidemicontrasenia' id='linkolvi'>¿Olvidaste tu contraseña?</Link>
 
-              <button type="submit" id="ingreso">Ingresar</button>
+              <button type="submit" id="ingreso" onClick={() => login()}>Ingresar</button>
 
               <button type='submit' id='google'> Ingresa con google</button>
 
