@@ -1,5 +1,5 @@
 import React from 'react'
-/*import {Link} from 'react-router-dom'*/
+import {Link} from 'react-router-dom'
 import './home.css';
 import Header from '../header/header';
 import Footer from '../footer/footer';
@@ -10,6 +10,7 @@ import Invitaciones from './Invitaciones.png';
 import Items from './Items.png';
 import Lista from './Lista.png';
 import Proveedores from './Proveedores.png';
+import Circulos from './Circulos.png';
 
 function home() {
   return (
@@ -69,6 +70,29 @@ function home() {
                 <img src={Proveedores} alt="" className="foto4" />
                   <h3 className="titulo4">Proveedores </h3>
                   <h5 className="subtitulo4">Adicionalemente te ofrecemos los medios para contratar el servicio ideal para tu evento. </h5>
+                </div>
+
+              </div>
+
+              <div className="blanco">
+
+                <div className="ladoizqb">
+
+                  <h5 className="servicio">Nuestro servicio</h5>
+                
+                  <h2 className="ayudamos">Te ayudamos a formar grupos </h2>
+
+                  <h5 className="nuestra">Nuestra pagina web no solo va a ayudarte mediante diversas herramientas a poder crear diversos grupos para distintos eventos, sino que tambien te servira como una lista en donde podras ver quienes traen cada item. Todo esto con el fin de ayudate con tu organización. </h5>
+
+                  <button className="sobre"><Link to='/sobrenosotros' className='linkus'>Sobre nosotros</Link></button>
+
+                </div>
+
+                <div className="ladoderb">
+                  <div className="cazul">
+                    <img src={Circulos} alt="" className="circulos" />
+                  </div>
+                
                 </div>
 
               </div>
