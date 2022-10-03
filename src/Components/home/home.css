@@ -75,7 +75,7 @@
 }
 
 .Home .contenidohome .gris {
-  height: 2000px;
+  height: 3010px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,18 +334,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 410px;
-}
-
-.Home .contenidohome .gris .blanco .ladoizqb, .Home .contenidohome .gris .blanco .ladoderb {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  height: 700px;
+  background-color: #FFFFFF;
+  position: absolute;
+  margin-top: 1050px;
 }
 
 .Home .contenidohome .gris .blanco .ladoizqb {
@@ -357,43 +349,52 @@
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: 'Inter', sans-serif;
+  width: 600px;
+  height: 500px;
+  margin-left: 300px;
+  margin-top: 200px;
 }
 
 .Home .contenidohome .gris .blanco .ladoizqb .servicio {
-  position: absolute;
-  margin-top: 1000px;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
   text-justify: left;
+  color: #0038FF;
+  margin-bottom: 0px;
 }
 
 .Home .contenidohome .gris .blanco .ladoizqb .ayudamos {
-  position: absolute;
-  margin-top: 1000px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  text-justify: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-justify: center;
+  margin-bottom: 10px;
 }
 
 .Home .contenidohome .gris .blanco .ladoizqb .nuestra {
-  position: absolute;
-  margin-top: 1000px;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
   text-justify: left;
+  width: 275px;
 }
 
 .Home .contenidohome .gris .blanco .ladoizqb .sobre {
-  position: absolute;
-  margin-top: 1200px;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  background-color: #7A82D9;
+  border-radius: 0.625rem;
+  border-style: none;
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.Home .contenidohome .gris .blanco .ladoizqb .sobre .linkus {
   text-decoration: none;
-  text-justify: left;
+  color: #FFFFFF;
 }
 
 .Home .contenidohome .gris .blanco .ladoderb {
@@ -407,8 +408,6 @@
 }
 
 .Home .contenidohome .gris .blanco .ladoderb .cazul {
-  position: absolute;
-  margin-top: 1050px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -421,6 +420,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: -625px;
 }
 
 .Home .contenidohome .gris .blanco .ladoderb .cazul .circulos {
@@ -428,5 +428,94 @@
   height: 550px;
   margin-top: 10px;
   margin-left: 15px;
+}
+
+.Home .contenidohome .gris .gris2 {
+  position: absolute;
+  margin-top: 1750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  margin-left: -285px;
+}
+
+.Home .contenidohome .gris .gris2 .ladoizqg2 {
+  width: 664px;
+  background-image: url("Triangulo.png");
+  height: 479px;
+}
+
+.Home .contenidohome .gris .gris2 .ladoizqg2 .grupo {
+  position: absolute;
+  width: 450px;
+  height: 600px;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.Home .contenidohome .gris .gris2 .ladoderg2 {
+  width: 400px;
+  font-family: 'Inter', sans-serif;
+  margin-top: 150px;
+  margin-left: 150px;
+}
+
+.Home .contenidohome .gris .gris2 .ladoderg2 .parte {
+  color: #0038FF;
+}
+
+.Home .contenidohome .gris .blanco2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin-top: 2450px;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 570px;
+}
+
+.Home .contenidohome .gris .blanco2 .ladoizqb2 {
+  font-family: 'Inter', sans-serif;
+  margin-left: 200px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.Home .contenidohome .gris .blanco2 .ladoizqb2 .ingresem {
+  margin-left: 100px;
+  width: 250px;
+}
+
+.Home .contenidohome .gris .blanco2 .ladoizqb2 .email {
+  margin-top: 30px;
+  width: 430px;
+  height: 50px;
+  font-size: 0.9rem;
+  border-radius: 0.625rem;
+  outline: none;
+  border-color: #949494;
+  border-style: solid;
+  padding-left: 0.6rem;
+}
+
+.Home .contenidohome .gris .blanco2 .ladoizqb2 .Enviar {
+  height: 35px;
+  width: 70px;
+  border-radius: 0.625rem;
+  outline: none;
+  border: none;
+  background-color: #7A82D9;
+  color: #FFFFFF;
+  position: absolute;
+  margin-left: -80px;
+  margin-top: 40px;
+}
+
+.Home .contenidohome .gris .blanco2 .ladoderb2 .nube {
+  margin-left: 100px;
+  margin-top: 40px;
+  height: 500px;
 }
 /*# sourceMappingURL=home.css.map */

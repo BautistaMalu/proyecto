@@ -11,7 +11,8 @@ import Items from './Items.png';
 import Lista from './Lista.png';
 import Proveedores from './Proveedores.png';
 import Circulos from './Circulos.png';
-
+import Grupo from './Grupo.png';
+import Nube from './Nube.png';
 function home() {
   return (
 
@@ -82,7 +83,7 @@ function home() {
                 
                   <h2 className="ayudamos">Te ayudamos a formar grupos </h2>
 
-                  <h5 className="nuestra">Nuestra pagina web no solo va a ayudarte mediante diversas herramientas a poder crear diversos grupos para distintos eventos, sino que tambien te servira como una lista en donde podras ver quienes traen cada item. Todo esto con el fin de ayudate con tu organización. </h5>
+                  <h4 className="nuestra">Nuestra pagina web no solo va a ayudarte mediante diversas herramientas a poder crear diversos grupos para distintos eventos, sino que tambien te servira como una lista en donde podras ver quienes traen cada item. Todo esto con el fin de ayudate con tu organización. </h4>
 
                   <button className="sobre"><Link to='/sobrenosotros' className='linkus'>Sobre nosotros</Link></button>
 
@@ -95,6 +96,35 @@ function home() {
                 
                 </div>
 
+              </div>
+              <div className="gris2">
+                
+                <div className="ladoizqg2">
+                  <img src={Grupo} alt="" className="grupo" />
+                </div>
+
+                <div className="ladoderg2">
+
+                  <h5 className="parte">Parte de nuestro objectivo</h5>
+
+                  <h2 className="importancia">Importancia de formar grupos</h2>
+
+                  <h4 className="desde">Desde nuestro punto de vista, formar grupos ayuda a las personas a relacionarse unas con otras, a compartir intereses y a apoyarse mutuamente. Los grupos también pueden proporcionar un sentido de pertenencia y ayudar a las personas a sentirse menos solas y aisladas.Estos sentimientos se vieron presentes durante la pandemia, y pensamos que es de suma importancia poder revertirlo.</h4>
+
+                </div>
+
+              </div>
+              <div className="blanco2">
+
+                <div className="ladoizqb2">
+                    <h2 className="mantene">Mantente al tanto</h2>
+                    <h4 className="ingresem">Ingrese su mail para no perderte ninguna actualización.</h4>
+                    <input type="text" className="email" placeholder='Ingrese su mail'/>
+                    <button className='Enviar'>Enviar</button>
+                </div>
+                <div className="ladoderb2">
+                  <img src={Nube} alt="" className="nube" />
+                </div>
               </div>
 
           </div>
