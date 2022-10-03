@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './login.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Logo from './Logo.png';
 import Foto from './Fotoprueba.png';
 /*import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 const eye = <FontAwesomeIcon icon={faEye} />;*/
 
-function login() {
+function Login() {
+  const [loginData, setLoginData] = React.useState({});
 
   const handlesubmit = (event) => {
     event.preventDefault();
+  };
+
+  const handleInputChange = (event) => {
+    setLoginData({
+      ...loginData,
+      [event.target.name]: event.target.value,
+    });
   };
 
   const login = () => {
@@ -20,10 +28,7 @@ function login() {
       method: 'POST',
       credentials: 'include',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        nombreUsuario: "1234",
-        password: '1234'
-      })
+      body: JSON.stringify(loginData)
     };
 
     fetch(apiURL, requestConfig)
@@ -48,11 +53,11 @@ function login() {
 
             <label for ="email1">Email</label>
 
-              <input placeholder="Ingrese su email" type="email" id="email1"/>
+              <input onChange={handleInputChange} placeholder="Ingrese su email" id="email1" name="nombreUsuario" />
 
             <label for="psw1">Contraseña</label>
 
-              <input placeholder="Ingrese su contraseña" type="password" id="psw1"/>
+              <input onChange={handleInputChange} placeholder="Ingrese su contraseña" type="password" id="psw1" name="password" />
 
               <Link to='/olvidemicontrasenia' id='linkolvi'>¿Olvidaste tu contraseña?</Link>
 
@@ -78,4 +83,4 @@ function login() {
   )
 }
 
-export default login
+export default Login
