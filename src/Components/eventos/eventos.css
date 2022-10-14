@@ -1,79 +1,10 @@
-.peventos .header2 {
-  width: 100%;
-  height: 50px;
-  background-color: #FFFFFF;
+.peventos .todo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-  margin-top: 0px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.peventos .header2 .ladoizqh {
-  width: 20%;
-  height: 100%;
-}
-
-.peventos .header2 .ladoizqh .logo {
-  width: 130px;
-  height: 40px;
-  margin-top: 5px;
-  margin-left: 20px;
-}
-
-.peventos .header2 .ladoderh {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80%;
-  height: 100%;
-}
-
-.peventos .header2 .ladoderh .lupita {
-  height: 20px;
-  position: absolute;
-  margin-left: 7px;
-}
-
-.peventos .header2 .ladoderh .buscar {
-  font-family: 'Inter', sans-serif;
-  height: 35px;
-  width: 50%;
-  outline: none;
-  border-radius: 0.625rem;
-  border-style: none;
-  background-color: #EFEFEF;
-  padding-left: 30px;
-}
-
-.peventos .header2 .ladoderh .foto {
-  margin-left: 300px;
-  width: 40px;
-}
-
-.peventos .header2 .ladoderh .nombreus {
-  font-family: 'Inter', sans-serif;
-  font-size: small;
-  font-weight: 200;
-  margin-left: 10px;
-}
-
-.peventos .menu {
+.peventos .todo .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,8 +13,59 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 20%;
-  height: 100%;
+  height: calc(100vh - 50px);
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0);
+  background-color: #FFFFFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.peventos .todo .menu .crear {
+  outline: none;
+  background-color: #78C6FF;
+  border-style: none;
+  border-radius: 0.625rem;
+  width: 75%;
+  height: 33px;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.peventos .todo .menu .volverme {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-radius: 0.625rem;
+  width: 75%;
+  height: 33px;
+  border-width: 1px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  border-color: #717171;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+}
+
+.peventos .todo .eventos {
+  height: 100%;
+  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=eventos.css.map */

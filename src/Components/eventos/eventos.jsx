@@ -1,29 +1,18 @@
 import React from 'react'
-import Logo from '../login/Logo.png';
-import Lupita from './Lupita.png';
 import './eventos.css';
-import Fotoej from './Ejemplo.png';
 import Cajita from './Cajita.png';
 import Personas from './Personas.png'
 import Estrellita from './Estrellita.png';
 import Tacho from './Tacho.png';
+import Header2 from '../header2/header2';
 function eventos() {
   return (
     <div className="peventos">
             
         <div className="header2">
-            <div className="ladoizqh">
-                <img src={Logo} alt="" className="logo" />
-            </div>
-            <div className="ladoderh">
-                <img src={Lupita} alt="" className="lupita" />
-                <input type="text" placeholder='Buscar en mis eventos' className="buscar" />
-                {/*ver de agarrar una foto */}
-                <img src={Fotoej} alt="" className="foto" />
-                <h3 className="nombreus">Nombre de Ejemplo</h3>
-            </div>
+            <Header2/>
         </div>
-
+        <div className="todo">
         <div className="menu">
             <button className="crear">+ Crear</button>
 
@@ -39,6 +28,7 @@ function eventos() {
         </div>
         <div className="eventos">
 
+        </div>
         </div>
     </div>
   )
