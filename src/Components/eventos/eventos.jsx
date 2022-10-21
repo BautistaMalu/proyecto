@@ -6,8 +6,16 @@ import Estrellita from './Estrellita.png';
 import Tacho from './Tacho.png';
 import Header2 from '../header2/header2';
 import Lamparita from './Lamparita.png';
+import Pj from './Pj.png';
+import Estrellitachica from './Estrellitachica.png';
 function eventos() {
-  const listaEventos = []
+  const listaEventos = [{
+    nombre:"Evento1",
+    descripcion:"El cumple de uno de los pibes",
+    invitadosc:"32",
+    fechacrea:"2 dias",
+    creador:"Tuvi",
+  }]
   return (
     <div className="peventos">
             
@@ -34,12 +42,33 @@ function eventos() {
             
         </div>
         <div className="eventos">
-        {listaEventos.length > 0 ? listaEventos.map(({name})=> {
+        {listaEventos.length > 0 ? listaEventos.map(({nombre,invitadosc,fechacrea,descripcion,creador})=> {
           return (
-            <h1>{name}</h1>
+            <div className="hay">
+              <div className="imagen"></div>
+              <div className="textos">
+
+                <div className="iyf">
+                  <h5 className="invitados">Invitados confirmados #{invitadosc}</h5>
+                  <h5 className="fecha">Hace {fechacrea}</h5>
+                </div>
+                
+                <div className="tituloydescr">
+                  <h2 className="titulo">{nombre}</h2>
+                  <h5 className="descr">{descripcion}</h5>
+                </div>
+
+                <div className="usyfav">
+                  <h5 className="us"><img src={Pj} alt="" className="pj" /> @{creador}</h5>
+                  
+                </div>
+
+              </div>
+            </div>
+            
           )
         }) : 
-        <div className="No">
+        <div className="no">
         <h1 className="nohay">No tienes ningún evento </h1>
         <h4 className="momento">Es momento de empezar a crear </h4>
         <img src={Lamparita} alt="" className="lamparita" />

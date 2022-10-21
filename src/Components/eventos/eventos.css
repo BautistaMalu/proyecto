@@ -2,7 +2,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: 100vh;
   padding-left: 260px;
 }
 
@@ -136,9 +136,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,10 +144,37 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-image: url("Rectangulo2.png");
+  padding: 0%;
 }
 
-.peventos .todo .eventos .No {
+.peventos .todo .eventos .no {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Inter', sans-serif;
   text-align: center;
+}
+
+.peventos .todo .eventos .no .nohay, .peventos .todo .eventos .no .momento {
+  color: #626262;
+}
+
+.peventos .todo .eventos .no .nohay {
+  margin-top: 50px;
+  font-weight: 500;
+}
+
+.peventos .todo .eventos .no .momento {
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+.peventos .todo .eventos .no .lamparita {
+  margin-top: 0px;
+  margin-bottom: -20px;
+}
+
+.peventos .todo .eventos .hay {
+  background-image: url("Rectangulo2.png");
 }
 /*# sourceMappingURL=eventos.css.map */
