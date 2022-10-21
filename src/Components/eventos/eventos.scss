@@ -1,60 +1,116 @@
 .peventos{
     .todo{
         display: flex;
+        height: 100%;
+        padding-left: 260px;
         .menu{
             display: flex;
             flex-direction: column;
-            width: 20%;
+            width: 260px;
+            margin-top: 50px;
             height: calc(100vh - 50px);
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0);
             background-color: #FFFFFF;
-            align-items: center;
-            margin-top: 20px;
-            .crear{
-                outline: none;
-                background-color: #78C6FF;
+            box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            button {
+                cursor: pointer;
+            }
+            .botones1{
+                position: sticky;
+                top: 0;
+                display: flex;
+                align-items: center;
+                flex-direction: column;                
+                .crear{
+                    margin-top: 20px;
+                    outline: none;
+                    background-color: #78C6FF;
+                    border-style: none;
+                    border-radius: 0.625rem;
+                    width: 75%;
+                    height: 33px;
+                    color: #FFFFFF;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    
+                }   
+                .volverme{
+                    background-color: #FFFFFF;
+                    border-style: solid;
+                    border-radius: 0.625rem;
+                    width: 75%;
+                    height: 33px;
+                    border-width: 1px;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 300;
+                    border-color: #717171;
+                    margin-bottom: 10px;
+                }
+            }
+            .botones2{
+            align-items: left;
+            display: flex;
+            flex-direction: column; 
+            .miseventos,.compartidos,.favoritos,.basura{
+                width: 230px;
+                height: 35px;
+                margin-bottom: 5px;
+                border-radius:  0rem 0.625rem 0.625rem 0rem;
                 border-style: none;
-                border-radius: 0.625rem;
-                width: 75%;
-                height: 33px;
-                color: #FFFFFF;
-                font-family: 'Inter', sans-serif;
-                font-weight: 600;
-                margin-bottom: 10px;
-            }   
-            .volverme{
                 background-color: #FFFFFF;
-                border-style: solid;
-                border-radius: 0.625rem;
-                width: 75%;
-                height: 33px;
-                border-width: 1px;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    background-color: #D7E7FF;
+                }
                 font-family: 'Inter', sans-serif;
                 font-weight: 300;
-                border-color: #717171;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                margin-bottom: 10px;
             }
             .miseventos{
-    
+                .cajita{
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    margin-left: 25px;
+                }
             }
             .compartidos{
-    
+                .personas{
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    margin-left: 25px;
+                }
             }
             .favoritos{
-    
+                .estrellita{
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    margin-left: 25px;
+                }
             }
             .basura{
-                
+                .tacho{
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    margin-left: 25px;
+                }
+            }
             }
         }
         .eventos{
             height: 100%;
-            width: 80%;
+            width: 100%;
             align-items: center;
             justify-content: center;
             display: flex;
             flex-direction: column;
-        }
+            background-image: url("Rectangulo2.png");
+            .No{
+                font-family: 'Inter', sans-serif;
+                text-align: center;
+            }
+        }   
     }
 }
