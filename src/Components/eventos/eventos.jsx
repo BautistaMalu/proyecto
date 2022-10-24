@@ -8,11 +8,18 @@ import Header2 from '../header2/header2';
 import Lamparita from './Lamparita.png';
 import Pj from './Pj.png';
 import Estrellitachica from './Estrellitachica.png';
+import Eventosocial from './Eventosocial.png';
+import Eventodeportivo from './Eventodeportivo.png';
+import Eventoformal from './Eventoformal.png';
+
 function eventos() {
+
+  let tevento="deportivo";
   const listaEventos = [{
     nombre:"Evento1",
     descripcion:"El cumple de uno de los pibes",
-    invitadosc:"32",
+    tevento: "social",
+    imagena: tevento === "social" ? Eventosocial : tevento === "deportivo" ? Eventodeportivo : tevento === "formal" ? Eventoformal : Estrellitachica,
     fechacrea:"2 dias",
     creador:"Tuvi",
   }]
@@ -42,25 +49,26 @@ function eventos() {
             
         </div>
         <div className="eventos">
-        {listaEventos.length > 0 ? listaEventos.map(({nombre,invitadosc,fechacrea,descripcion,creador})=> {
+        {listaEventos.length > 0 ? listaEventos.map(({imagena,nombre,tevento,fechacrea,descripcion,creador})=> {
           return (
             <div className="hay">
-              <div className="imagen"></div>
+              <div className="imagen"><img src={imagena} alt="" className="imagenevento" /></div>
               <div className="textos">
 
-                <div className="iyf">
-                  <h5 className="invitados">Invitados confirmados #{invitadosc}</h5>
+                <div className="teyf">
+                  <h5 className="tipoevento">Evento {tevento}</h5>
                   <h5 className="fecha">Hace {fechacrea}</h5>
                 </div>
                 
-                <div className="tituloydescr">
+                <div className="tituloydesc">
                   <h2 className="titulo">{nombre}</h2>
-                  <h5 className="descr">{descripcion}</h5>
+                  <h5 className="desc">{descripcion}</h5>
                 </div>
 
                 <div className="usyfav">
-                  <h5 className="us"><img src={Pj} alt="" className="pj" /> @{creador}</h5>
-                  
+                  <img src={Pj} alt="" className="pj" />
+                  <h5 className="us"> @{creador}</h5>
+                  <button className="fav">FAV</button>
                 </div>
 
               </div>
