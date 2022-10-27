@@ -1,1 +1,29 @@
-/* No CSS *//*# sourceMappingURL=creacion.css.map */
+.todocrea {
+  position: fixed;
+  top: 75px;
+  left: 20px;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.todocrea .creacion {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 0.625rem;
+}
+
+.todocrea .creacion .cerrar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/*# sourceMappingURL=creacion.css.map */

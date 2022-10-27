@@ -1,3 +1,27 @@
-.todo{
-    
+.todocrea{
+    position: fixed;
+    top: 75px;
+    left: 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .creacion{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background-color: #ffffff;
+        border-radius: 0.625rem;
+        .cerrar{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            .cruz{
+
+            }
+        }
+    }
 }
+

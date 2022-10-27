@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState }from 'react'
+import { useState } from 'react'
 import './eventos.css';
 import Cajita from './Cajita.png';
 import Personas from './Personas.png'
@@ -12,12 +12,12 @@ import Estrellitachica from './Estrellitachica.png';
 import Eventosocial from './Eventosocial.png';
 import Eventodeportivo from './Eventodeportivo.png';
 import Eventoformal from './Eventoformal.png';
-import creacion from '../creacion/creacion';
+import Creacion from '../creacion/creacion';
 
-function eventos() {
+function Eventos() {
+  const [buttoncreacion, setButtonCreacion] = useState(false);
   
-  
-  let tevento="deportivo";
+  let tevento="social";
   const listaEventos = [{
     nombre:"Evento1",
     descripcion:"El cumple de uno de los pibes",
@@ -37,7 +37,7 @@ function eventos() {
         <div className="menu">
 
             <div className="botones1">
-            <button className="crear" >+ Crear</button>   
+            <button className="crear" onClick={() => setButtonCreacion(true)}> + Crear</button>   
 
             <button className='volverme'>Volverme proovedor</button>
             </div>
@@ -90,13 +90,13 @@ function eventos() {
          }
         </div>
         <div id="popup" className='popup'>
-          <creacion trigger={false}>
-            <h1>/HOLA</h1>
-          </creacion>
+          <Creacion trigger={buttoncreacion} setTrigger={setButtonCreacion}>
+            <h1>AAAAAAAAAAAAAAAAAAAAAAA</h1>
+          </Creacion>
         </div>
         </div>
     </div>
   )
 }
 
-export default eventos
+export default Eventos
