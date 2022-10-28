@@ -85,7 +85,7 @@
           flex-direction: column;
 }
 
-.peventos .todo .menu .botones2 .miseventos, .peventos .todo .menu .botones2 .compartidos, .peventos .todo .menu .botones2 .favoritos, .peventos .todo .menu .botones2 .basura {
+.peventos .todo .menu .botones2 .miseventos, .peventos .todo .menu .botones2 .compartidos, .peventos .todo .menu .botones2 .basura {
   width: 230px;
   height: 35px;
   margin-bottom: 5px;
@@ -102,7 +102,7 @@
   font-weight: 300;
 }
 
-.peventos .todo .menu .botones2 .miseventos:hover, .peventos .todo .menu .botones2 .compartidos:hover, .peventos .todo .menu .botones2 .favoritos:hover, .peventos .todo .menu .botones2 .basura:hover {
+.peventos .todo .menu .botones2 .miseventos:hover, .peventos .todo .menu .botones2 .compartidos:hover, .peventos .todo .menu .botones2 .basura:hover {
   background-color: #D7E7FF;
 }
 
@@ -113,12 +113,6 @@
 }
 
 .peventos .todo .menu .botones2 .compartidos .personas {
-  vertical-align: middle;
-  margin-right: 5px;
-  margin-left: 25px;
-}
-
-.peventos .todo .menu .botones2 .favoritos .estrellita {
   vertical-align: middle;
   margin-right: 5px;
   margin-left: 25px;
