@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    font-family: 'Inter', sans-serif;
 
     .creacion{
         position: relative;
@@ -14,12 +15,149 @@
         height: 500px;
         background-color: #ffffff;
         border-radius: 0.625rem;
+        justify-content: left;
+        display: flex;
         .cerrar{
             position: absolute;
             top: 20px;
             right: 20px;
+            background-color: #ffffff;
+            border-style: none;
+            outline: none;
+            border-radius: 0.625rem;
             .cruz{
 
+            }
+        }
+        .labelesyinputs{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            margin-left: 20px;
+            text-align: left;
+            .crearevento{
+                
+            }
+            .tituloevento{
+                width: 150px;
+                font-size: 14px;
+                margin-bottom: 5px;
+                border-radius: 10px;
+            }
+            .escribititulo{
+                width: 450px;
+                height: 30px;
+                border-radius: 10px;
+                border-style: solid;
+                outline: none;
+                border-color: #CFCFCF;
+            }
+            .tipoevento{
+                width: 150px;
+                font-size: 14px;
+                margin-bottom: 5px;
+                margin-top: 15px;
+                border-radius: 10px;
+                
+            }
+            .escribitipo{
+                width: 450px;
+                height: 30px;
+                margin-bottom: 25px;
+                border-radius: 10px;
+            }
+            .labeldesc{
+                width: 150px;
+                font-size: 14px;
+                margin-bottom: 5px;
+                
+            }
+            .escribidesc{
+                width: 450px;
+                height: 30px;   
+                border-radius: 10px;
+                border-style: solid;
+                outline: none;
+                padding-bottom: 3rem;
+                border-color: #CFCFCF;
+            }
+            .fechayinvitados{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+
+               .invitados{
+                display: flex;
+                flex-direction: column;
+                margin-left: 60px;
+                
+                .labelcant{
+                    width: 150px;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    margin-top: 15px;
+                    }
+                    .cantinvitados{
+                        width: 100px;
+                        height: 25px;
+                        margin-left: 17px;
+                        border-radius: 10px;
+                        border-style: solid;
+                        outline: none;
+                        border-color: #CFCFCF;
+                    }
+               }
+               .fechas2{
+                display: flex;
+                flex-direction: column;
+                margin-right: 60px;
+                .labelfecha{
+                    width: 150px;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    margin-top: 15px;
+                    }
+                    .fechadelevento{
+                        width: 100px;
+                        height: 25px;
+                        margin-left: 17px;
+                        border-radius: 10px;
+                        border-style: solid;
+                        outline: none;
+                        border-color: #CFCFCF;
+                    }
+               }
+            }
+            .botones{
+                justify-content: right;
+                margin-top: 45px;
+                display: flex;
+                flex-direction: row;
+                .bcrear{
+                    margin-right: 40px;
+                    border-style: none;
+                    outline: none;
+                    border-radius: 10px;
+                    width: 100px;
+                    height: 35px;
+                    background-color: #78C6FF;
+                    color: #ffffff;
+                    
+                }
+                .bcancelar{ 
+                    
+                    border-style: none;
+                    outline: none;
+                    border-radius: 10px;
+                    width: 100px;
+                    height: 35px;
+                    margin-right: 20px;
+                    background-color: #ffffff;
+                    color: #78C6FF;
+                    
+                }
             }
         }
     }

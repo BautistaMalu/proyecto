@@ -7,6 +7,8 @@ import Contacto from './Components/contacto/contacto';
 import Sobrenosotros from './Components/aboutus/aboutus';
 import Contraolvi from "./Components/contraolvi/contraolvi";
 import Eventos from "./Components/eventos/eventos";
+import Infoeventos from "./Components/infoeventos/infoeventos";
+import Lista from "./Components/lista/lista";
 function App() {
   return (
     <div className="App"> 
@@ -27,6 +29,10 @@ function App() {
               <Route path="/olvidemicontrasenia" exact element={<Contraolvi/>}/>
 
               <Route path="/eventos" exact element={<Eventos/>}/>
+
+              <Route path="/infoeventos" exact element={<Infoeventos/>}/>
+
+              <Route path="/lista" exact element={<Lista/>}/>
                                 
             </Routes>
           </BrowserRouter>

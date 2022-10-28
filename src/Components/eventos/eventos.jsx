@@ -16,6 +16,7 @@ import Creacion from '../creacion/creacion';
 
 function Eventos() {
   const [buttoncreacion, setButtonCreacion] = useState(false);
+
   
   let tevento="social";
   const listaEventos = [{
@@ -46,8 +47,6 @@ function Eventos() {
 
             <button className="compartidos"> <img src={Personas} alt="" className="personas" />Compartidos conmigo</button>
 
-            <button className="favoritos"> <img src={Estrellita} alt="" className="estrellita" />Favoritos</button>
-
             <button className="basura"> <img src={Tacho} alt="" className="tacho" />Basura</button>
             </div>
             
@@ -74,7 +73,7 @@ function Eventos() {
                   <div className="usyfav">
                     <img src={Pj} alt="" className="pj" />
                     <h5 className="us"> @{creador}</h5>
-                    <button className="fav">FAV</button>
+                    <button className="fav">Info</button>
                   </div>
 
                 </div>
@@ -89,9 +88,8 @@ function Eventos() {
         </div>
          }
         </div>
-        <div id="popup" className='popup'>
+        <div className="popup">
           <Creacion trigger={buttoncreacion} setTrigger={setButtonCreacion}>
-            <h1>AAAAAAAAAAAAAAAAAAAAAAA</h1>
           </Creacion>
         </div>
         </div>

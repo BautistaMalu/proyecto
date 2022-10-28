@@ -54,7 +54,7 @@
             align-items: left;
             display: flex;
             flex-direction: column; 
-            .miseventos,.compartidos,.favoritos,.basura{
+            .miseventos,.compartidos,.basura{
                 width: 230px;
                 height: 35px;
                 margin-bottom: 5px;
@@ -83,13 +83,7 @@
                     margin-left: 25px;
                 }
             }
-            .favoritos{
-                .estrellita{
-                    vertical-align: middle;
-                    margin-right: 5px;
-                    margin-left: 25px;
-                }
-            }
+            
             .basura{
                 .tacho{
                     vertical-align: middle;
@@ -206,9 +200,6 @@
                         
                     }
                 }
-            }
-            .creacion{
-                
             }
         }   
     }
