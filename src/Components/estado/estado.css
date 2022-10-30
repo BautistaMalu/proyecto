@@ -1,1 +1,82 @@
-/*# sourceMappingURL=estado.css.map */
+.todoestado {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  z-index: 3;
+  position: absolute;
+}
+.todoestado .cerrar {
+  height: 20px;
+  width: 10px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  top: -44px;
+  left: 1151px;
+}
+.todoestado .estado {
+  background-color: #ffffff;
+  border-radius: 0.625rem;
+  border-color: #5F5F5F;
+  border-style: solid;
+  width: 100px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  right: 70px;
+  top: -70px;
+  position: absolute;
+  border-width: 1px;
+}
+.todoestado .estado .disponible {
+  background-color: #ffffff;
+  border: none;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 0.625rem;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  padding-right: 0px;
+}
+.todoestado .estado .disponible:hover {
+  background-color: #D7E7FF;
+}
+.todoestado .estado .disponible .circuloverde {
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+.todoestado .estado .pendiente {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 5px;
+  margin-left: 1px;
+  width: 100px;
+  height: 15px;
+  font-size: 14px;
+}
+.todoestado .estado .pendiente:hover {
+  background-color: #D7E7FF;
+}
+.todoestado .estado .pendiente .circuloamarillo {
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+.todoestado .estado .noconfirmados {
+  background-color: transparent;
+  border: none;
+  margin-right: 50px;
+  border-radius: 0.625rem;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  padding-left: 0px;
+}
+.todoestado .estado .noconfirmados:hover {
+  background-color: #D7E7FF;
+}
+.todoestado .estado .noconfirmados .circulorojo {
+  vertical-align: middle;
+}/*# sourceMappingURL=estado.css.map */

@@ -20,6 +20,8 @@
   text-align: center;
 }
 .todologout .salir .salirbtn {
+  position: fixed;
+  right: 30px;
   align-items: center;
   background-color: #ffffff;
   border-style: solid;
@@ -34,4 +36,13 @@
 .todologout .salir .salirbtn .puerta {
   width: 20px;
   height: 20px;
+}
+.todologout .salir .cerrar {
+  position: fixed;
+  top: 22px;
+  right: 35.8px;
+  background-color: #ffffff;
+  width: 1px;
+  height: 1px;
+  border-style: none;
 }/*# sourceMappingURL=logout.css.map */

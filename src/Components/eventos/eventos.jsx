@@ -16,7 +16,7 @@ import Creacion from '../creacion/creacion';
 
 function Eventos() {
   const [buttoncreacion, setButtonCreacion] = useState(false);
-
+  
   
   let tevento="social";
   const listaEventos = [{
@@ -26,7 +26,7 @@ function Eventos() {
     imagena: tevento === "social" ? Eventosocial : tevento === "deportivo" ? Eventodeportivo : tevento === "formal" ? Eventoformal : Estrellitachica,
     fechacrea:"2 dias",
     creador:"Tuvi",
-    favoritos:"no"
+    id:1
   }]
   return (
     <div className="peventos">

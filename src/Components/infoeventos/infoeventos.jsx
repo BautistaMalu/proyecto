@@ -14,13 +14,13 @@ import {Link} from 'react-router-dom';
 import Dotsline from './3dots.png';
 import { useState } from 'react'
 import Agregar from '../agreagarpersonas/agregar';
-
+import Estadoo from '../estado/estado';
 
 function Infoeventos() {
 
   const [buttoncompartir, setButtonCompartir] = useState(false);
-
-
+  const [buttondots, setButtonDots] = useState(false);
+  
 
   let estado="Disponible";
 
@@ -40,13 +40,14 @@ function Infoeventos() {
         <Header3/>
       </div>
       <div className="info">
+       
         <div className="primeralinea">
 
           <h3 className="lista">Lista de invitados</h3>
 
           <button className="borrar"><img src={Tacho} alt="" className="tacho" /> Borrar</button>
 
-          <button className="compartir" onClick={() => setButtonCompartir(true)}><img src={Dots} alt="" className="dots" /> Compartir</button>
+          <button className="compartir" onClick={() => setButtonCompartir(true)} ><img src={Dots} alt="" className="dots" /> Compartir</button>
             
         </div>
           <Agregar trigger={buttoncompartir} setTrigger={setButtonCompartir}></Agregar>
@@ -96,13 +97,14 @@ function Infoeventos() {
                   </div>
                   <div className="btns">
                     <button className="items"><Link to='/lista' className='itemslista'>Items</Link></button>
-                    <button className="tresdots" ><img src={Dotsline} alt="" className="dotsline" /></button>
+                    <button className="tresdots" onClick={() => setButtonDots(true)}><img src={Dotsline} alt="" className="dotsline" /></button>
                   </div>
                 </div>
-              
+                
             )
           }) : ""
           }
+          <Estadoo trigger={buttondots} setTrigger={setButtonDots}></Estadoo>
         </div>
       </div>
     </div>

@@ -18,6 +18,8 @@
         flex-direction: row;
         text-align: center;
         .salirbtn{
+            position: fixed;
+            right: 30px;
             align-items: center;
             background-color: #ffffff;
             border-style: solid;
@@ -33,6 +35,18 @@
                 height: 20px;
                 
                 
+            }
+        }
+        .cerrar{
+            position: fixed;
+            top: 22px;
+            right: 35.8px;
+            background-color: #ffffff;
+            width: 1px;
+            height:1px;
+            border-style: none;
+            .cruz{
+
             }
         }
     }
