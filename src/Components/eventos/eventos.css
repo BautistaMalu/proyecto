@@ -1,50 +1,31 @@
 .peventos .todo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100vh;
   padding-left: 260px;
 }
-
 .peventos .todo .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 260px;
   margin-top: 50px;
   height: calc(100vh - 50px);
   background-color: #FFFFFF;
-  -webkit-box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
   left: 0px;
   top: 0px;
 }
-
 .peventos .todo .menu button {
   cursor: pointer;
 }
-
 .peventos .todo .menu .botones1 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
 }
-
 .peventos .todo .menu .botones1 .crear {
   margin-top: 20px;
   outline: none;
@@ -54,11 +35,10 @@
   width: 75%;
   height: 33px;
   color: #FFFFFF;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   margin-bottom: 10px;
 }
-
 .peventos .todo .menu .botones1 .volverme {
   background-color: #FFFFFF;
   border-style: solid;
@@ -66,154 +46,98 @@
   width: 75%;
   height: 33px;
   border-width: 1px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
   border-color: #717171;
   margin-bottom: 10px;
 }
-
 .peventos .todo .menu .botones2 {
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: left;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
-.peventos .todo .menu .botones2 .miseventos, .peventos .todo .menu .botones2 .compartidos, .peventos .todo .menu .botones2 .basura {
+.peventos .todo .menu .botones2 .miseventos, .peventos .todo .menu .botones2 .compartidos {
   width: 230px;
   height: 35px;
   margin-bottom: 5px;
   border-radius: 0rem 0.625rem 0.625rem 0rem;
   border-style: none;
   background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Inter', sans-serif;
+  align-items: center;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
 }
-
-.peventos .todo .menu .botones2 .miseventos:hover, .peventos .todo .menu .botones2 .compartidos:hover, .peventos .todo .menu .botones2 .basura:hover {
+.peventos .todo .menu .botones2 .miseventos:hover, .peventos .todo .menu .botones2 .compartidos:hover {
   background-color: #D7E7FF;
 }
-
 .peventos .todo .menu .botones2 .miseventos .cajita {
   vertical-align: middle;
   margin-right: 5px;
   margin-left: 25px;
 }
-
 .peventos .todo .menu .botones2 .compartidos .personas {
   vertical-align: middle;
   margin-right: 5px;
   margin-left: 25px;
 }
-
-.peventos .todo .menu .botones2 .basura .tacho {
-  vertical-align: middle;
-  margin-right: 5px;
-  margin-left: 25px;
-}
-
 .peventos .todo .eventos {
   height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-image: url("Rectangulo2.png");
   padding: 0%;
 }
-
 .peventos .todo .eventos .no {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Inter', sans-serif;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
   text-align: center;
 }
-
 .peventos .todo .eventos .no .nohay, .peventos .todo .eventos .no .momento {
   color: #626262;
 }
-
 .peventos .todo .eventos .no .nohay {
   margin-top: 50px;
   font-weight: 500;
 }
-
 .peventos .todo .eventos .no .momento {
   margin-bottom: 0px;
   font-weight: 500;
 }
-
 .peventos .todo .eventos .no .lamparita {
   margin-top: 0px;
   margin-bottom: -20px;
 }
-
 .peventos .todo .eventos .hay {
   margin: 50px;
   width: 900px;
   height: 156.5px;
   background-color: #FFFFFF;
   border-radius: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .peventos .todo .eventos .hay .imagenevento {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .peventos .todo .eventos .hay .textos {
   width: 100%;
   height: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
 .peventos .todo .eventos .hay .textos .teyf {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   height: 40px;
 }
-
 .peventos .todo .eventos .hay .textos .teyf .tipoevento {
   margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 0px;
 }
-
 .peventos .todo .eventos .hay .textos .teyf .fecha {
   margin-right: 55px;
   margin-top: 15px;
@@ -221,42 +145,25 @@
   color: #757575;
   font-weight: 200;
 }
-
 .peventos .todo .eventos .hay .textos .tituloydesc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .peventos .todo .eventos .hay .textos .tituloydesc .titulo {
   margin-top: 0px;
   margin-left: 20px;
   margin-bottom: 10px;
 }
-
 .peventos .todo .eventos .hay .textos .tituloydesc .desc {
   margin-top: 0px;
   margin-left: 20px;
   margin-bottom: 0px;
 }
-
 .peventos .todo .eventos .hay .textos .usyfav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 .peventos .todo .eventos .hay .textos .usyfav .us {
   margin-bottom: 10px;
   margin-top: 25px;
@@ -264,7 +171,6 @@
   color: #757575;
   font-weight: 600;
 }
-
 .peventos .todo .eventos .hay .textos .usyfav .pj {
   margin-left: 15px;
   margin-right: 5px;
@@ -272,7 +178,6 @@
   margin-top: 20px;
   margin-bottom: 10px;
 }
-
 .peventos .todo .eventos .hay .textos .usyfav .fav {
   margin-bottom: 10px;
   margin-top: 15px;
@@ -282,6 +187,5 @@
   background-color: #FFFFFF;
   border-radius: 0.625rem;
   border-width: 1px;
-  font-family: 'Inter', sans-serif;
-}
-/*# sourceMappingURL=eventos.css.map */
+  font-family: "Inter", sans-serif;
+}/*# sourceMappingURL=eventos.css.map */

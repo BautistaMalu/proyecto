@@ -8,101 +8,60 @@ body {
   overflow-x: hidden;
   padding: 0%;
 }
-
 .Contraolvi .imagen {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  justify-content: left;
   margin-left: 2rem;
   margin-top: 1rem;
   height: 2.3rem;
 }
-
 .Contraolvi .contenido-contra {
   height: 60vh;
   width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-left: 2rem;
 }
-
 .Contraolvi .contenido-contra .ladoizq, .Contraolvi .contenido-contra .ladoder {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .Contraolvi .contenido-contra .ladoder {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .Contraolvi .contenido-contra .ladoder .Foto {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  justify-content: left;
   width: 100%;
 }
-
 .Contraolvi .contenido-contra .ladoizq {
   margin-top: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 10rem;
   margin-right: 5rem;
 }
-
 .Contraolvi .contenido-contra .ladoizq .recordar {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-right: 3rem;
   margin-bottom: 0rem;
   height: 3rem;
   font-size: 1.75rem;
   margin-top: 5rem;
 }
-
 .Contraolvi .contenido-contra .ladoizq .recuperar {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-right: 3.3rem;
   margin-top: 0rem;
   margin-bottom: 1.5rem;
   font-size: 1rem;
 }
-
 .Contraolvi .contenido-contra .ladoizq input {
   font-size: 1rem;
   display: block;
@@ -115,20 +74,18 @@ body {
   border-style: solid;
   padding: 0.6rem;
   outline: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
 .Contraolvi .contenido-contra .ladoizq label {
   display: block;
   margin: auto;
   float: left;
   width: 20%;
   font-size: larger;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   margin-left: 0.5rem;
 }
-
 .Contraolvi .contenido-contra .ladoizq #recuperarcontra {
   width: 420px;
   height: 45px;
@@ -141,8 +98,6 @@ body {
   color: white;
   font-size: medium;
 }
-
 .Contraolvi .contenido-contra .ladoizq #recuperarcontra:hover {
   background-color: #2f7699;
-}
-/*# sourceMappingURL=contraolvi.css.map */
+}/*# sourceMappingURL=contraolvi.css.map */

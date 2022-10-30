@@ -1,1 +1,193 @@
-/* No CSS *//*# sourceMappingURL=lista.css.map */
+.todolista {
+  height: 100vh;
+}
+.todolista .lista {
+  display: flex;
+  height: calc(100vh - 80px);
+  flex-direction: column;
+  vertical-align: center;
+}
+.todolista .lista .primeralinea {
+  display: flex;
+  flex-direction: row;
+  font-family: "Inter", sans-serif;
+  margin-top: 20px;
+}
+.todolista .lista .primeralinea .itemsatraer {
+  margin-right: 150px;
+  margin-left: 130px;
+}
+.todolista .lista .primeralinea .borrar {
+  align-items: center;
+  background-color: #ffffff;
+  border-style: solid;
+  border-radius: 0.625rem;
+  border-color: #D8D8D8;
+  color: #FF0000;
+  height: 30px;
+  width: 100px;
+  margin-top: 15px;
+  margin-left: 600px;
+  margin-right: 50px;
+}
+.todolista .lista .primeralinea .borrar .tacho {
+  vertical-align: middle;
+}
+.todolista .lista .primeralinea .agregarcosas {
+  background-color: #78C6FF;
+  border-style: solid;
+  border: none;
+  border-radius: 0.625rem;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  margin-top: 15px;
+  color: #ffffff;
+}
+.todolista .lista .primeralinea .agregarcosas .dots {
+  vertical-align: middle;
+}
+.todolista .lista .segundalinea {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.todolista .lista .segundalinea .totales .totalestext {
+  position: absolute;
+  top: 170px;
+  left: 120px;
+}
+.todolista .lista .segundalinea .totales .numtotales {
+  position: absolute;
+  top: 200px;
+  left: 150px;
+}
+.todolista .lista .segundalinea .confirmados .confirmadostext {
+  position: absolute;
+  top: 170px;
+  left: 580px;
+}
+.todolista .lista .segundalinea .confirmados .numconfirmados {
+  position: absolute;
+  top: 200px;
+  left: 610px;
+}
+.todolista .lista .segundalinea .restantes .restantestext {
+  position: absolute;
+  top: 170px;
+  left: 1030px;
+}
+.todolista .lista .segundalinea .restantes .numrestantes {
+  position: absolute;
+  top: 200px;
+  left: 1080px;
+}
+.todolista .lista .terceralinea {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.todolista .lista .terceralinea .todosbtn {
+  margin-left: 150px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 15px;
+}
+.todolista .lista .terceralinea .todosbtn:hover {
+  color: #1481E5;
+}
+.todolista .lista .terceralinea .confirmadosbtn {
+  margin-left: 75px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 15px;
+}
+.todolista .lista .terceralinea .confirmadosbtn:hover {
+  color: #1481E5;
+}
+.todolista .lista .terceralinea .restantesbtn {
+  margin-left: 75px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 15px;
+}
+.todolista .lista .terceralinea .restantesbtn:hover {
+  color: #1481E5;
+}
+.todolista .lista .lineaa {
+  width: 1200px;
+  background-color: #D8D8D8;
+  height: 3px;
+  margin-left: 70px;
+  margin-top: 5px;
+}
+.todolista .lista .cosas .itemsa {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 255px;
+  border-color: #D8D8D8;
+  border-radius: 30px;
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 10px;
+  margin-left: 150px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  background-image: url("Trianguloazul.png");
+}
+.todolista .lista .cosas .itemsa .tipoyrest {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+.todolista .lista .cosas .itemsa .tipoyrest .tipo {
+  margin-bottom: 0px;
+  margin-right: 120px;
+  font-size: 15px;
+  height: 20px;
+}
+.todolista .lista .cosas .itemsa .tipoyrest .rest {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #ffffff;
+}
+.todolista .lista .cosas .itemsa .cosaycant {
+  display: flex;
+  flex-direction: column;
+}
+.todolista .lista .cosas .itemsa .cosaycant .cosa {
+  margin-top: 0px;
+  margin-right: 130px;
+}
+.todolista .lista .cosas .itemsa .cosaycant .cant {
+  margin-top: 0px;
+  color: #5F5F5F;
+}
+.todolista .lista .cosas .itemsa .btns {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.todolista .lista .cosas .itemsa .btns .anadir {
+  margin-right: 20px;
+  background-color: #78C6FF;
+  color: #ffffff;
+  border-radius: 0.625rem;
+  border-style: none;
+  outline: none;
+  height: 30px;
+  width: 80px;
+}
+.todolista .lista .cosas .itemsa .btns .restar {
+  background-color: #FF0000;
+  color: #ffffff;
+  border-radius: 0.625rem;
+  border-style: none;
+  outline: none;
+  height: 30px;
+  width: 80px;
+}/*# sourceMappingURL=lista.css.map */

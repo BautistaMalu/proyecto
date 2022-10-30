@@ -54,7 +54,7 @@
             align-items: left;
             display: flex;
             flex-direction: column; 
-            .miseventos,.compartidos,.basura{
+            .miseventos,.compartidos{
                 width: 230px;
                 height: 35px;
                 margin-bottom: 5px;
@@ -78,14 +78,6 @@
             }
             .compartidos{
                 .personas{
-                    vertical-align: middle;
-                    margin-right: 5px;
-                    margin-left: 25px;
-                }
-            }
-            
-            .basura{
-                .tacho{
                     vertical-align: middle;
                     margin-right: 5px;
                     margin-left: 25px;

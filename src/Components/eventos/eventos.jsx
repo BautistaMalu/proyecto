@@ -47,7 +47,6 @@ function Eventos() {
 
             <button className="compartidos"> <img src={Personas} alt="" className="personas" />Compartidos conmigo</button>
 
-            <button className="basura"> <img src={Tacho} alt="" className="tacho" />Basura</button>
             </div>
             
         </div>

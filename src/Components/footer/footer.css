@@ -2,130 +2,89 @@
   height: 230px;
   background-color: #000856;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .footer .contenido-footer {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .footer .contenido-footer .imagenes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 30%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   margin-top: 1.5rem;
   margin-bottom: 0rem;
 }
-
 .footer .contenido-footer .imagenes #LineaIzq {
   width: 41.7%;
   height: 10px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: left;
+  align-items: center;
   margin-top: 2.3rem;
 }
-
 .footer .contenido-footer .imagenes #Facebook {
   height: 25px;
   margin-top: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
 }
-
 .footer .contenido-footer .imagenes #Instagram {
   height: 25px;
   margin-top: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
-
 .footer .contenido-footer .imagenes #Discord {
   height: 25px;
   margin-top: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
 }
-
 .footer .contenido-footer .imagenes #LineaDer {
   width: 41.7%;
   height: 10px;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: right;
+  align-items: center;
   margin-top: 2.3rem;
 }
-
 .footer .contenido-footer .texto #Nombre {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: white;
   margin-bottom: 0.3rem;
   margin-top: 0rem;
   font-weight: 100;
 }
-
 .footer .contenido-footer .texto #Copy {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: white;
   margin-top: 0rem;
   font-weight: 100;
 }
-
 .footer .contenido-footer .links {
   text-align: center;
 }
-
 .footer .contenido-footer .links .us, .footer .contenido-footer .links .inicio, .footer .contenido-footer .links .contacto {
   margin: 2%;
 }
-
 .footer .contenido-footer .links .us {
   text-decoration: none;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
 .footer .contenido-footer .links .inicio {
   text-decoration: none;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
 .footer .contenido-footer .links .contacto {
   text-decoration: none;
   color: white;
-  font-family: 'Inter', sans-serif;
-}
-/*# sourceMappingURL=footer.css.map */
+  font-family: "Inter", sans-serif;
+}/*# sourceMappingURL=footer.css.map */

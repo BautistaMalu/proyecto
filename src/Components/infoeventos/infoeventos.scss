@@ -1,3 +1,243 @@
 .todoinfo{
-    
+    height: 100vh;
+    .header{
+
+    }
+    .info{
+        display: flex;
+        height: calc(100vh - 80px);
+        flex-direction: column;
+        vertical-align: center;
+        
+        .primeralinea{
+            display: flex;
+            flex-direction: row;
+            font-family: 'Inter', sans-serif;
+            margin-top: 20px;
+            .lista{
+                margin-right: 150px;
+                margin-left: 130px;
+            }
+            .borrar{
+
+
+                align-items: center;
+                background-color: #ffffff;
+                border-style: solid;
+                border-radius: 0.625rem;
+                border-color: #D8D8D8;
+                color: #FF0000;
+                height: 30px;
+                width: 100px;
+                margin-top: 15px;
+                margin-left: 600px;
+                margin-right: 50px;
+                .tacho{
+                    vertical-align: middle;
+                }
+                
+            }
+            .compartir{
+                background-color: #78C6FF;
+                border-style: solid;
+                border: none;
+                border-radius: 0.625rem;
+                height: 30px;
+                width: 100px;
+                text-align: center;
+                margin-top: 15px;
+                color: #ffffff;
+                .dots{
+                    vertical-align: middle;
+                }
+
+                
+            }   
+        }
+        .segundalinea{
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 30px;
+            .concurren{
+                .concurrenimg{
+
+                }
+                .concurrentext{
+                    position: absolute;
+                    top: 170px;
+                    left: 120px;
+
+                }
+                .numconfirmados{
+                    position: absolute;
+                    top: 200px;
+                    left: 150px;
+                }
+            }
+            .pendientes{
+                .pendientesimg{
+                    
+                }
+                .pendientestext{
+                    position: absolute;
+                    top: 170px;
+                    left: 580px;
+                }
+                .numpendientes{
+                    position: absolute;
+                    top: 200px;
+                    left: 610px;
+                }
+            }
+            .noconcurren{
+                .noconcurrenimg{
+
+                }
+                .noconcurrentext{
+                    position: absolute;
+                    top: 170px;
+                    left: 1030px;
+                }
+                .numnoconfirmados{
+                    position: absolute;
+                    top: 200px;
+                    left: 1080px;
+                }
+            }
+        }
+        .terceralinea{ 
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            
+            .todosbtn{
+                margin-left: 150px;
+                background-color: #ffffff;
+                border: none;
+                font-size: 15px;
+
+                &:hover{
+                    color: #1481E5;
+                }
+            }
+            .disponiblesbtn{
+                margin-left: 75px;
+                background-color: #ffffff;
+                border: none;
+                font-size: 15px;
+                &:hover{
+                    color: #1481E5;
+                }
+            }
+            .pendientesbtn{
+                margin-left: 75px;
+                background-color: #ffffff;
+                border: none;
+                font-size: 15px;
+                &:hover{
+                    color: #1481E5;
+                }
+            }
+            .ausentesbtn{
+                margin-left: 75px;
+                background-color: #ffffff;
+                border: none;
+                font-size: 15px;
+                &:hover{
+                    color: #1481E5;
+                }
+            }   
+        }
+        .linea{
+            width: 1200px;
+            background-color: #D8D8D8;
+            height: 3px;
+            margin-left: 70px;
+            margin-top: 5px;
+            
+        }
+        .invitados{
+
+            .gente{ 
+                display: flex;
+                flex-direction: row;
+                height: 60px;
+                width: 1100px;
+                border-color: #D8D8D8;
+                border-radius: 0.625rem;
+                border-width: 2px;
+                border-style: solid;
+                margin-left: 111px;
+                margin-top: 10px;
+                align-items: center;
+                font-family: 'Inter', sans-serif;
+                .foto{
+                    .fotoej{
+                        margin-left: 20px;
+                        margin-right: 15px;
+                    }
+                }
+                .usymail{
+                    .us{
+                        margin-top: 20px;
+                    }
+                    .mail{
+                        margin-top: -18px;
+                        color: #5F5F5F;
+                    }                    
+                }
+                .estadoycirc{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .circu{
+                        width: 10px;
+                        height: 10px;
+                        margin-left: 150px;
+                        margin-right: 10px;
+                        
+                    }
+                    .estadoo{
+                     font-weight: 200;
+                     color: #5F5F5F;
+                    }
+                }
+                .adm{
+                    .admin{
+                        font-weight: 500;
+                        color: #5F5F5F;
+                        margin-left: 200px;
+                    }
+                }
+                .btns{
+                    .items{
+                        margin-left: 250px;
+                        background-color: #78C6FF;
+                        border: none;
+                        font-size: 15px;
+                        border-radius: 0.625rem;
+                        width: 80px;
+                        height: 30px;
+                        .itemslista{
+                            text-decoration: none;
+                            color:#ffffff;
+                        }
+                    }
+                    .tresdots{
+                        margin-left: 20px;
+                        background-color: #ffffff;
+                        border: none;
+                        font-size: 15px;
+                        .dotsline{
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
 }

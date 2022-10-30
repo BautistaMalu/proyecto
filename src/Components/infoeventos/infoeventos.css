@@ -1,1 +1,202 @@
-/* No CSS *//*# sourceMappingURL=infoeventos.css.map */
+.todoinfo {
+  height: 100vh;
+}
+.todoinfo .info {
+  display: flex;
+  height: calc(100vh - 80px);
+  flex-direction: column;
+  vertical-align: center;
+}
+.todoinfo .info .primeralinea {
+  display: flex;
+  flex-direction: row;
+  font-family: "Inter", sans-serif;
+  margin-top: 20px;
+}
+.todoinfo .info .primeralinea .lista {
+  margin-right: 150px;
+  margin-left: 130px;
+}
+.todoinfo .info .primeralinea .borrar {
+  align-items: center;
+  background-color: #ffffff;
+  border-style: solid;
+  border-radius: 0.625rem;
+  border-color: #D8D8D8;
+  color: #FF0000;
+  height: 30px;
+  width: 100px;
+  margin-top: 15px;
+  margin-left: 600px;
+  margin-right: 50px;
+}
+.todoinfo .info .primeralinea .borrar .tacho {
+  vertical-align: middle;
+}
+.todoinfo .info .primeralinea .compartir {
+  background-color: #78C6FF;
+  border-style: solid;
+  border: none;
+  border-radius: 0.625rem;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  margin-top: 15px;
+  color: #ffffff;
+}
+.todoinfo .info .primeralinea .compartir .dots {
+  vertical-align: middle;
+}
+.todoinfo .info .segundalinea {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.todoinfo .info .segundalinea .concurren .concurrentext {
+  position: absolute;
+  top: 170px;
+  left: 120px;
+}
+.todoinfo .info .segundalinea .concurren .numconfirmados {
+  position: absolute;
+  top: 200px;
+  left: 150px;
+}
+.todoinfo .info .segundalinea .pendientes .pendientestext {
+  position: absolute;
+  top: 170px;
+  left: 580px;
+}
+.todoinfo .info .segundalinea .pendientes .numpendientes {
+  position: absolute;
+  top: 200px;
+  left: 610px;
+}
+.todoinfo .info .segundalinea .noconcurren .noconcurrentext {
+  position: absolute;
+  top: 170px;
+  left: 1030px;
+}
+.todoinfo .info .segundalinea .noconcurren .numnoconfirmados {
+  position: absolute;
+  top: 200px;
+  left: 1080px;
+}
+.todoinfo .info .terceralinea {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.todoinfo .info .terceralinea .todosbtn {
+  margin-left: 150px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 15px;
+}
+.todoinfo .info .terceralinea .todosbtn:hover {
+  color: #1481E5;
+}
+.todoinfo .info .terceralinea .disponiblesbtn {
+  margin-left: 75px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 15px;
+}
+.todoinfo .info .terceralinea .disponiblesbtn:hover {
+  color: #1481E5;
+}
+.todoinfo .info .terceralinea .pendientesbtn {
+  margin-left: 75px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 15px;
+}
+.todoinfo .info .terceralinea .pendientesbtn:hover {
+  color: #1481E5;
+}
+.todoinfo .info .terceralinea .ausentesbtn {
+  margin-left: 75px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 15px;
+}
+.todoinfo .info .terceralinea .ausentesbtn:hover {
+  color: #1481E5;
+}
+.todoinfo .info .linea {
+  width: 1200px;
+  background-color: #D8D8D8;
+  height: 3px;
+  margin-left: 70px;
+  margin-top: 5px;
+}
+.todoinfo .info .invitados .gente {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 1100px;
+  border-color: #D8D8D8;
+  border-radius: 0.625rem;
+  border-width: 2px;
+  border-style: solid;
+  margin-left: 111px;
+  margin-top: 10px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+.todoinfo .info .invitados .gente .foto .fotoej {
+  margin-left: 20px;
+  margin-right: 15px;
+}
+.todoinfo .info .invitados .gente .usymail .us {
+  margin-top: 20px;
+}
+.todoinfo .info .invitados .gente .usymail .mail {
+  margin-top: -18px;
+  color: #5F5F5F;
+}
+.todoinfo .info .invitados .gente .estadoycirc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.todoinfo .info .invitados .gente .estadoycirc .circu {
+  width: 10px;
+  height: 10px;
+  margin-left: 150px;
+  margin-right: 10px;
+}
+.todoinfo .info .invitados .gente .estadoycirc .estadoo {
+  font-weight: 200;
+  color: #5F5F5F;
+}
+.todoinfo .info .invitados .gente .adm .admin {
+  font-weight: 500;
+  color: #5F5F5F;
+  margin-left: 200px;
+}
+.todoinfo .info .invitados .gente .btns .items {
+  margin-left: 250px;
+  background-color: #78C6FF;
+  border: none;
+  font-size: 15px;
+  border-radius: 0.625rem;
+  width: 80px;
+  height: 30px;
+}
+.todoinfo .info .invitados .gente .btns .items .itemslista {
+  text-decoration: none;
+  color: #ffffff;
+}
+.todoinfo .info .invitados .gente .btns .tresdots {
+  margin-left: 20px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 15px;
+}
+.todoinfo .info .invitados .gente .btns .tresdots .dotsline {
+  vertical-align: middle;
+}/*# sourceMappingURL=infoeventos.css.map */

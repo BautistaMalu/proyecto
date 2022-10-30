@@ -1,0 +1,83 @@
+.todoagregar {
+  position: fixed;
+  top: 75px;
+  left: 20px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  z-index: 3;
+}
+.todoagregar .agregar {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: #CFCFCF;
+}
+.todoagregar .agregar .cerrar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  border-style: none;
+  outline: none;
+  border-radius: 0.625rem;
+}
+.todoagregar .agregar .compartir {
+  display: flex;
+  flex-direction: column;
+}
+.todoagregar .agregar .compartir .titulocomp {
+  margin-right: 120px;
+}
+.todoagregar .agregar .compartir .nombreus {
+  margin-right: 100px;
+}
+.todoagregar .agregar .compartir .adicionar {
+  width: 250px;
+  margin-left: 45px;
+  height: 25px;
+  font-family: "Inter", sans-serif;
+  border-radius: 0.625rem;
+  outline: none;
+  border-color: #CFCFCF;
+  border-style: solid;
+}
+.todoagregar .agregar .compartir .personasysolo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.todoagregar .agregar .compartir .personasysolo .personitas {
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+  margin-top: 25px;
+}
+.todoagregar .agregar .compartir .personasysolo .solo {
+  margin-left: 10px;
+  width: 250px;
+  font-size: small;
+  color: #545454;
+}
+.todoagregar .agregar .compartir .compartir {
+  width: 100px;
+  height: 30px;
+  background-color: #78C6FF;
+  color: #ffffff;
+  border-radius: 0.625rem;
+  border-style: none;
+  outline: none;
+  padding: 7px;
+  padding-left: 20px;
+  margin-top: 50px;
+  margin-left: 200px;
+}/*# sourceMappingURL=agregar.css.map */

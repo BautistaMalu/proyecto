@@ -8,101 +8,60 @@ body {
   overflow-x: hidden;
   padding: 0%;
 }
-
 .registrate .imagen {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  justify-content: left;
   margin-left: 2rem;
   margin-top: 1rem;
   height: 2.3rem;
 }
-
 .registrate .contenido-registro {
   height: 60vh;
   width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-left: 2rem;
 }
-
 .registrate .contenido-registro .ladoizq, .registrate .contenido-registro .ladoder {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .registrate .contenido-registro .ladoder {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .registrate .contenido-registro .ladoder .Foto {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  justify-content: left;
   width: 100%;
 }
-
 .registrate .contenido-registro .ladoizq {
   margin-top: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 10rem;
   margin-right: 5rem;
 }
-
 .registrate .contenido-registro .ladoizq .registro {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-right: 3rem;
   margin-bottom: 0rem;
   height: 3rem;
   font-size: 1.75rem;
   margin-top: 5rem;
 }
-
 .registrate .contenido-registro .ladoizq .ingrese {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-right: 3.3rem;
   margin-top: 0rem;
   margin-bottom: 1rem;
   font-size: 1rem;
 }
-
 .registrate .contenido-registro .ladoizq input {
   font-size: 1rem;
   display: block;
@@ -115,24 +74,22 @@ body {
   border-style: solid;
   padding: 0.6rem;
   outline: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   /* .ojo{
-                      <i className='ojo'>{eye}</i>
-                
-                }*/
-}
+         <i className='ojo'>{eye}</i>
 
+   }*/
+}
 .registrate .contenido-registro .ladoizq label {
   display: block;
   margin: auto;
   float: left;
   width: 20%;
   font-size: larger;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   margin-left: 0.5rem;
 }
-
 .registrate .contenido-registro .ladoizq #registrarse {
   width: 410px;
   height: 50px;
@@ -145,26 +102,15 @@ body {
   color: white;
   font-size: medium;
 }
-
 .registrate .contenido-registro .ladoizq #registrarse:hover {
   background-color: #2f7699;
 }
-
 .registrate .contenido-registro .ladoizq #google {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-left: 0.3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-left: 0.5rem;
   margin-top: 1rem;
   width: 410px;
@@ -175,17 +121,11 @@ body {
   border: 1px solid #949449;
   font-size: medium;
 }
-
 .registrate .contenido-registro .ladoizq .links #Iniciolink {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-left: 1rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   margin-top: 1rem;
-}
-/*# sourceMappingURL=register.css.map */
+}/*# sourceMappingURL=register.css.map */

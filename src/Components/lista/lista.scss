@@ -1,3 +1,216 @@
 .todolista{
-    
+    height: 100vh;
+    .lista{
+        display: flex;
+        height: calc(100vh - 80px);
+        flex-direction: column;
+        vertical-align: center;
+        .primeralinea{
+            display: flex;
+            flex-direction: row;
+            font-family: 'Inter', sans-serif;
+            margin-top: 20px;
+            .itemsatraer{
+                margin-right: 150px;
+                margin-left: 130px;
+            }
+            .borrar{
+                align-items: center;
+                background-color: #ffffff;
+                border-style: solid;
+                border-radius: 0.625rem;
+                border-color: #D8D8D8;
+                color: #FF0000;
+                height: 30px;
+                width: 100px;
+                margin-top: 15px;
+                margin-left: 600px;
+                margin-right: 50px;
+                .tacho{
+                    vertical-align: middle;
+                }
+            }
+            .agregarcosas{
+                background-color: #78C6FF;
+                border-style: solid;
+                border: none;
+                border-radius: 0.625rem;
+                height: 30px;
+                width: 100px;
+                text-align: center;
+                margin-top: 15px;
+                color: #ffffff;
+                .dots{
+                    vertical-align: middle;
+                }
+            }
+        }
+        .segundalinea{
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 30px;
+            .totales{
+                .totalesimg{
+
+                }
+                .totalestext{
+                    position: absolute;
+                    top: 170px;
+                    left: 120px;
+
+                }
+                .numtotales{
+                    position: absolute;
+                    top: 200px;
+                    left: 150px;
+                }
+            }
+            .confirmados{
+                .confirmadosimg{
+                    
+                }
+                .confirmadostext{
+                    position: absolute;
+                    top: 170px;
+                    left: 580px;
+                }
+                .numconfirmados{
+                    position: absolute;
+                    top: 200px;
+                    left: 610px;
+                }
+            }
+            .restantes{
+                .restantesimg{
+
+                }
+                .restantestext{
+                    position: absolute;
+                    top: 170px;
+                    left: 1030px;
+                }
+                .numrestantes{
+                    position: absolute;
+                    top: 200px;
+                    left: 1080px;
+                }
+            }
+        }
+        .terceralinea{ 
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            
+            .todosbtn{
+                margin-left: 150px;
+                background-color: #ffffff;
+                border: none;
+                font-size: 15px;
+
+                &:hover{
+                    color: #1481E5;
+                }
+            }
+            .confirmadosbtn{
+                margin-left: 75px;
+                background-color: #ffffff;
+                border: none;
+                font-size: 15px;
+                &:hover{
+                    color: #1481E5;
+                }
+            }
+            .restantesbtn{
+                margin-left: 75px;
+                background-color: #ffffff;
+                border: none;
+                font-size: 15px;
+                &:hover{
+                    color: #1481E5;
+                }
+            } 
+        }
+        .lineaa{
+            width: 1200px;
+            background-color: #D8D8D8;
+            height: 3px;
+            margin-left: 70px;
+            margin-top: 5px;
+            
+        }
+        .cosas{
+            .itemsa{
+                display: flex;
+                flex-direction: column;
+                height: 200px;
+                width: 255px;
+                border-color: #D8D8D8;
+                border-radius: 30px;
+                border-width: 2px;
+                border-style: solid;
+                margin-top: 10px;
+                margin-left: 150px;
+                align-items: center;
+                font-family: 'Inter', sans-serif;
+                background-image: url("Trianguloazul.png");
+                .tipoyrest{
+                    display: flex;
+                    flex-direction: row;                  
+                    height: 50px;
+                    .tipo{
+                       margin-bottom: 0px;
+                       margin-right: 120px;
+                       font-size: 15px;
+                       height: 20px;
+
+                    }
+                    .rest{
+                        font-size: 20px;
+                        margin-top: 15px;
+                        color: #ffffff;
+                    }
+                }
+                .cosaycant{
+                                        
+                    display: flex;
+                    flex-direction: column;
+                    .cosa{
+                        margin-top: 0px;
+                        margin-right: 130px;
+                    }   
+                    .cant{
+                        margin-top: 0px;
+                        color: #5F5F5F;
+                    }
+                }
+                .btns{
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 20px;
+                    .anadir{
+                        margin-right: 20px;
+                        background-color: #78C6FF;
+                        color: #ffffff;
+                        border-radius: 0.625rem;
+                        border-style: none;
+                        outline: none;
+                        height: 30px;
+                        width: 80px;
+                    }
+                    .restar{
+                        background-color: #FF0000;
+                        color: #ffffff;
+                        border-radius: 0.625rem;
+                        border-style: none;
+                        outline: none;
+                        height: 30px;
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
 }

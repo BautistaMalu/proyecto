@@ -1,0 +1,88 @@
+.todoagregar{
+    position: fixed;
+    top: 75px;
+    left: 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    z-index: 3;
+    .agregar{
+        position: relative;
+        width: 350px;
+        height: 300px;
+        background-color: #ffffff;
+        border-radius: 0.625rem;
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-color: #CFCFCF;
+        .cerrar{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ffffff;
+            border-style: none;
+            outline: none;
+            border-radius: 0.625rem;
+        }
+        .compartir{
+
+            display: flex;
+            flex-direction: column;
+            .titulocomp{
+                margin-right:120px;
+            }
+            .nombreus{
+                margin-right:100px;
+            }
+            .adicionar{
+                width: 250px;
+                margin-left: 45px;
+                height: 25px;
+                font-family: 'Inter', sans-serif;
+                border-radius: 0.625rem;
+                outline: none;
+                border-color: #CFCFCF;
+                border-style: solid;
+            }
+            .personasysolo{
+                display: flex;
+                flex-direction: row;
+                margin-top: 10px;
+                margin-left: 20px;
+                
+                .personitas{
+                    height: 20px;
+                    width: 20px;
+                    margin-left: 10px;
+                    margin-top: 25px;
+                    
+                    
+                }
+                .solo{
+                    margin-left: 10px;
+                    width:250px;
+                    font-size: small;
+                    color: #545454;
+                    
+                }
+            }
+            .compartir{
+                width: 100px;
+                height: 30px;
+                background-color: #78C6FF;
+                color:#ffffff;
+                border-radius: 0.625rem;
+                border-style: none;
+                outline: none;
+                padding: 7px;
+                padding-left: 20px;
+                margin-top: 50px;
+                margin-left: 200px;
+            }
+        }
+    }
+}

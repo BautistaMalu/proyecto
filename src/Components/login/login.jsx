@@ -3,12 +3,18 @@ import './login.css';
 import { Link } from 'react-router-dom';
 import Logo from './Logo.png';
 import Foto from './Fotoprueba.png';
+import { useNavigate } from 'react-router-dom';
 /*import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 const eye = <FontAwesomeIcon icon={faEye} />;*/
 
+const localUrl = "http://localhost:8080"
+const railwayUrl = "https://GroupIT-API.up.railway.app"
+
 function Login() {
   const [loginData, setLoginData] = React.useState({});
+
+  const navigate = useNavigate();
 
   const handlesubmit = (event) => {
     event.preventDefault();
@@ -21,8 +27,8 @@ function Login() {
     });
   };
 
-  const login = () => {
-    const apiURL = 'http://localhost:8080/auth/login';
+  const login = async () => {
+    const ApiURL = railwayUrl + "/auth/login"
 
     const requestConfig = {
       method: 'POST',
@@ -30,10 +36,16 @@ function Login() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(loginData)
     };
+    
+    const response = await fetch(ApiURL, requestConfig);
 
-    fetch(apiURL, requestConfig)
-      .then(response => response.json())
-      .then(data => console.log(data));
+    if (response.status === 200) {
+      const data = await response.json();
+      console.log(data);
+      navigate('/eventos');
+    } else {
+      alert("Login failed");
+    }
   };
 
   return (
