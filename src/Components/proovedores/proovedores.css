@@ -104,56 +104,6 @@
   padding: 0%;
   position: relative;
 }
-.todoproovedores .todo .proo .primero {
-  background-color: #FFFFFF;
-  width: 320px;
-  position: absolute;
-  left: 150px;
-  height: 380px;
-  border-radius: 0.625rem;
-  top: 450px;
-  font-family: "Inter", sans-serif;
-}
-.todoproovedores .todo .proo .primero .imgpro {
-  position: absolute;
-  width: 300px;
-  left: 10px;
-  top: 5px;
-}
-.todoproovedores .todo .proo .primero .nombrenegocio {
-  position: absolute;
-  top: 180px;
-  left: 10px;
-}
-.todoproovedores .todo .proo .primero .descripcionnego {
-  position: absolute;
-  top: 200px;
-  left: 10px;
-  max-width: 300px;
-  color: #787878;
-}
-.todoproovedores .todo .proo .primero .nombredelpro {
-  position: absolute;
-  top: 260px;
-  left: 10px;
-  color: #787878;
-}
-.todoproovedores .todo .proo .primero .mailpro {
-  position: absolute;
-  left: 10px;
-  top: 280px;
-  color: #787878;
-}
-.todoproovedores .todo .proo .primero .telefono {
-  position: absolute;
-  top: 340px;
-  left: 150px;
-}
-.todoproovedores .todo .proo .primero .numdelpro {
-  position: absolute;
-  top: 325px;
-  left: 180px;
-}
 .todoproovedores .todo .proo .segundo {
   background-color: #FFFFFF;
   width: 320px;

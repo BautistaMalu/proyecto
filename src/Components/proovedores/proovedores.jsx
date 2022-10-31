@@ -12,9 +12,11 @@ import Pro1 from './Pro1.png';
 import Pro2 from './Pro2.png';
 import Pro3 from './Pro3.png';
 import Volverse1 from '../volverse1/volverse1';
+import Volverse2 from '../volverse2/volverse2';
 function Proovedores() {
     const [buttoncreacion, setButtonCreacion] = useState(false);
     const [buttonvolverse1, setButtonVolverse1] = useState(false);
+    const [buttonvolverse2, setButtonVolverse2] = useState(false);
   return (
     <div className="todoproovedores">
         <div className="header2">
@@ -39,15 +41,6 @@ function Proovedores() {
               
           </div>
           <div className="proo">
-            <div className="primero">
-              <img src={Pro1} alt="" className="imgpro" />
-              <h3 className="nombrenegocio">Sushi DO</h3>
-              <h6 className="descripcionnego">Buen sushi por mayorista</h6>
-              <h5 className="nombredelpro">Miyagi</h5>
-              <h5 className="mailpro">srmiyagi@gmail.com</h5>
-              <img src={Telefono} alt="" className="telefono" />
-              <h5 className="numdelpro">+54 11 1258-2014</h5>
-            </div>
             <div className="segundo">
               <img src={Pro2} alt="" className="imgpro" />
               <h3 className="nombrenegocio">Donatello's pizza</h3>
@@ -71,8 +64,14 @@ function Proovedores() {
           <div className="popup">
             <Creacion trigger={buttoncreacion} setTrigger={setButtonCreacion}>
             </Creacion>
-            <Volverse1 trigger={buttonvolverse1} setTrigger={setButtonVolverse1}>
+            <Volverse1 trigger={buttonvolverse1} setTrigger={(bool)=>{
+              setButtonVolverse1(bool) 
+              setButtonVolverse2(!bool)
+              }}>
+
             </Volverse1>
+            <Volverse2 trigger={buttonvolverse2} setTrigger={setButtonVolverse2}>
+            </Volverse2>
           </div>
         </div>
     </div>

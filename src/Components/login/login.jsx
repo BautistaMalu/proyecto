@@ -28,6 +28,9 @@ function Login() {
   };
 
   const login = async () => {
+    console.log(loginData);
+
+
     const ApiURL = railwayUrl + "/auth/login"
 
     const requestConfig = {
@@ -47,7 +50,7 @@ function Login() {
       alert("Login failed");
     }
   };
-
+  
   return (
     <div className='Logueo'>
             

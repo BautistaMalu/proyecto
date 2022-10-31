@@ -110,59 +110,7 @@
                 background-image: url("Rectangulo2.png");
                 padding: 0%;
                 position: relative;
-                .primero{
-                    background-color: #FFFFFF;
-                    width: 320px;
-                    position: absolute;
-                    left: 150px;
-                    height: 380px;
-                    border-radius: 0.625rem;
-                    top: 450px;
-                    font-family: 'Inter', sans-serif;
-                    
-                    .imgpro{    
-                        position: absolute;
-                        width: 300px;
-                        left: 10px;
-                        top: 5px;
-
-                    }
-                    .nombrenegocio{
-                        position: absolute;
-                        top: 180px;
-                        left: 10px;
-                    }
-                    .descripcionnego{
-                        position: absolute;
-                        top: 200px;
-                        left: 10px;
-                        max-width: 300px;
-                        color: #787878;
-                    }
-                    .nombredelpro{
-                        position: absolute;
-                        top: 260px;
-                        left: 10px;
-                        color: #787878;
-                    }
-                    .mailpro{
-                        position: absolute;
-                        left: 10px;
-                        top: 280px;
-                        color: #787878;
-                    }
-                    .telefono{
-                        position: absolute;
-                        top: 340px;
-                        left: 150px;
-                        
-                    }
-                    .numdelpro{
-                        position: absolute;
-                        top: 325px;
-                        left: 180px;
-                    }
-                }                
+  
                 .segundo{
                     background-color: #FFFFFF;
                     width: 320px;

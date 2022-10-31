@@ -57,16 +57,6 @@
                 .tipoitem{
                     display: flex;
                     flex-direction: column;
-                        .tipoi{
-                            margin-top: 20px;
-                            margin-right: 85px;
-                        }
-                        .ej{
-                            margin-top: 5px;
-                            height: 20px;
-                            margin-left: 30px;
-                            width: 200px;
-                        }
                     
                 }
                 .cantitem{
@@ -74,14 +64,14 @@
                     flex-direction: column;
                     .cantt{
                         margin-top: 20px;
-                        margin-left: 20px;
+                        margin-left: 110px;
                     }
                     .cant{
                         height: 20px;
-                        width: 60px;
+                        width: 120px;
                         
                         margin-top: 5px;
-                        margin-left: 20px;
+                        margin-left: 110px;
                     }
                 }
             }

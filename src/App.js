@@ -33,7 +33,7 @@ function App() {
 
               <Route path="/info/:id" exact element={<Infoeventos/>}/>
 
-              <Route path="/lista" exact element={<Lista/>}/>
+              <Route path="/lista/:id" exact element={<Lista/>}/>
 
               <Route path="/proovedores" exact element={<Proovedores/>}/>
 

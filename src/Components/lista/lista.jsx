@@ -6,20 +6,77 @@ import Confirmados from './Confirmados.png';
 import Restantes from './Restantes.png';
 import Totales from './Totales.png';
 import Triangulo from './Trianguloazul.png';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Agregaritems from '../agregaritems/agregaritems';
+import {useParams} from 'react-router-dom';
+
 function Lista() {
 
-  
   const [buttonagregarcosas, setButtonAgregarcosas] = useState(false);
+  const [itemsToBring, setItemsToBring] = useState(null);
+  const listaCosas = []
+  const ApiBaseURL = "https://GroupIT-API.up.railway.app"
 
-  const listaCosas = [{
-    Cosa:"Coca",
-    Cantidad:"6",
-    Tipo: "Bebida",
-    Restantes:12
-  }]
+  const { id } = useParams();
+  let totalItemsToBring = 0;
+  let totalItemsBrought = 0;
+  let totalItemsLeft = 0;
 
+  const getItemsToBring = async () => {
+    const requestConfig = {
+      method: 'POST',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ idEvento: id })
+    };
+
+    const response = await fetch(`${ApiBaseURL}/itemList/toBring`, requestConfig);
+
+    const data = await response.json();
+
+    return data;
+  }
+
+  const setItemsBrought = async (Cosa) => {
+    console.log("entre")
+    const requestConfig = {
+      method: 'POST',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ idEvento: id, nombreObjeto: Cosa, cantidadObjeto: 1})
+    };
+
+    console.log(requestConfig.body)
+    const response = await fetch(`${ApiBaseURL}/itemList/setBrought`, requestConfig);
+
+    const data = await response.json();
+
+    window.location.reload()
+
+    return data;
+  }
+
+  useEffect(() => {
+    getItemsToBring().then((data) => {
+      setItemsToBring(data);
+    });
+  }, []);
+
+  
+  itemsToBring?.forEach((item) => {
+    const itemToBring = {
+      Cosa: item.nombreObjeto,
+      Cantidad: item.cantidadTotal,
+      Restantes: item.cantidad
+    }
+
+    totalItemsToBring += item.cantidadTotal;
+    totalItemsBrought += item.cantidadTotal - item.cantidad;
+    totalItemsLeft += item.cantidad;
+    
+    listaCosas.push(itemToBring);
+
+  })
 
   return (
     <div className="todolista">
@@ -40,20 +97,20 @@ function Lista() {
         <div className="segundalinea">
             <div className="totales">
               <img src={Totales} alt="" className="totalesimg" />
-              <h3 className="totalestext">Concurren</h3>
-              <h3 className="numtotales"> 7 </h3>
+              <h3 className="totalestext">Totales</h3>
+              <h3 className="numtotales">{totalItemsToBring}</h3>
             </div>
 
             <div className="confirmados">
               <img src={Confirmados} alt="" className="confirmadosimg" />
-              <h3 className="confirmadostext">Pendientes</h3>
-              <h3 className="numconfirmados"> 3 </h3>
+              <h3 className="confirmadostext">Confimados</h3>
+              <h3 className="numconfirmados">{totalItemsBrought}</h3>
             </div>
 
             <div className="restantes">
               <img src={Restantes} alt="" className="restantesimg" />
-              <h3 className="restantestext">No concurren</h3>
-              <h3 className="numrestantes"> 4 </h3>
+              <h3 className="restantestext">Restantes</h3>
+              <h3 className="numrestantes">{totalItemsLeft}</h3>
             </div>
 
           </div>
@@ -67,22 +124,20 @@ function Lista() {
           <div className="lineaa"></div>
 
           <div className="cosas">
-            {listaCosas.length > 0 ? listaCosas.map(({Cosa,Cantidad,Tipo,Restantes})=> {
+            {listaCosas.length > 0 ? listaCosas.map(({Cosa,Cantidad,Restantes})=> {
                 return (
                   
                     <div className="itemsa">
                       
-                    <div className="tipoyrest">
-                      <h3 className="tipo">{Tipo}</h3>
-                      <h5 className="rest">{Restantes}</h5>
+                    <div className="tipoyrest">=
+                      <h5 className="rest"> {Restantes}</h5>
                     </div>
                     <div className="cosaycant">
-                      <h3 className="cosa">{Cosa}</h3>
-                      <h5 className="cant">Cantidad:{Cantidad}</h5>
+                      <h3 className="cosa"> {Cosa}</h3>
+                      <h5 className="cant">Total:{Cantidad}</h5>
                     </div>
                       <div className="btns">
-                        <button className="anadir" >+ Añadir</button>
-                        <button className="restar">- Restar</button>
+                        <button className="restar" onClick={() => setItemsBrought(Cosa)}>Traigo</button>
                       </div>
 
                     </div>

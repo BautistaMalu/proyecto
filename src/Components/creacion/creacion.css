@@ -60,6 +60,8 @@
   height: 30px;
   margin-bottom: 25px;
   border-radius: 10px;
+  border-color: #CFCFCF;
+  outline: none;
 }
 .todocrea .creacion .labelesyinputs .labeldesc {
   width: 150px;

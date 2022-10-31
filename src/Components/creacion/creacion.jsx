@@ -3,15 +3,41 @@ import './creacion.css';
 import Cerrar from './cruz.png';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
-function creacion(props) {
-  
-  const options = [
-    { value: "social", label: "Social" },
-    { value: "deportivo", label:"Deportivo"},
-    { value:"formal", label:"Formal"}
-  ];
 
-  const defaultOption = options[0];
+function Creacion(props) {
+  
+  const ApiBaseURL = "https://GroupIT-API.up.railway.app"
+  const [createEventData, setCreateEventData] = React.useState(null);
+
+
+  const handleInputChange = (event) => {
+    setCreateEventData({
+      ...createEventData,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const createEvent = async () => {
+
+    const requestConfig = {
+      method: 'POST',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(createEventData)
+    };
+
+    const response = await fetch(ApiBaseURL + "/event", requestConfig);
+
+    if (response.status === 200) {
+      const data = await response.json();
+      window.location.reload();
+      return data;
+    } else {
+      alert("Something went wrong");
+    }
+    
+  }
+
 
   return (props.trigger) ? (
     <div className="todocrea">
@@ -24,27 +50,17 @@ function creacion(props) {
             <div className="labelesyinputs">
               <h2 className="crearevento">Crear evento</h2>
 
-              <label className="tituloevento" for="escribititulo" >Titulo del evento</label>
-              <input type="text" className="escribititulo" placeholder='Escribi el titulo del evento'/>
+              <label className="tituloevento" for="escribititulo" >Titulo del Evento</label>
+              <input type="text" className="escribititulo" onChange={handleInputChange} name="nombre" placeholder='Escribi el titulo del evento'/>
 
-              <label className="tipoevento" for="escribitipo" >Titulo del evento</label>
-              <Dropdown options={options} value={defaultOption} placeholder="Select an option" className='escribitipo' />      
+              <label className="tipoevento" for="escribitipo" >Lugar del Evento</label>
+              <input placeholder="Lugar del evento" onChange={handleInputChange} name="lugar" className='escribitipo' />      
               
-              <label className="labeldesc" for="escribidesc" >Descripcion (opcional) </label>
-              <input type="text" className="escribidesc" placeholder='Escribi una descripcion para tu evento'/>
-              <div className="fechayinvitados">
-                <div className="invitados">
-                  <label className="labelcant" for="cantinvitados" >Cantidad de invitados</label>
-                  <input type="number" className="cantinvitados" min={0}/>
-                </div>
-                <div className="fechas2">
-                  <label className="labelfecha" for="fechadelevento" >Cantidad de invitados</label>
-                  <input type="date" className="fechadelevento" />
-                </div>
-              </div>
+              <label className="labeldesc" for="escribidesc" >Descripcion </label>
+              <input type="text" className="escribidesc" onChange={handleInputChange} name="descripcion" placeholder='Escribi una descripcion para tu evento'/>
               <div className="botones">
                 <button className="bcancelar"  onClick={() => props.setTrigger(false)}>Cancelar</button>
-                <button className="bcrear">+ Crear</button>
+                <button className="bcrear" onClick={() => createEvent()}>+ Crear</button>
               </div>
             </div>
 
@@ -53,4 +69,4 @@ function creacion(props) {
   ) : "";
 }
 
-export default creacion
+export default Creacion

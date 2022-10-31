@@ -1,1 +1,122 @@
-/*# sourceMappingURL=volverse1.css.map */
+.todovolverse1 {
+  z-index: 4;
+  position: absolute;
+  background-color: #ffffff;
+  top: 100px;
+  left: 550px;
+  height: 500px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.625rem;
+  border-style: solid;
+  border-color: #5F5F5F;
+  border-width: 0.5px;
+  font-family: "Inter", sans-serif;
+}
+.todovolverse1 .cerrar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  border-style: none;
+  outline: none;
+  border-radius: 0.625rem;
+}
+.todovolverse1 .volverme {
+  position: absolute;
+  top: 10px;
+  left: 110px;
+}
+.todovolverse1 .labelsyinputs2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  width: 350px;
+  margin-left: 20px;
+}
+.todovolverse1 .labelsyinputs2 .labelnombre {
+  margin-bottom: 3px;
+}
+.todovolverse1 .labelsyinputs2 .inpnombre {
+  margin-bottom: 3px;
+  border-radius: 0.625rem;
+  border-style: solid;
+  outline: none;
+  height: 30px;
+}
+.todovolverse1 .labelsyinputs2 .labelnegocio {
+  margin-bottom: 3px;
+}
+.todovolverse1 .labelsyinputs2 .inpnegocio {
+  margin-bottom: 3px;
+  border-radius: 0.625rem;
+  border-style: solid;
+  outline: none;
+  height: 30px;
+}
+.todovolverse1 .labelsyinputs2 .labeltelefono {
+  margin-bottom: 3px;
+}
+.todovolverse1 .labelsyinputs2 .inptelefono {
+  margin-bottom: 3px;
+  border-radius: 0.625rem;
+  border-style: solid;
+  outline: none;
+  height: 30px;
+}
+.todovolverse1 .labelsyinputs2 .labelemail {
+  margin-bottom: 3px;
+}
+.todovolverse1 .labelsyinputs2 .inpemail {
+  margin-bottom: 3px;
+  border-radius: 0.625rem;
+  border-style: solid;
+  outline: none;
+  height: 30px;
+}
+.todovolverse1 .labelsyinputs2 .labeltservicio {
+  margin-bottom: 3px;
+}
+.todovolverse1 .labelsyinputs2 .inptservicio {
+  margin-bottom: 3px;
+  border-radius: 0.625rem;
+  border-style: solid;
+  outline: none;
+  height: 30px;
+}
+.todovolverse1 .labelsyinputs2 .labelservicio {
+  margin-bottom: 3px;
+}
+.todovolverse1 .labelsyinputs2 .inpservicio {
+  margin-bottom: 3px;
+  border-radius: 0.625rem;
+  border-style: solid;
+  outline: none;
+  height: 30px;
+}
+.todovolverse1 .btns {
+  display: flex;
+  flex-direction: row;
+  margin-left: 210px;
+  margin-top: 20px;
+}
+.todovolverse1 .btns .cancelar {
+  border-radius: 0.625rem;
+  outline: none;
+  border-style: none;
+  color: #78C6FF;
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
+}
+.todovolverse1 .btns .prox {
+  margin-left: 20px;
+  outline: none;
+  border-style: none;
+  background-color: #78C6FF;
+  font-family: "Inter", sans-serif;
+  border-radius: 0.625rem;
+  height: 30px;
+  width: 70px;
+  color: #ffffff;
+}/*# sourceMappingURL=volverse1.css.map */

@@ -1,5 +1,4 @@
-
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './eventos.css';
 import Cajita from './Cajita.png';
 import Personas from './Personas.png'
@@ -15,32 +14,53 @@ import Eventoformal from './Eventoformal.png';
 import Creacion from '../creacion/creacion';
 import {Link} from 'react-router-dom';
 import Redes from './Proovedor.png';
+import moment from "moment";
+import Volverse1 from '../volverse1/volverse1';
+import Volverse2 from '../volverse2/volverse2';
 
 function Eventos() {
   const [buttoncreacion, setButtonCreacion] = useState(false);
-  
+  const [buttonvolverse1, setButtonVolverse1] = useState(false);
+  const [buttonvolverse2, setButtonVolverse2] = useState(false);
+  const [fetchOutput, setFetchOutput] = useState(null);
+  const ApiURLBase = "https://GroupIT-API.up.railway.app"
   let tevento="social";
-  const listaEventos = 
-  [
-    {
-      nombre:"EventoRailway",
-      descripcion:"El cumple de uno de los pibes",
-      tevento: "social",
+
+  const listaEventos = []
+
+  const getEvents = async () => {
+    const requestConfig = {
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+    };
+
+    const response = await fetch(ApiURLBase + "/event/all", requestConfig);
+
+    const data = await response.json();
+
+    return data;
+  };
+
+  useEffect(() => {
+    getEvents().then((data) => {
+      setFetchOutput(data);
+    });
+  }, []);
+
+  fetchOutput?.forEach((event) => {
+    const eventInfo = {
+      nombre: event.nombre,
+      descripcion: event.descripcion,
+      tevento: tevento,
       imagena: tevento === "social" ? Eventosocial : tevento === "deportivo" ? Eventodeportivo : tevento === "formal" ? Eventoformal : Estrellitachica,
-      fechacrea:"2 dias",
-      creador:"Tuvi",
-      id:"cl7s9n1bm0135fsu3ouuqod1p"
-    },
-    {
-      nombre:"EventoLocal",
-      descripcion:"El cumple de uno de los pibes",
-      tevento: "deportivo",
-      imagena: tevento === "social" ? Eventosocial : tevento === "deportivo" ? Eventodeportivo : tevento === "formal" ? Eventoformal : Estrellitachica,
-      fechacrea:"2 dias",
-      creador:"Tuvi",
-      id:"cl7s9n1bm0135fsu3ouuqod1p"
-    }
-  ]
+      fechacrea: moment(event.fecha).utc().format('YYYY-MM-DD'),
+      creador: event.usuario.nombreUsuario,
+      id: event.id
+    };
+
+    listaEventos.push(eventInfo);
+  });
+
 
   return (
     <div className="peventos">
@@ -55,7 +75,7 @@ function Eventos() {
             <div className="botones1">
               <button className="crear" onClick={() => setButtonCreacion(true)}> + Crear</button>   
 
-              <button className='volverme'>Volverme proovedor</button>
+              <button className='volverme'onClick={() => setButtonVolverse1(true)}>Volverme proovedor</button>
             </div>
 
             <div className="botones2">
@@ -79,7 +99,7 @@ function Eventos() {
 
                     <div className="teyf">
                       <h5 className="tipoevento">Evento {tevento}</h5>
-                      <h5 className="fecha">Hace {fechacrea}</h5>
+                      <h5 className="fecha">{fechacrea}</h5>
                     </div>
                   
                     <div className="tituloydesc">
@@ -108,6 +128,14 @@ function Eventos() {
           <div className="popup">
             <Creacion trigger={buttoncreacion} setTrigger={setButtonCreacion}>
             </Creacion>
+            <Volverse1 trigger={buttonvolverse1} setTrigger={(bool)=>{
+              setButtonVolverse1(bool) 
+              setButtonVolverse2(!bool)
+              }}>
+
+            </Volverse1>
+            <Volverse2 trigger={buttonvolverse2} setTrigger={setButtonVolverse2}>
+            </Volverse2>
           </div>
         </div>
     </div>

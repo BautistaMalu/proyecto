@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../login/Logo.png';
-import {Link} from 'react-router-dom';
+import {Link, useParams, useNavigate} from 'react-router-dom';
 import './header3.css';
 import Fotoej from '../header2/Ejemplo.png';
 import { useState, useEffect } from 'react'
@@ -12,10 +12,11 @@ function Header3() {
   const [buttonlogout, setButtonLogout] = useState(false);
   const [loggedUserInfo, setLoggedUserInfo] = useState(null);
   const nombreUsuarioToDisplay = loggedUserInfo?.nombreUsuario;
+  const { id } = useParams();
+  const navigate = useNavigate();
 
   const getUserInfo = async () => {
-
-    const ApiURL= "https://GroupIT-API.up.railway.app/user/getUser"
+    const ApiURL= "https://GroupIT-API.up.railway.app/user/getUser";
 
     const requestConfig = {
       credentials: 'include',
@@ -23,10 +24,14 @@ function Header3() {
     };
 
     const response = await fetch(ApiURL, requestConfig);
-
-    const data = await response.json();
-
-    return data;
+    
+    if (response.status === 200) {
+      const data = await response.json();
+      return data;
+    } else {
+      navigate('/login');
+      return null;
+    }
   };
 
   useEffect(() => {
@@ -49,20 +54,16 @@ function Header3() {
 
                 <div className="ladoder">
                     <div className="links">
-                        <Link to='/infoeventos' className='us'>Lista de invitados</Link>
-                        <Link to='/eventos' className='inicio'>Mis eventos</Link>            
-                        <Link to='/lista' className='contacto'>Items a traer</Link>
+                        <Link to={`/info/${id}`} className='us'>Lista de invitados</Link>
+                        <Link to='/eventos' className='inicio'>Eventos</Link>            
+                        <Link to={`/lista/${id}`} className='contacto'>Items a traer</Link>
                         <img src={Fotoej} alt="" className="foto" />
                         <h3 className="nombreus">{nombreUsuarioToDisplay}</h3>
                         <button className="desloguearse" onClick={() => setButtonLogout(true)}> <img src={Bajada} alt="" className="desloguearseimg" /></button>  
                         <LogOut trigger={buttonlogout} setTrigger={setButtonLogout}></LogOut>
                     </div>
-
-
                 </div>
-
             </div>
-
     </div>
   )
 }

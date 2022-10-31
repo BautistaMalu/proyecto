@@ -1,1 +1,43 @@
-/*# sourceMappingURL=volverse2.css.map */
+.todovolverse2 {
+  z-index: 4;
+  position: absolute;
+  background-color: #ffffff;
+  top: 100px;
+  left: 550px;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.625rem;
+  border-style: solid;
+  border-color: #5F5F5F;
+  border-width: 0.5px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+.todovolverse2 .cerrar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  border-style: none;
+  outline: none;
+  border-radius: 0.625rem;
+}
+.todovolverse2 .revisar {
+  margin-top: 50px;
+}
+.todovolverse2 .revisartxt {
+  margin: 0px;
+}
+.todovolverse2 .enviarmail {
+  margin-left: 180px;
+  outline: none;
+  border-style: none;
+  background-color: #78C6FF;
+  font-family: "Inter", sans-serif;
+  border-radius: 0.625rem;
+  height: 30px;
+  width: 150px;
+  color: #ffffff;
+}/*# sourceMappingURL=volverse2.css.map */
