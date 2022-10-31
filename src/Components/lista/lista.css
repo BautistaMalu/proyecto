@@ -124,70 +124,76 @@
   margin-left: 70px;
   margin-top: 5px;
 }
-.todolista .lista .cosas .itemsa {
+.todolista .lista .cosas {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 1300px;
+}
+.todolista .lista .cosas .itemsa {
   height: 200px;
   width: 255px;
   border-color: #D8D8D8;
   border-radius: 30px;
   border-width: 2px;
   border-style: solid;
-  margin-top: 10px;
-  margin-left: 150px;
-  align-items: center;
   font-family: "Inter", sans-serif;
   background-image: url("Trianguloazul.png");
+  position: relative;
+  margin-left: 80px;
+  margin-top: 20px;
 }
 .todolista .lista .cosas .itemsa .tipoyrest {
-  display: flex;
-  flex-direction: row;
-  height: 50px;
+  position: absolute;
 }
 .todolista .lista .cosas .itemsa .tipoyrest .tipo {
-  margin-bottom: 0px;
-  margin-right: 120px;
-  font-size: 15px;
-  height: 20px;
+  position: absolute;
+  left: 20px;
+  top: -6px;
+  font-weight: 600;
 }
 .todolista .lista .cosas .itemsa .tipoyrest .rest {
+  position: absolute;
+  margin-top: 13px;
+  left: 200px;
   font-size: 20px;
-  margin-top: 15px;
   color: #ffffff;
 }
 .todolista .lista .cosas .itemsa .cosaycant {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
 }
 .todolista .lista .cosas .itemsa .cosaycant .cosa {
-  margin-top: 0px;
-  margin-right: 130px;
+  position: absolute;
+  margin-top: 50px;
+  left: 18px;
+  font-size: 25px;
 }
 .todolista .lista .cosas .itemsa .cosaycant .cant {
-  margin-top: 0px;
-  color: #5F5F5F;
+  position: absolute;
+  margin-top: 90px;
+  left: 20px;
 }
 .todolista .lista .cosas .itemsa .btns {
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
+  position: absolute;
 }
 .todolista .lista .cosas .itemsa .btns .anadir {
-  margin-right: 20px;
+  position: absolute;
+  margin-top: 145px;
+  left: 130px;
+  width: 90px;
+  height: 40px;
   background-color: #78C6FF;
-  color: #ffffff;
   border-radius: 0.625rem;
-  border-style: none;
-  outline: none;
-  height: 30px;
-  width: 80px;
+  color: #ffffff;
+  border: none;
 }
 .todolista .lista .cosas .itemsa .btns .restar {
+  position: absolute;
+  margin-top: 145px;
+  left: 30px;
+  width: 90px;
+  height: 40px;
+  border-radius: 0.625rem;
   background-color: #FF0000;
   color: #ffffff;
-  border-radius: 0.625rem;
-  border-style: none;
-  outline: none;
-  height: 30px;
-  width: 80px;
+  border: none;
 }/*# sourceMappingURL=lista.css.map */

@@ -1,6 +1,6 @@
 import React from 'react'
 import './estado.css';
-import Cerrar from '../infoeventos/3dots.png';
+import Cerrar from '../creacion/cruz.png';
 import Circuloverde from '../infoeventos/Circuloverde.png';
 import Circuloamarillo from '../infoeventos/Circuloamarillo.png';
 import Circulorojo from '../infoeventos/Circulorojo.png';

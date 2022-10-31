@@ -17,8 +17,10 @@ function Lista() {
     Cosa:"Coca",
     Cantidad:"6",
     Tipo: "Bebida",
-    Restantes:"2"
+    Restantes:12
   }]
+
+
   return (
     <div className="todolista">
       <div className="header">
@@ -67,24 +69,24 @@ function Lista() {
           <div className="cosas">
             {listaCosas.length > 0 ? listaCosas.map(({Cosa,Cantidad,Tipo,Restantes})=> {
                 return (
-
-                  <div className="itemsa">
-                    
-                  <div className="tipoyrest">
-                    <h3 className="tipo">{Tipo}</h3>
-                    <h5 className="rest">{Restantes}</h5>
-                  </div>
-                  <div className="cosaycant">
-                    <h3 className="cosa">{Cosa}</h3>
-                    <h5 className="cant">Cantidad:{Cantidad}</h5>
-                  </div>
-                    <div className="btns">
-                      <button className="anadir">+ Añadir</button>
-                      <button className="restar">- Restar</button>
+                  
+                    <div className="itemsa">
+                      
+                    <div className="tipoyrest">
+                      <h3 className="tipo">{Tipo}</h3>
+                      <h5 className="rest">{Restantes}</h5>
                     </div>
+                    <div className="cosaycant">
+                      <h3 className="cosa">{Cosa}</h3>
+                      <h5 className="cant">Cantidad:{Cantidad}</h5>
+                    </div>
+                      <div className="btns">
+                        <button className="anadir" >+ Añadir</button>
+                        <button className="restar">- Restar</button>
+                      </div>
 
-                  </div>
-                
+                    </div>
+                  
               )
             }) : ""
             }

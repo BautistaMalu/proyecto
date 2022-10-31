@@ -10,27 +10,91 @@ import Circuloverde from './Circuloverde.png';
 import Circuloamarillo from './Circuloamarillo.png';
 import Circulorojo from './Circulorojo.png';
 import Fotoej from '../header2/Ejemplo.png';
-import {Link} from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
 import Dotsline from './3dots.png';
-import { useState } from 'react'
+import { useState, useEffect  } from 'react'
 import Agregar from '../agreagarpersonas/agregar';
 import Estadoo from '../estado/estado';
+import { faClipboardList } from '@fortawesome/free-solid-svg-icons';
 
 function Infoeventos() {
 
   const [buttoncompartir, setButtonCompartir] = useState(false);
   const [buttondots, setButtonDots] = useState(false);
-  
+  const [fetchOutput, setFetchOutput] = useState(null);
+  const [loggedUserInfo, setLoggedUserInfo] = useState(null);
 
-  let estado="Disponible";
+  const { id } = useParams();
 
-  const listaInvitados = [{
-    nombreus:"Pepito",
-    mail:"pepito@gmail.com",
-    estado: "Disponible",
-    imagene: estado === "Disponible" ? Circuloverde : estado === "Pendiente" ? Circuloamarillo : estado === "Ausente" ? Circulorojo : "",
-    rango:"Admin"
-  }]
+  const confirmationCounter = {
+    "Confirmado": 0,
+    "Pendiente": 0,
+    "Ausente": 0
+  }
+
+  const ApiURLBase = "https://GroupIT-API.up.railway.app"
+  const listaInvitados = []
+
+  const getUserInfo = async () => {
+    const requestConfig = {
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+    };
+
+    const response = await fetch(ApiURLBase + "/user/getUser", requestConfig);
+
+    const data = await response.json();
+
+    return data;
+  };
+
+  const getInvitedList = async (eventId) => {
+    const requestConfig = {
+      method: 'POST',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({nombreEvento: eventId})
+    };
+    
+    const response = await fetch(ApiURLBase + "/event/participants", requestConfig);
+
+    if (response.status === 200) {
+      const data = await response.json();
+      return data;
+    } else {
+      alert("Something went wrong");
+    }
+  }
+
+  useEffect(() => {
+    getInvitedList(id).then((data) => {
+      setFetchOutput(data);
+    });
+    getUserInfo().then((data) => {
+      setLoggedUserInfo(data);
+    });
+  }, []);
+
+  fetchOutput?.forEach((personObject) => {
+    const estado = personObject.confirmacion;
+
+    confirmationCounter[estado]++;
+
+    const newObject = {
+      nombreus: personObject.usuario.nombreUsuario,
+      mail: personObject.usuario.mail,
+      estado: estado,
+      imagene: estado === "Confirmado" ? Circuloverde : estado === "Pendiente" ? Circuloamarillo : estado === "Ausente" ? Circulorojo : "",
+      rango: "Invitado"
+    }
+    
+    if (newObject.nombreus === loggedUserInfo?.nombreUsuario) {
+      listaInvitados.unshift(newObject);
+    } else {
+      listaInvitados.push(newObject);
+    }
+    
+  })
 
   return (
                 
@@ -55,19 +119,19 @@ function Infoeventos() {
           <div className="concurren">
             <img src={Concurren} alt="" className="concurrenimg" />
             <h3 className="concurrentext">Concurren</h3>
-            <h3 className="numconfirmados"> 23 </h3>
+            <h3 className="numconfirmados">{confirmationCounter.Confirmado}</h3>
           </div>
 
           <div className="pendientes">
             <img src={Pendientes} alt="" className="pendientesimg" />
             <h3 className="pendientestext">Pendientes</h3>
-            <h3 className="numpendientes"> 23 </h3>
+            <h3 className="numpendientes">{confirmationCounter.Pendiente}</h3>
           </div>
 
           <div className="noconcurren">
             <img src={Noconcurren} alt="" className="noconcurrenimg" />
             <h3 className="noconcurrentext">No concurren</h3>
-            <h3 className="numnoconfirmados"> 23 </h3>
+            <h3 className="numnoconfirmados">{confirmationCounter.Ausente}</h3>
           </div>
 
         </div>

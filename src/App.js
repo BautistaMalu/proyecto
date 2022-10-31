@@ -9,6 +9,7 @@ import Contraolvi from "./Components/contraolvi/contraolvi";
 import Eventos from "./Components/eventos/eventos";
 import Infoeventos from "./Components/infoeventos/infoeventos";
 import Lista from "./Components/lista/lista";
+import Proovedores from './Components/proovedores/proovedores';
 function App() {
   return (
     <div className="App"> 
@@ -30,10 +31,12 @@ function App() {
 
               <Route path="/eventos" exact element={<Eventos/>}/>
 
-              <Route path="/infoeventos" exact element={<Infoeventos/>}/>
+              <Route path="/info/:id" exact element={<Infoeventos/>}/>
 
               <Route path="/lista" exact element={<Lista/>}/>
-                                
+
+              <Route path="/proovedores" exact element={<Proovedores/>}/>
+
             </Routes>
           </BrowserRouter>
       </header>

@@ -1,103 +1,69 @@
 body {
   margin: 0;
+  padding: 0;
 }
 
 .Contraolvi {
-  min-height: 100vh;
-  min-width: 100%;
-  overflow-x: hidden;
-  padding: 0%;
-}
-.Contraolvi .imagen {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  justify-content: left;
-  margin-left: 2rem;
-  margin-top: 1rem;
-  height: 2.3rem;
+  flex-direction: column;
 }
 .Contraolvi .contenido-contra {
-  height: 60vh;
-  width: 90%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2rem;
-}
-.Contraolvi .contenido-contra .ladoizq, .Contraolvi .contenido-contra .ladoder {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.Contraolvi .contenido-contra .ladoder {
-  display: flex;
-  justify-content: center;
-}
-.Contraolvi .contenido-contra .ladoder .Foto {
-  display: flex;
-  justify-content: left;
-  width: 100%;
 }
 .Contraolvi .contenido-contra .ladoizq {
-  margin-top: 5rem;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 10rem;
-  margin-right: 5rem;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  margin-left: 50px;
+}
+.Contraolvi .contenido-contra .ladoizq .imagen {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 300px;
 }
 .Contraolvi .contenido-contra .ladoizq .recordar {
-  font-family: "Inter", sans-serif;
-  margin-right: 3rem;
-  margin-bottom: 0rem;
-  height: 3rem;
-  font-size: 1.75rem;
-  margin-top: 5rem;
+  margin-top: 100px;
+  font-weight: 1600;
+  margin-bottom: 10px;
 }
 .Contraolvi .contenido-contra .ladoizq .recuperar {
-  font-family: "Inter", sans-serif;
-  margin-right: 3.3rem;
-  margin-top: 0rem;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
+  margin-top: 0px;
+  font-weight: 400;
 }
-.Contraolvi .contenido-contra .ladoizq input {
-  font-size: 1rem;
-  display: block;
-  border-color: gray;
-  height: 30px;
+.Contraolvi .contenido-contra .ladoizq .emaill {
+  display: flex;
+  flex-direction: column;
+}
+.Contraolvi .contenido-contra .ladoizq .emaill .labelemail {
+  margin-bottom: 2.5px;
+  margin-left: 8px;
+}
+.Contraolvi .contenido-contra .ladoizq .emaill .email1 {
   width: 400px;
+  padding: 10px;
   border-radius: 0.625rem;
-  margin-bottom: 0.2rem;
-  margin-top: 1.5rem;
-  border-style: solid;
-  padding: 0.6rem;
   outline: none;
-  font-family: "Inter", sans-serif;
+  border-style: solid;
+  border-color: #949494;
 }
-.Contraolvi .contenido-contra .ladoizq label {
-  display: block;
-  margin: auto;
-  float: left;
-  width: 20%;
-  font-size: larger;
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  margin-left: 0.5rem;
-}
-.Contraolvi .contenido-contra .ladoizq #recuperarcontra {
+.Contraolvi .contenido-contra .ladoizq .recuperarcontra {
+  margin-left: 2px;
+  margin-top: 50px;
   width: 420px;
-  height: 45px;
-  margin-left: 0.2rem;
-  margin-top: 1rem;
-  background: #2A81C0;
-  cursor: pointer;
+  height: 40px;
   border-radius: 0.625rem;
   border: none;
-  color: white;
-  font-size: medium;
+  background-color: #2A81C0;
+  color: #ffffff;
 }
-.Contraolvi .contenido-contra .ladoizq #recuperarcontra:hover {
+.Contraolvi .contenido-contra .ladoizq .recuperarcontra:hover {
   background-color: #2f7699;
+}
+.Contraolvi .contenido-contra .ladoder {
+  margin-left: 53px;
+  height: 784px;
 }/*# sourceMappingURL=contraolvi.css.map */

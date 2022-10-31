@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useState } from 'react'
 import './eventos.css';
 import Cajita from './Cajita.png';
@@ -13,84 +13,102 @@ import Eventosocial from './Eventosocial.png';
 import Eventodeportivo from './Eventodeportivo.png';
 import Eventoformal from './Eventoformal.png';
 import Creacion from '../creacion/creacion';
+import {Link} from 'react-router-dom';
+import Redes from './Proovedor.png';
 
 function Eventos() {
   const [buttoncreacion, setButtonCreacion] = useState(false);
   
-  
   let tevento="social";
-  const listaEventos = [{
-    nombre:"Evento1",
-    descripcion:"El cumple de uno de los pibes",
-    tevento: "social",
-    imagena: tevento === "social" ? Eventosocial : tevento === "deportivo" ? Eventodeportivo : tevento === "formal" ? Eventoformal : Estrellitachica,
-    fechacrea:"2 dias",
-    creador:"Tuvi",
-    id:1
-  }]
+  const listaEventos = 
+  [
+    {
+      nombre:"EventoRailway",
+      descripcion:"El cumple de uno de los pibes",
+      tevento: "social",
+      imagena: tevento === "social" ? Eventosocial : tevento === "deportivo" ? Eventodeportivo : tevento === "formal" ? Eventoformal : Estrellitachica,
+      fechacrea:"2 dias",
+      creador:"Tuvi",
+      id:"cl7s9n1bm0135fsu3ouuqod1p"
+    },
+    {
+      nombre:"EventoLocal",
+      descripcion:"El cumple de uno de los pibes",
+      tevento: "deportivo",
+      imagena: tevento === "social" ? Eventosocial : tevento === "deportivo" ? Eventodeportivo : tevento === "formal" ? Eventoformal : Estrellitachica,
+      fechacrea:"2 dias",
+      creador:"Tuvi",
+      id:"cl7s9n1bm0135fsu3ouuqod1p"
+    }
+  ]
+
   return (
     <div className="peventos">
             
         <div className="header2">
             <Header2/>
         </div>
+
         <div className="todo">
-        <div className="menu">
+          <div className="menu">
 
             <div className="botones1">
-            <button className="crear" onClick={() => setButtonCreacion(true)}> + Crear</button>   
+              <button className="crear" onClick={() => setButtonCreacion(true)}> + Crear</button>   
 
-            <button className='volverme'>Volverme proovedor</button>
+              <button className='volverme'>Volverme proovedor</button>
             </div>
+
             <div className="botones2">
-            <button className="miseventos"> <img src={Cajita} alt="" className="cajita" />Mis eventos</button>
+              <button className="miseventos"> <img src={Cajita} alt="" className="cajita" />Mis eventos</button>
 
-            <button className="compartidos"> <img src={Personas} alt="" className="personas" />Compartidos conmigo</button>
+              <button className="compartidos"> <img src={Personas} alt="" className="personas" />Compartidos conmigo</button>
 
+              <button className="proovedor"> <img src={Redes} alt="" className="redes" /><Link to='/proovedores' className='us'>Proovedores</Link></button>
             </div>
-            
-        </div>
-        <div className="eventos">
-          {listaEventos.length > 0 ? listaEventos.map(({imagena,nombre,tevento,fechacrea,descripcion,creador})=> {
-            return (
-              <div className="hay">
-                <div className="imagen">
-                  <img src={imagena} alt="" className="imagenevento" />
-                </div>
-                <div className="textos">
-
-                  <div className="teyf">
-                    <h5 className="tipoevento">Evento {tevento}</h5>
-                    <h5 className="fecha">Hace {fechacrea}</h5>
-                  </div>
-                
-                  <div className="tituloydesc">
-                    <h2 className="titulo">{nombre}</h2>
-                    <h5 className="desc">{descripcion}</h5>
+              
+          </div>
+          <div className="eventos">
+            {listaEventos.length > 0 ? listaEventos.map(({id,imagena,nombre,tevento,fechacrea,descripcion,creador})=> {
+              return (
+                <div className="hay">
+                  <div className="imagen">
+                    <img src={imagena} alt="" className="imagenevento" />
                   </div>
 
-                  <div className="usyfav">
-                    <img src={Pj} alt="" className="pj" />
-                    <h5 className="us"> @{creador}</h5>
-                    <button className="fav">Info</button>
-                  </div>
+                  <div className="textos">
 
-                </div>
-            </div>
-            
-          )
-        }) : 
-        <div className="no">
-        <h1 className="nohay">No tienes ningún evento </h1>
-        <h4 className="momento">Es momento de empezar a crear </h4>
-        <img src={Lamparita} alt="" className="lamparita" />
-        </div>
-         }
-        </div>
-        <div className="popup">
-          <Creacion trigger={buttoncreacion} setTrigger={setButtonCreacion}>
-          </Creacion>
-        </div>
+                    <div className="teyf">
+                      <h5 className="tipoevento">Evento {tevento}</h5>
+                      <h5 className="fecha">Hace {fechacrea}</h5>
+                    </div>
+                  
+                    <div className="tituloydesc">
+                      <h2 className="titulo">{nombre}</h2>
+                      <h5 className="desc">{descripcion}</h5>
+                    </div>
+
+                    <div className="usyfav">
+                      <img src={Pj} alt="" className="pj" />
+                      <h5 className="us"> @{creador}</h5>
+                      <button className="fav"><Link to={`/info/${id}`} className='linkinfoeventos'>Info</Link></button>
+                    </div>
+
+                  </div>
+              </div>
+            )
+          }) : 
+          <div className="no">
+            <h1 className="nohay">No tienes ningún evento </h1>
+            <h4 className="momento">Es momento de empezar a crear </h4>
+            <img src={Lamparita} alt="" className="lamparita" />
+          </div>
+          }
+          </div>
+
+          <div className="popup">
+            <Creacion trigger={buttoncreacion} setTrigger={setButtonCreacion}>
+            </Creacion>
+          </div>
         </div>
     </div>
   )

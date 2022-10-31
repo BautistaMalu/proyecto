@@ -54,7 +54,7 @@
             align-items: left;
             display: flex;
             flex-direction: column; 
-            .miseventos,.compartidos{
+            .miseventos,.compartidos,.proovedor{
                 width: 230px;
                 height: 35px;
                 margin-bottom: 5px;
@@ -81,6 +81,17 @@
                     vertical-align: middle;
                     margin-right: 5px;
                     margin-left: 25px;
+                }
+            }
+            .proovedor{
+                .redes{
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    margin-left: 25px;
+                }
+                .us{    
+                    text-decoration: none;
+                    color: #626262;
                 }
             }
             }
@@ -188,6 +199,11 @@
                             border-radius: 0.625rem;
                             border-width: 1px;
                             font-family: 'Inter', sans-serif;
+                            .linkinfoeventos{
+                                text-decoration: none;
+                                
+                                
+                            }
                         }
                         
                     }

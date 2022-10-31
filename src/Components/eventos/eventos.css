@@ -56,7 +56,7 @@
   display: flex;
   flex-direction: column;
 }
-.peventos .todo .menu .botones2 .miseventos, .peventos .todo .menu .botones2 .compartidos {
+.peventos .todo .menu .botones2 .miseventos, .peventos .todo .menu .botones2 .compartidos, .peventos .todo .menu .botones2 .proovedor {
   width: 230px;
   height: 35px;
   margin-bottom: 5px;
@@ -68,7 +68,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 300;
 }
-.peventos .todo .menu .botones2 .miseventos:hover, .peventos .todo .menu .botones2 .compartidos:hover {
+.peventos .todo .menu .botones2 .miseventos:hover, .peventos .todo .menu .botones2 .compartidos:hover, .peventos .todo .menu .botones2 .proovedor:hover {
   background-color: #D7E7FF;
 }
 .peventos .todo .menu .botones2 .miseventos .cajita {
@@ -80,6 +80,15 @@
   vertical-align: middle;
   margin-right: 5px;
   margin-left: 25px;
+}
+.peventos .todo .menu .botones2 .proovedor .redes {
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-left: 25px;
+}
+.peventos .todo .menu .botones2 .proovedor .us {
+  text-decoration: none;
+  color: #626262;
 }
 .peventos .todo .eventos {
   height: 100%;
@@ -188,4 +197,7 @@
   border-radius: 0.625rem;
   border-width: 1px;
   font-family: "Inter", sans-serif;
+}
+.peventos .todo .eventos .hay .textos .usyfav .fav .linkinfoeventos {
+  text-decoration: none;
 }/*# sourceMappingURL=eventos.css.map */

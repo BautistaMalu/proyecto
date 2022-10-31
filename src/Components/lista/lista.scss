@@ -141,76 +141,81 @@
             margin-top: 5px;
             
         }
-        .cosas{
-            .itemsa{
+            .cosas{
                 display: flex;
-                flex-direction: column;
-                height: 200px;
-                width: 255px;
-                border-color: #D8D8D8;
-                border-radius: 30px;
-                border-width: 2px;
-                border-style: solid;
-                margin-top: 10px;
-                margin-left: 150px;
-                align-items: center;
-                font-family: 'Inter', sans-serif;
-                background-image: url("Trianguloazul.png");
-                .tipoyrest{
-                    display: flex;
-                    flex-direction: row;                  
-                    height: 50px;
-                    .tipo{
-                       margin-bottom: 0px;
-                       margin-right: 120px;
-                       font-size: 15px;
-                       height: 20px;
-
-                    }
-                    .rest{
-                        font-size: 20px;
-                        margin-top: 15px;
-                        color: #ffffff;
-                    }
-                }
-                .cosaycant{
-                                        
-                    display: flex;
-                    flex-direction: column;
-                    .cosa{
-                        margin-top: 0px;
-                        margin-right: 130px;
-                    }   
-                    .cant{
-                        margin-top: 0px;
-                        color: #5F5F5F;
-                    }
-                }
-                .btns{
-                    display: flex;
-                    flex-direction: row;
+                flex-direction: row;
+                width: 1300px;
+                .itemsa{
+                    height: 200px;
+                    width: 255px;
+                    border-color: #D8D8D8;
+                    border-radius: 30px;
+                    border-width: 2px;
+                    border-style: solid;
+                    font-family: 'Inter', sans-serif;
+                    background-image: url("Trianguloazul.png");
+                    position: relative;
+                    margin-left: 80px;
                     margin-top: 20px;
-                    .anadir{
-                        margin-right: 20px;
-                        background-color: #78C6FF;
-                        color: #ffffff;
-                        border-radius: 0.625rem;
-                        border-style: none;
-                        outline: none;
-                        height: 30px;
-                        width: 80px;
+                    .tipoyrest{
+                        position: absolute;
+                        .tipo{
+                            position: absolute;
+                            left: 20px;
+                            top: -6px;
+                            font-weight: 600;
+    
+                        }
+                        .rest{
+                            position: absolute;
+                            margin-top: 13px;
+                            left: 200px;
+                            font-size: 20px;
+                            color: #ffffff;
+                        }
                     }
-                    .restar{
-                        background-color: #FF0000;
-                        color: #ffffff;
-                        border-radius: 0.625rem;
-                        border-style: none;
-                        outline: none;
-                        height: 30px;
-                        width: 80px;
+                    .cosaycant{
+                        position: absolute;
+                        
+                        .cosa{
+                            position: absolute;
+                            margin-top: 50px;
+                            left: 18px;
+                            font-size: 25px;
+                        }   
+                        .cant{
+                            position: absolute;
+                            margin-top: 90px;
+                            left:20px;
+                        }
+                    }
+                    .btns{
+                        position: absolute;
+                        .anadir{
+                            position: absolute;
+                            margin-top: 145px;
+                            left: 130px;
+                            width: 90px;
+                            height: 40px;
+                            background-color: #78C6FF;
+                            border-radius: 0.625rem;
+                            color: #ffffff;
+                            border: none;
+                        }
+                        .restar{
+                            position: absolute;
+                            margin-top: 145px;
+                            left: 30px;
+                            width: 90px;
+                            height: 40px;
+                            border-radius: 0.625rem;
+                            background-color: #FF0000;
+                            color: #ffffff;
+                            border: none;
+                        }
                     }
                 }
             }
         }
+        
     }
-}

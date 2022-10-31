@@ -10,7 +10,7 @@
   font-family: "Inter", sans-serif;
 }
 .todologout .salir {
-  position: relative;
+  position: absolute;
   width: 120px;
   height: 30px;
   align-items: center;
@@ -20,7 +20,7 @@
   text-align: center;
 }
 .todologout .salir .salirbtn {
-  position: fixed;
+  position: absolute;
   right: 30px;
   align-items: center;
   background-color: #ffffff;
@@ -38,7 +38,7 @@
   height: 20px;
 }
 .todologout .salir .cerrar {
-  position: fixed;
+  position: absolute;
   top: 22px;
   right: 35.8px;
   background-color: #ffffff;

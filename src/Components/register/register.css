@@ -1,131 +1,104 @@
-body {
-  margin: 0;
-}
-
 .registrate {
-  min-height: 100vh;
-  min-width: 100%;
-  overflow-x: hidden;
-  padding: 0%;
-}
-.registrate .imagen {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  justify-content: left;
-  margin-left: 2rem;
-  margin-top: 1rem;
-  height: 2.3rem;
+  flex-direction: column;
 }
 .registrate .contenido-registro {
-  height: 60vh;
-  width: 90%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2rem;
-}
-.registrate .contenido-registro .ladoizq, .registrate .contenido-registro .ladoder {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.registrate .contenido-registro .ladoder {
-  display: flex;
-  justify-content: center;
-}
-.registrate .contenido-registro .ladoder .Foto {
-  display: flex;
-  justify-content: left;
-  width: 100%;
 }
 .registrate .contenido-registro .ladoizq {
-  margin-top: 5rem;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 10rem;
-  margin-right: 5rem;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  margin-left: 50px;
+}
+.registrate .contenido-registro .ladoizq .imagen {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 300px;
 }
 .registrate .contenido-registro .ladoizq .registro {
-  font-family: "Inter", sans-serif;
-  margin-right: 3rem;
-  margin-bottom: 0rem;
-  height: 3rem;
-  font-size: 1.75rem;
-  margin-top: 5rem;
+  margin-top: 100px;
+  font-weight: 1600;
+  margin-bottom: 10px;
 }
 .registrate .contenido-registro .ladoizq .ingrese {
-  font-family: "Inter", sans-serif;
-  margin-right: 3.3rem;
-  margin-top: 0rem;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  margin-top: 0px;
+  font-weight: 400;
 }
-.registrate .contenido-registro .ladoizq input {
-  font-size: 1rem;
-  display: block;
-  border-color: gray;
-  height: 35px;
-  width: 400px;
-  border-radius: 0.625rem;
-  margin-bottom: 0.6rem;
-  margin-top: 0.2rem;
-  border-style: solid;
-  padding: 0.6rem;
-  outline: none;
-  font-family: "Inter", sans-serif;
-  /* .ojo{
-         <i className='ojo'>{eye}</i>
-
-   }*/
-}
-.registrate .contenido-registro .ladoizq label {
-  display: block;
-  margin: auto;
-  float: left;
-  width: 20%;
-  font-size: larger;
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  margin-left: 0.5rem;
-}
-.registrate .contenido-registro .ladoizq #registrarse {
-  width: 410px;
-  height: 50px;
-  margin-left: 0.5rem;
-  margin-top: 0.75rem;
-  background: #2A81C0;
-  cursor: pointer;
-  border-radius: 0.625rem;
-  border: none;
-  color: white;
-  font-size: medium;
-}
-.registrate .contenido-registro .ladoizq #registrarse:hover {
-  background-color: #2f7699;
-}
-.registrate .contenido-registro .ladoizq #google {
-  justify-content: center;
-  align-items: center;
-  margin-left: 0.3rem;
+.registrate .contenido-registro .ladoizq .uss {
   display: flex;
   flex-direction: column;
-  margin-left: 0.5rem;
-  margin-top: 1rem;
-  width: 410px;
-  height: 50px;
-  cursor: pointer;
-  background: white;
-  border-radius: 0.625rem;
-  border: 1px solid #949449;
-  font-size: medium;
 }
-.registrate .contenido-registro .ladoizq .links #Iniciolink {
-  justify-content: center;
-  align-items: center;
-  margin-left: 1rem;
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  margin-top: 1rem;
+.registrate .contenido-registro .ladoizq .uss .labelus {
+  margin-bottom: 2.5px;
+  margin-left: 8px;
+}
+.registrate .contenido-registro .ladoizq .uss .us1 {
+  width: 400px;
+  padding: 10px;
+  border-radius: 0.625rem;
+  outline: none;
+  border-style: solid;
+  border-color: #949494;
+}
+.registrate .contenido-registro .ladoizq .emaill {
+  display: flex;
+  flex-direction: column;
+}
+.registrate .contenido-registro .ladoizq .emaill .labelemail {
+  margin-top: 30px;
+  margin-bottom: 2.5px;
+  margin-left: 8px;
+}
+.registrate .contenido-registro .ladoizq .emaill .email1 {
+  width: 400px;
+  padding: 10px;
+  border-radius: 0.625rem;
+  outline: none;
+  border-style: solid;
+  border-color: #949494;
+}
+.registrate .contenido-registro .ladoizq .pass {
+  display: flex;
+  flex-direction: column;
+}
+.registrate .contenido-registro .ladoizq .pass .labelpsw {
+  margin-top: 30px;
+  margin-bottom: 2.5px;
+  margin-left: 8px;
+}
+.registrate .contenido-registro .ladoizq .pass .psw1 {
+  width: 400px;
+  padding: 10px;
+  border-radius: 0.625rem;
+  outline: none;
+  border-style: solid;
+  border-color: #949494;
+}
+.registrate .contenido-registro .ladoizq .registrarse {
+  margin-left: 2px;
+  margin-top: 50px;
+  width: 420px;
+  height: 40px;
+  border-radius: 0.625rem;
+  border: none;
+  background-color: #2A81C0;
+  color: #ffffff;
+}
+.registrate .contenido-registro .ladoizq .registrarse:hover {
+  background-color: #2f7699;
+}
+.registrate .contenido-registro .ladoizq .links .Iniciolink {
+  font-size: small;
+}
+.registrate .contenido-registro .ladoizq .links .Iniciolink .linkinicio {
+  font-size: small;
+  text-decoration: none;
+}
+.registrate .contenido-registro .ladoder {
+  margin-left: 53px;
 }/*# sourceMappingURL=register.css.map */

@@ -13,7 +13,7 @@
 .todoagregar .agregar {
   position: relative;
   width: 350px;
-  height: 300px;
+  height: 250px;
   background-color: #ffffff;
   border-radius: 0.625rem;
   display: flex;
@@ -78,6 +78,6 @@
   outline: none;
   padding: 7px;
   padding-left: 20px;
-  margin-top: 50px;
+  margin-top: 5px;
   margin-left: 200px;
 }/*# sourceMappingURL=agregar.css.map */

@@ -1,156 +1,111 @@
 
 
-body{
-    margin: 0;
-   
-}
-
 .Logueo{
-    min-height: 100vh;
-    min-width: 100%;
-    overflow-x: hidden;
-    padding: 0%;
-        .imagen{
-            display: flex;
-            justify-content: left;
-            margin-left: 2rem;
-            margin-top: 1rem;
-            height: 2.3rem;
-        }
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     .contenido-login{
-
-        height: 60vh;
-        width: 90%;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 2rem;
-        
-        .ladoizq,.ladoder{
-            
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .ladoder{
-            display: flex;
-            justify-content: center;
-            .Foto{
-                display: flex;
-                justify-content: left;
-                width: 100%;
-            }
-        }
-        .ladoizq{
-            margin-top: 5rem;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            margin-left: 10rem;
-            margin-right: 5rem;
 
+        .ladoizq{
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+            align-items: center;
+            margin-left: 50px;
+            .imagen{
+                width: 120px;
+                height: 40px;
+                margin-top: 10px;
+                margin-right: 300px;
+            }
             .login{
-                font-family:'Inter', sans-serif;
-                margin-right: 3rem;
-                margin-bottom: 0rem;
-                height: 3rem;
-                font-size: 1.75rem;
-                margin-top: 5rem;
-                
+                margin-top: 100px;
+                font-weight: 1600;
+                margin-bottom: 10px;
             }
             .ingrese{
-                font-family:'Inter', sans-serif;
-                margin-right: 3.3rem;
-                margin-top: 0rem;
-                margin-bottom: 1.5rem;
-                font-size: 1rem;
+                margin-top: 0px;
+                font-weight: 400;
             }
-            input{
-                font-size: 1rem;
-                display: block;
-                border-color: gray;
-                height: 40px;
-                width: 400px;
-                border-radius: 0.625rem;
-                margin-bottom: 0.2rem;
-                border-style:solid;
-                padding: 0.6rem;
-                outline: none;
-                font-family:'Inter', sans-serif;
-
-               /* .ojo{
-                      <i className='ojo'>{eye}</i>
-                
-                }*/
-
-            }
-            #linkolvi{
-                display: flex;
-                justify-content: right;
-                margin-bottom: 1.5rem;
-                font-family:'Inter', sans-serif;
-                font-size: small;
-                text-decoration: none;
-            }
-
-           
-            label{
-                display: block;
-                margin: auto;
-                float: left;
-                width: 20%;
-                font-size: larger;
-                font-family:'Inter', sans-serif;
-                font-size: 1rem;
-                margin-left: 0.5rem;
-            }
-            #ingreso{
-                width: 410px;
-                height: 50px;
-                margin-left: 0.5rem;
-                margin-top: 0.3rem;
-                background: #2A81C0;
-                cursor: pointer;
-                border-radius: 0.625rem;
-                border: none;
-                color: white;
-                font-size: medium;
-                &:hover{
-                    background-color: #2f7699;
-                }
-            }
-            #google{
-                justify-content: center;
-                align-items: center;
-                margin-left: 0.3rem;
+            .labelsyinputslogin{
                 display: flex;
                 flex-direction: column;
-                margin-top: 1rem;
-                margin-left: 0.5rem;
-                width: 410px;
-                height: 50px;
-                cursor: pointer;
-                background:white;
-                border-radius: 0.625rem;
-                border: 1px solid #949449;
-                font-size: medium;
+                .emaill{
+                    display: flex;
+                    flex-direction: column;
+                    .labelemail1{
+                        margin-bottom: 2.5px;
+                        margin-left: 8px;
+                    }
+                    .email1{
+                        width: 400px;
+                        padding: 10px;
+                        border-radius: 0.625rem;
+                        outline: none;
+                        border-style: solid;
+                        border-color: #949494;
+                    }
+                }
+                .psww{
+                    display: flex;
+                    flex-direction: column;
+                    .labelpsw1{
+                        margin-top: 30px;
+                        margin-bottom: 2.5px;
+                        margin-left: 8px;
+                    }
+                    .psw1{
+                        width: 400px;
+                        padding: 10px;
+                        border-radius: 0.625rem;
+                        outline: none;
+                        border-style: solid;
+                        border-color: #949494;
+                    }
+                }
+                .linkybtn{
+                    display: flex;
+                    flex-direction: column;
+                    .linkolvi{
+                        text-decoration: none;
+                        font-size: small;
+                        margin-top: 5px;
+                    }
+                    .ingreso{
+                        margin-left: 2px;
+                        margin-top: 50px;
+                        width: 420px;
+                        height: 40px;
+                        border-radius: 0.625rem;
+                        border:none;
+                        background-color: #2A81C0;
+                        color:#ffffff;
+                        &:hover{
+                            background-color: #2f7699;
+                        }
+                    }
+                }
 
             }
-            
+      
             .link{
-                #registrolink{
-                    justify-content: center;
-                    align-items: center;
-                    margin-left: 1rem;
-                    font-family:'Inter', sans-serif;
-                    text-decoration: none;
-                    font-size: medium;
-                    margin-top: 1rem;
+                .registrolink{
+                    font-size: small;
+                    
+                    .linkregistro{
+                        text-decoration: none;
+                    }
                 }
             }
 
+        }
+        .ladoder{
+            margin-left: 53px;
+            .foto{
+
+            }
         }
     }
 }

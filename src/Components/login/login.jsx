@@ -51,36 +51,39 @@ function Login() {
   return (
     <div className='Logueo'>
             
-      <div className="imagen"> <img src={Logo} alt="" /> </div>
+      
 
       <div className='contenido-login'>
 
         <div className='ladoizq'>
+
+          <img src={Logo} alt=""  className='imagen'/> 
         
           <h1 className='login'> Bienvenido de vuelta <br/> </h1>
 
           <h3 className="ingrese"> Por favor ingrese sus datos <br/> </h3>
-
+          <div className="labelsyinputslogin">
           <form onSubmit={handlesubmit}>
+            <div className="emaill">
+            <label for ="email1" className='labelemail1'>Email</label>
 
-            <label for ="email1">Email</label>
+              <input onChange={handleInputChange} placeholder="Ingrese su email" className="email1" name="nombreUsuario" />
+            </div>
+            <div className="psww">
+              <label for="psw1" className='labelpsw1'>Contraseña</label>
 
-              <input onChange={handleInputChange} placeholder="Ingrese su email" id="email1" name="nombreUsuario" />
+              <input onChange={handleInputChange} placeholder="Ingrese su contraseña" type="password" className="psw1" name="password" />
+            </div>
+            <div className="linkybtn">
+              <Link to='/olvidemicontrasenia' className='linkolvi'>¿Olvidaste tu contraseña?</Link>
 
-            <label for="psw1">Contraseña</label>
-
-              <input onChange={handleInputChange} placeholder="Ingrese su contraseña" type="password" id="psw1" name="password" />
-
-              <Link to='/olvidemicontrasenia' id='linkolvi'>¿Olvidaste tu contraseña?</Link>
-
-              <button type="submit" id="ingreso" onClick={() => login()}>Ingresar</button>
-
-              <button type='submit' id='google'> Ingresa con google</button>
+              <button type="submit" className="ingreso" onClick={() => login()}>Ingresar</button>
+            </div>
 
           </form>
-
+          </div>
             <div className="link">
-              <h3 id='registrolink'>¿No tenes cuenta? <Link to='/register'>Registrate</Link></h3>
+              <h3 className='registrolink'>¿No tenes cuenta? <Link to='/register' className='linkregistro'>Registrate</Link></h3>
             </div>
 
         </div>

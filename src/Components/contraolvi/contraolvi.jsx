@@ -15,30 +15,34 @@ function contraolvi() {
 
     <div className="Contraolvi">
 
-        <div className="imagen"> <img src={Logo} alt="" /> </div>
+        
 
         <div className='contenido-contra'>
 
         <div className='ladoizq'>
-        
+
+            <img src={Logo} alt="" className='imagen'/>
+
             <h1 className='recordar'> No recuerdas tu contraseña <br/> </h1>
 
             <h3 className="recuperar"> Te enviamos un mail para recuperarla <br/> </h3>
 
             <form onSubmit={handlesubmit}>
 
-            <label for ="email1">Email</label>
+            <div className="emaill">
+                <label for ="email1" className='labelemail'>Email</label>
 
-                <input placeholder="Ingrese su email" type="email" id="email1"/>
+                <input placeholder="Ingrese su email" type="email" className="email1"/>
+            </div>
 
-                <button type="submit" id="recuperarcontra">Recuperar contraseña</button>
+                <button type="submit" className="recuperarcontra">Recuperar contraseña</button>
 
             </form>
 
         </div>
 
         <div className='ladoder'>
-        <div className="Foto"> <img src={Foto} alt="" /> </div>
+        <img src={Foto} alt="" className='foto'/> 
         </div>
 
         </div>

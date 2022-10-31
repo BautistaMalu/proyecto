@@ -146,57 +146,79 @@
   margin-top: 10px;
   align-items: center;
   font-family: "Inter", sans-serif;
+  position: relative;
+}
+.todoinfo .info .invitados .gente .foto {
+  left: 5px;
+  top: 10px;
+  position: absolute;
 }
 .todoinfo .info .invitados .gente .foto .fotoej {
-  margin-left: 20px;
-  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+}
+.todoinfo .info .invitados .gente .usymail {
+  position: absolute;
 }
 .todoinfo .info .invitados .gente .usymail .us {
-  margin-top: 20px;
+  position: absolute;
+  top: -45px;
+  left: 58px;
 }
 .todoinfo .info .invitados .gente .usymail .mail {
-  margin-top: -18px;
+  position: absolute;
+  top: -25px;
+  left: 58px;
   color: #5F5F5F;
 }
 .todoinfo .info .invitados .gente .estadoycirc {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  position: absolute;
 }
 .todoinfo .info .invitados .gente .estadoycirc .circu {
-  width: 10px;
-  height: 10px;
-  margin-left: 150px;
-  margin-right: 10px;
+  position: absolute;
+  top: -8px;
+  left: 420px;
 }
 .todoinfo .info .invitados .gente .estadoycirc .estadoo {
-  font-weight: 200;
-  color: #5F5F5F;
+  position: absolute;
+  top: -33px;
+  left: 450px;
+}
+.todoinfo .info .invitados .gente .adm {
+  position: absolute;
 }
 .todoinfo .info .invitados .gente .adm .admin {
-  font-weight: 500;
-  color: #5F5F5F;
-  margin-left: 200px;
+  position: absolute;
+  top: -33px;
+  left: 650px;
+}
+.todoinfo .info .invitados .gente .btns {
+  position: absolute;
 }
 .todoinfo .info .invitados .gente .btns .items {
-  margin-left: 250px;
+  position: absolute;
+  top: -15px;
+  left: 900px;
   background-color: #78C6FF;
   border: none;
-  font-size: 15px;
+  outline: none;
   border-radius: 0.625rem;
-  width: 80px;
   height: 30px;
+  width: 80px;
 }
 .todoinfo .info .invitados .gente .btns .items .itemslista {
   text-decoration: none;
   color: #ffffff;
 }
 .todoinfo .info .invitados .gente .btns .tresdots {
-  margin-left: 20px;
-  background-color: #ffffff;
+  position: absolute;
+  position: absolute;
+  top: -13px;
+  left: 1000px;
+  background-color: transparent;
   border: none;
-  font-size: 15px;
-}
-.todoinfo .info .invitados .gente .btns .tresdots .dotsline {
-  vertical-align: middle;
+  outline: none;
+  border-radius: 0.625rem;
+  height: 30px;
+  width: 80px;
 }/*# sourceMappingURL=infoeventos.css.map */
