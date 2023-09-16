@@ -15,7 +15,7 @@ function Lista() {
   const [buttonagregarcosas, setButtonAgregarcosas] = useState(false);
   const [itemsToBring, setItemsToBring] = useState(null);
   const listaCosas = []
-  const ApiBaseURL = "https://GroupIT-API.up.railway.app"
+  const ApiBaseURL = "https://groupit-api.vercel.app"
 
   const { id } = useParams();
   let totalItemsToBring = 0;

@@ -8,8 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 const eye = <FontAwesomeIcon icon={faEye} />;*/
 
-const localUrl = "http://localhost:8080"
-const railwayUrl = "https://GroupIT-API.up.railway.app"
+const railwayUrl = "https://groupit-api.vercel.app"
 
 function Login() {
   const [loginData, setLoginData] = React.useState({});

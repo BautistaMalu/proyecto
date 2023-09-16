@@ -7,7 +7,7 @@ import {useParams} from 'react-router-dom';
 function Agregar(props3) {
   //http://localhost:8080
   const [newUserData, setNewUserData] = React.useState({});
-  const ApiURLBase = "https://GroupIT-API.up.railway.app"
+  const ApiURLBase = "https://groupit-api.vercel.app"
   const { id } = useParams();
 
   const handleInputChange = (event) => {

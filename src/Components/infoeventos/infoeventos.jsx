@@ -32,7 +32,7 @@ function Infoeventos() {
     "Ausente": 0
   }
 
-  const ApiURLBase = "https://GroupIT-API.up.railway.app"
+  const ApiURLBase = "https://groupit-api.vercel.app"
   const listaInvitados = []
 
   const getUserInfo = async () => {

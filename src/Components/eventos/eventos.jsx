@@ -23,7 +23,7 @@ function Eventos() {
   const [buttonvolverse1, setButtonVolverse1] = useState(false);
   const [buttonvolverse2, setButtonVolverse2] = useState(false);
   const [fetchOutput, setFetchOutput] = useState(null);
-  const ApiURLBase = "https://GroupIT-API.up.railway.app"
+  const ApiURLBase = "https://groupit-api.vercel.app"
   let tevento="social";
 
   const listaEventos = []

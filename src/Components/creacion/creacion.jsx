@@ -6,7 +6,7 @@ import 'react-dropdown/style.css';
 
 function Creacion(props) {
   
-  const ApiBaseURL = "https://GroupIT-API.up.railway.app"
+  const ApiBaseURL = "https://groupit-api.vercel.app"
   const [createEventData, setCreateEventData] = React.useState(null);
 
 

@@ -15,7 +15,7 @@ function Header2() {
 
   const getUserInfo = async () => {
 
-    const ApiURL= "https://groupit-api.up.railway.app/user/getUser"
+    const ApiURL= "https://groupit-api.vercel.app/user/getUser"
 
     const requestConfig = {
       credentials: 'include',

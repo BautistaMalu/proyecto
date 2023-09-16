@@ -9,7 +9,7 @@ function Agregaritems(props5) {
     const { id } = useParams();
     const [itemsData, setItemsData] = React.useState({});
     
-    const ApiBaseURL = "https://GroupIT-API.up.railway.app"
+    const ApiBaseURL = "https://groupit-api.vercel.app"
 
     const handleInputChange = (event) => {
         setItemsData({

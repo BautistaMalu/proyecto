@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 function Register() {
   const [registerData, setRegisterData] = React.useState({});
   const navigate = useNavigate();
-  const ApiBaseURL = "https://GroupIT-API.up.railway.app"
+  const ApiBaseURL = "https://groupit-api.vercel.app"
 
   const handleInputChange = (event) => {
     setRegisterData({
