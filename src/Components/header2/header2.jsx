@@ -11,11 +11,10 @@ function Header2() {
 
   const [buttonlogout, setButtonLogout] = useState(false);
   const [loggedUserInfo, setLoggedUserInfo] = useState(null);
-  const nombreUsuarioToDisplay = loggedUserInfo?.nombreUsuario;
 
   const getUserInfo = async () => {
 
-    const ApiURL= "https://groupit-api.vercel.app/user/getUser"
+    const ApiURL= "https://groupit-api.vercel.app/auth/getSession"
 
     const requestConfig = {
       credentials: 'include',
@@ -31,9 +30,9 @@ function Header2() {
 
   useEffect(() => {
     getUserInfo().then((data) => {
-      setLoggedUserInfo(data);
+      setLoggedUserInfo(data.user.nombreUsuario);
     });
-  }, []);
+  }, []); 
 
 
 
@@ -48,7 +47,7 @@ function Header2() {
             <input type="text" placeholder='Buscar en mis eventos' className="buscar" />
             {/*ver de agarrar una foto*/}
             <img src={Fotoej} alt="" className="foto" />
-            <h3 className="nombreus">{nombreUsuarioToDisplay}</h3>
+            <h3 className="nombreus">{loggedUserInfo}</h3>
             <button className="desloguearse" onClick={() => setButtonLogout(true)}> <img src={Bajada} alt="" className="desloguearseimg" /></button>
 
             <LogOut trigger={buttonlogout} setTrigger={setButtonLogout}></LogOut>
