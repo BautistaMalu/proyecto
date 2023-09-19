@@ -31,7 +31,7 @@ function Header3() {
 
   useEffect(() => {
     getUserInfo().then((data) => {
-      setLoggedUserInfo(data.user.nombreUsuarioa);
+      setLoggedUserInfo(data.user.nombreUsuario);
     });
   }, []);
 
