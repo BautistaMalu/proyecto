@@ -1,19 +1,21 @@
 import React from 'react'
 import './logout.css'
 import Puerta from './Puerta.png'
-import Cerrar from '../header3/bajada.png';
-function logout(props2) {
-  return (props2.trigger) ? (
+import { Link } from 'react-router-dom';
 
+function logout(props2) {
+  const handleLogout = async () => {
+    await fetch("https://groupit-api.vercel.app/auth/logout");
+    return;
+  }
+
+  return (props2.trigger) ? (
     <div className="todologout">
         <div className="salir">
-          <button className="salirbtn"> <img src={Puerta} alt="" className="puerta" /> Cerrar Sesión </button>
-            {props2.children}
-          <button className="cerrar" onClick={() => props2.setTrigger(false)}> <img src={Cerrar} alt="" className="cruz" /> </button>
+          <Link to={"/"}><button className="salirbtn" onClick={handleLogout}> <img src={Puerta} alt="" className="puerta" /> Cerrar Sesión </button></Link>
             {props2.children}
         </div>
     </div>
-
   ) : "";
 }
 

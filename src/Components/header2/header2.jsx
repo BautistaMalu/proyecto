@@ -48,7 +48,7 @@ function Header2() {
             {/*ver de agarrar una foto*/}
             <img src={Fotoej} alt="" className="foto" />
             <h3 className="nombreus">{loggedUserInfo}</h3>
-            <button className="desloguearse" onClick={() => setButtonLogout(true)}> <img src={Bajada} alt="" className="desloguearseimg" /></button>
+            <button className="desloguearse" onClick={() => setButtonLogout(!buttonlogout)}> <img src={Bajada} alt="" className="desloguearseimg" /></button>
 
             <LogOut trigger={buttonlogout} setTrigger={setButtonLogout}></LogOut>
         </div>
